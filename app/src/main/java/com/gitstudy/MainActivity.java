@@ -1,0 +1,62 @@
+package com.gitstudy;
+
+import android.content.Intent;
+import android.view.View;
+import android.widget.RelativeLayout;
+
+import com.gitstudy.fragmenttabhostutils.FragmentTabhostActivity;
+import com.qk.applibrary.activity.QkActivity;
+import com.qk.applibrary.listener.TopbarImplListener;
+import com.qk.applibrary.widget.TopbarView;
+
+public class MainActivity extends QkActivity implements View.OnClickListener {
+
+    private RelativeLayout fragment_tabhost_utils_rl;
+    private TopbarView top_bar_view;
+
+    @Override
+    public int getLayoutId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    public void initViews() {
+        super.initViews();
+        top_bar_view = (TopbarView) findViewById(R.id.top_bar_view);
+        fragment_tabhost_utils_rl = (RelativeLayout) findViewById(R.id.fragment_tabhost_utils_rl);
+    }
+
+    @Override
+    public void initData() {
+        super.initData();
+        top_bar_view.setTopbarTitle("######");
+    }
+
+    @Override
+    public void addListeners() {
+        super.addListeners();
+        top_bar_view.setTopBarClickListener(topListener);
+        fragment_tabhost_utils_rl.setOnClickListener(MainActivity.this);
+    }
+
+    private TopbarImplListener topListener = new TopbarImplListener() {
+        @Override
+        public void leftButtonClick() {
+            finish();
+        }
+    };
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.fragment_tabhost_utils_rl:
+                startActivity(new Intent(MainActivity.this,FragmentTabhostActivity.class));
+                break;
+        }
+
+    }
+
+
+
+
+}

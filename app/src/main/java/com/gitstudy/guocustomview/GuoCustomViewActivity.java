@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.gitstudy.R;
 /**
+ * ceshi提交
  * csdn地址：http://blog.csdn.net/guolin_blog/article/details/17357967
  */
 public class GuoCustomViewActivity extends AppCompatActivity {

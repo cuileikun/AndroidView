@@ -21,8 +21,8 @@
         <activity android:name=".fragmenttabhostutils.CustomInJavaActivity" />
         <activity android:name=".fragmenttabhostutils.UseInFragment" />
         <activity android:name=".guocustomview.GuoCustomViewActivity" />
-        <activity android:name=".guocustomview.ZiHuiViewActivity" />
-        <activity android:name=".guocustomview.ZuHeViewActivity" />
+        <activity android:name=".guocustomview.zihuiview.ZiHuiViewActivity" />
+        <activity android:name=".guocustomview.zuheview.ZuHeViewActivity" />
         <activity android:name=".guocustomview.JiChengViewActivity"></activity>
     </application>
 

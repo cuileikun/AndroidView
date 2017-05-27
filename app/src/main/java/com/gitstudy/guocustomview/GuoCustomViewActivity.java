@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.gitstudy.R;
+import com.gitstudy.guocustomview.zihuiview.ZiHuiViewActivity;
+import com.gitstudy.guocustomview.zuheview.ZuHeViewActivity;
+
 /**
  * gitmerge
  * csdn地址：http://blog.csdn.net/guolin_blog/article/details/17357967

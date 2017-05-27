@@ -1,4 +1,4 @@
-package com.gitstudy.guocustomview;
+package com.gitstudy.guocustomview.zihuiview;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

@@ -97,7 +97,7 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/day_three_rl"
+                android:id="@+id/convenient_banner_rl"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_30_dip"
                 android:layout_marginLeft="@dimen/dimen_13_dip"
@@ -121,7 +121,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/belt_iv"
                     android:gravity="center_vertical"
-                    android:text="03"
+                    android:text="ConvenientBanner"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 

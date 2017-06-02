@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gitstudy">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,7 +23,13 @@
         <activity android:name=".guocustomview.GuoCustomViewActivity" />
         <activity android:name=".guocustomview.zihuiview.ZiHuiViewActivity" />
         <activity android:name=".guocustomview.zuheview.ZuHeViewActivity" />
-        <activity android:name=".guocustomview.JiChengViewActivity"></activity>
+        <activity android:name=".guocustomview.JiChengViewActivity" />
+        <activity android:name=".convenientbanner.ConvenientBannerActivity" />
+        <activity android:name=".convenientbanner.ConvenientBannerLocalActivity" />
+        <activity android:name=".convenientbanner.ConvenientBannerLocalPageActivity" />
+        <activity android:name=".convenientbanner.ConvenientBannerNetActivity" />
+        <activity android:name=".convenientbanner.ConvenientBannerNetPageActivity" />
+        <activity android:name=".convenientbanner.ConvenientBannerRecycleActivity"></activity>
     </application>
 
 </manifest>

@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.gitstudy.R;
+import com.gitstudy.convenientbanner.recyclerviewdemo.ConvenientBannerRecycleActivity;
 
 /**
  * 项目github地址：https://github.com/saiwu-bigkoo/Android-ConvenientBanner
@@ -63,7 +64,9 @@ public class ConvenientBannerActivity extends AppCompatActivity implements View.
                 startActivity(new Intent(ConvenientBannerActivity.this,ConvenientBannerNetPageActivity.class));
                 break;
             case R.id.btn_recycle_view_banner:
+
                 startActivity(new Intent(ConvenientBannerActivity.this,ConvenientBannerRecycleActivity.class));
+
                 break;
         }
 

@@ -22,11 +22,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Created by Sai on 15/8/13.
- * 这个是RecyclerView配合ConvenientBanner作为header的例子
- * 有issue反馈说RecyclerView刷新会出现空白图片，于是写了这个例子进行测试，也提供给对RecyclerView使用不熟悉的开发者进行参考吧。
- */
 public class ConvenientBannerRecycleActivity extends Activity implements SwipeRefreshLayout.OnRefreshListener {
     private SwipeRefreshLayout refreshLayout;
     private RecyclerView listView;
@@ -53,7 +48,7 @@ public class ConvenientBannerRecycleActivity extends Activity implements SwipeRe
     }
 
     private void initViews() {
-        setContentView(R.layout.acitvity_adrecyclerviewdemo);
+        setContentView(R.layout.activity_convenient_banner_recycle);
         refreshLayout = (SwipeRefreshLayout) findViewById(R.id.refreshLayout);
         convenientBanner = (ConvenientBanner) LayoutInflater.from(this).inflate(R.layout.adapter_header_cb,null);
         convenientBanner.setLayoutParams(new RecyclerView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,600));
@@ -61,7 +56,7 @@ public class ConvenientBannerRecycleActivity extends Activity implements SwipeRe
     }
 
     private void init(){
-//        initImageLoader();
+        initImageLoader();
 
         listView.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -76,7 +71,7 @@ public class ConvenientBannerRecycleActivity extends Activity implements SwipeRe
                 return new NetworkImageHolderView();
             }
         },networkImages)
-        .setPageIndicator(new int[]{R.drawable.ic_page_indicator, R.drawable.ic_page_indicator_focused});
+                .setPageIndicator(new int[]{R.drawable.ic_page_indicator, R.drawable.ic_page_indicator_focused});
 
         adapter.addHeader(convenientBanner);
         loadTestDatas();

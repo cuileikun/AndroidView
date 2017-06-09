@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.gitstudy.R;
 /**
+ * Tabhost工具类
  * github地址：https://github.com/open-android/FragmentTabhostUtils
  */
 public class FragmentTabhostActivity extends AppCompatActivity {

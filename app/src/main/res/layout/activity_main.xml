@@ -173,7 +173,7 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/day_five_rl"
+                android:id="@+id/fit_screen_rl"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_30_dip"
                 android:layout_marginLeft="@dimen/dimen_13_dip"
@@ -197,7 +197,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv5"
                     android:gravity="center_vertical"
-                    android:text="05"
+                    android:text="Android屏幕适配方案终结者"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 

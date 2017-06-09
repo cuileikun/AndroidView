@@ -10,6 +10,7 @@ import com.gitstudy.R;
 import com.gitstudy.convenientbanner.recyclerviewdemo.ConvenientBannerRecycleActivity;
 
 /**
+ *通用的广告栏控件，让你轻松实现广告头效果
  * 项目github地址：https://github.com/saiwu-bigkoo/Android-ConvenientBanner
  */
 

@@ -30,4 +30,5 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:25.3.0'
     compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
     compile 'in.srain.cube:grid-view-with-header-footer:1.0.12'
+    compile 'com.github.amlcurran.showcaseview:library:5.4.3'
 }

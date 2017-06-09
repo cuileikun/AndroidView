@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
 
-        <!--Tabhost工具类 on -->
+        <!-- Tabhost工具类 on -->
         <activity android:name=".fragmenttabhostutils.FragmentTabhostActivity" />
         <activity android:name=".fragmenttabhostutils.QuickStartActivity" />
         <activity android:name=".fragmenttabhostutils.CustomInXmlActivity" />
@@ -28,16 +28,16 @@
         <activity android:name=".guocustomview.zihuiview.ZiHuiViewActivity" />
         <activity android:name=".guocustomview.zuheview.ZuHeViewActivity" />
         <activity android:name=".guocustomview.JiChengViewActivity" />
-        <!--Tabhost工具类  off -->
-        <!--通用的广告栏控件 on -->
+        <!-- Tabhost工具类  off -->
+        <!-- 通用的广告栏控件 on -->
         <activity android:name=".convenientbanner.ConvenientBannerActivity" />
         <activity android:name=".convenientbanner.ConvenientBannerLocalActivity" />
         <activity android:name=".convenientbanner.ConvenientBannerLocalPageActivity" />
         <activity android:name=".convenientbanner.ConvenientBannerNetActivity" />
         <activity android:name=".convenientbanner.ConvenientBannerNetPageActivity" />
         <activity android:name=".convenientbanner.recyclerviewdemo.ConvenientBannerRecycleActivity" />
-        <!--通用的广告栏控件  off -->
-        <!--新手引导界面ShowcastView on -->
+        <!-- 通用的广告栏控件  off -->
+        <!-- 新手引导界面ShowcastView on -->
         <activity android:name=".showcastview.ShowCastViewActivity">
             <item android:name="windowNoTitle">
                 true
@@ -52,17 +52,22 @@
         <activity android:name=".showcastview.CustomShowcaseActivity" />
         <activity android:name=".showcastview.MemoryManagementTesting" />
         <activity android:name=".showcastview.legacy.MultipleShowcaseSampleActivity" />
-        <!--新手引导界面ShowcastView  off -->
-        <!--屏幕适配on -->
-        <activity android:name=".fitscreenend.FitScreenActivity"/>
+        <!-- 新手引导界面ShowcastView  off -->
+        <!-- 屏幕适配on -->
+        <activity android:name=".fitscreenend.FitScreenActivity" />
+
         <meta-data
             android:name="design_width"
             android:value="1080" />
         <meta-data
             android:name="design_height"
             android:value="1920" />
-        <!--屏幕适配off -->
-
+        <!-- 屏幕适配off -->
+        <!-- 仿支付宝手势密码解锁 on  -->
+        <activity android:name=".lockscreen.LockScreenActivity"/>
+        <activity android:name=".lockscreen.CreateGestureActivity"/>
+        <activity android:name=".lockscreen.GestureLoginActivity"/>
+        <!-- 仿支付宝手势密码解锁 off -->
     </application>
 
 </manifest>

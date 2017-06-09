@@ -8,6 +8,7 @@ import com.gitstudy.convenientbanner.ConvenientBannerActivity;
 import com.gitstudy.fitscreenend.FitScreenActivity;
 import com.gitstudy.fragmenttabhostutils.FragmentTabhostActivity;
 import com.gitstudy.guocustomview.GuoCustomViewActivity;
+import com.gitstudy.lockscreen.LockScreenActivity;
 import com.gitstudy.showcastview.ShowCastViewActivity;
 import com.qk.applibrary.activity.QkActivity;
 import com.qk.applibrary.listener.TopbarImplListener;
@@ -21,6 +22,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
     private RelativeLayout convenient_banner_rl;
     private RelativeLayout show_castview_rl;
     private RelativeLayout fit_screen_rl;
+    private RelativeLayout lock_pattern_rl;
 
     @Override
     public int getLayoutId() {
@@ -36,6 +38,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
         convenient_banner_rl = (RelativeLayout) findViewById(R.id.convenient_banner_rl);
         show_castview_rl = (RelativeLayout) findViewById(R.id.show_castview_rl);
         fit_screen_rl = (RelativeLayout) findViewById(R.id.fit_screen_rl);
+        lock_pattern_rl = (RelativeLayout) findViewById(R.id.lock_pattern_rl);
     }
 
     @Override
@@ -53,6 +56,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
         convenient_banner_rl.setOnClickListener(MainActivity.this);
         show_castview_rl.setOnClickListener(MainActivity.this);
         fit_screen_rl.setOnClickListener(MainActivity.this);
+        lock_pattern_rl.setOnClickListener(MainActivity.this);
     }
 
     private TopbarImplListener topListener = new TopbarImplListener() {
@@ -79,6 +83,10 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
                 break;
             case R.id.fit_screen_rl:
                 startActivity(new Intent(MainActivity.this, FitScreenActivity.class));
+                break;
+
+            case R.id.lock_pattern_rl:
+                startActivity(new Intent(MainActivity.this, LockScreenActivity.class));
                 break;
 
         }

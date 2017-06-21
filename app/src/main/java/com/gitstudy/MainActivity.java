@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.RelativeLayout;
 
+import com.gitstudy.collapsingtoolbarlayout.CollapsingToolbarLayoutActivity;
 import com.gitstudy.convenientbanner.ConvenientBannerActivity;
 import com.gitstudy.fitscreenend.FitScreenActivity;
 import com.gitstudy.fragmenttabhostutils.FragmentTabhostActivity;
@@ -27,6 +28,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
     private RelativeLayout lock_pattern_rl;
     private RelativeLayout recycle_view_rl;
     private RelativeLayout horizontal_scroll_selected_view_rl;
+    private RelativeLayout collapsing_toolbar_layout_rl;
 
     @Override
     public int getLayoutId() {
@@ -45,6 +47,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
         lock_pattern_rl = (RelativeLayout) findViewById(R.id.lock_pattern_rl);
         recycle_view_rl = (RelativeLayout) findViewById(R.id.recycle_view_rl);
         horizontal_scroll_selected_view_rl = (RelativeLayout) findViewById(R.id.horizontal_scroll_selected_view_rl);
+        collapsing_toolbar_layout_rl = (RelativeLayout) findViewById(R.id.collapsing_toolbar_layout_rl);
     }
 
     @Override
@@ -65,6 +68,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
         lock_pattern_rl.setOnClickListener(MainActivity.this);
         recycle_view_rl.setOnClickListener(MainActivity.this);
         horizontal_scroll_selected_view_rl.setOnClickListener(MainActivity.this);
+        collapsing_toolbar_layout_rl.setOnClickListener(MainActivity.this);
     }
 
     private TopbarImplListener topListener = new TopbarImplListener() {
@@ -103,6 +107,9 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
                 startActivity(new Intent(MainActivity.this,HorizontalScrollSelectedViewActivity.class));
                 break;
 
+            case R.id.collapsing_toolbar_layout_rl:
+                startActivity(new Intent(MainActivity.this,CollapsingToolbarLayoutActivity.class));
+                break;
         }
 
     }

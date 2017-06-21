@@ -18,4 +18,6 @@
     <color name="grey_a5a5a5">#A5A5A5</color>
     <color name="grey_dde1e7">#DDE1E7</color>
     <color name="red_f4333c">#F4333C</color>
+    <color name="black">#000000</color>
+    <color name="gray">#f9a4a3a3</color>
 </resources>

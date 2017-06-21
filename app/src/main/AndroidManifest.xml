@@ -69,7 +69,8 @@
         <activity android:name=".lockscreen.GestureLoginActivity" />
         <!-- 仿支付宝手势密码解锁 off -->
         <activity android:name=".recycleview.RecycleViewActivity" />
-        <activity android:name=".horizontalscrollselectedview.HorizontalScrollSelectedViewActivity"></activity>
+        <activity android:name=".horizontalscrollselectedview.HorizontalScrollSelectedViewActivity" />
+        <activity android:name=".collapsingtoolbarlayout.CollapsingToolbarLayoutActivity"></activity>
     </application>
 
 </manifest>

@@ -63,11 +63,13 @@
             android:name="design_height"
             android:value="1920" />
         <!-- 屏幕适配off -->
-        <!-- 仿支付宝手势密码解锁 on  -->
-        <activity android:name=".lockscreen.LockScreenActivity"/>
-        <activity android:name=".lockscreen.CreateGestureActivity"/>
-        <activity android:name=".lockscreen.GestureLoginActivity"/>
+        <!-- 仿支付宝手势密码解锁 on -->
+        <activity android:name=".lockscreen.LockScreenActivity" />
+        <activity android:name=".lockscreen.CreateGestureActivity" />
+        <activity android:name=".lockscreen.GestureLoginActivity" />
         <!-- 仿支付宝手势密码解锁 off -->
+        <activity android:name=".recycleview.RecycleViewActivity" />
+        <activity android:name=".horizontalscrollselectedview.HorizontalScrollSelectedViewActivity"></activity>
     </application>
 
 </manifest>

@@ -8,7 +8,9 @@ import com.gitstudy.convenientbanner.ConvenientBannerActivity;
 import com.gitstudy.fitscreenend.FitScreenActivity;
 import com.gitstudy.fragmenttabhostutils.FragmentTabhostActivity;
 import com.gitstudy.guocustomview.GuoCustomViewActivity;
+import com.gitstudy.horizontalscrollselectedview.HorizontalScrollSelectedViewActivity;
 import com.gitstudy.lockscreen.LockScreenActivity;
+import com.gitstudy.recycleview.RecycleViewActivity;
 import com.gitstudy.showcastview.ShowCastViewActivity;
 import com.qk.applibrary.activity.QkActivity;
 import com.qk.applibrary.listener.TopbarImplListener;
@@ -23,6 +25,8 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
     private RelativeLayout show_castview_rl;
     private RelativeLayout fit_screen_rl;
     private RelativeLayout lock_pattern_rl;
+    private RelativeLayout recycle_view_rl;
+    private RelativeLayout horizontal_scroll_selected_view_rl;
 
     @Override
     public int getLayoutId() {
@@ -39,6 +43,8 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
         show_castview_rl = (RelativeLayout) findViewById(R.id.show_castview_rl);
         fit_screen_rl = (RelativeLayout) findViewById(R.id.fit_screen_rl);
         lock_pattern_rl = (RelativeLayout) findViewById(R.id.lock_pattern_rl);
+        recycle_view_rl = (RelativeLayout) findViewById(R.id.recycle_view_rl);
+        horizontal_scroll_selected_view_rl = (RelativeLayout) findViewById(R.id.horizontal_scroll_selected_view_rl);
     }
 
     @Override
@@ -57,6 +63,8 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
         show_castview_rl.setOnClickListener(MainActivity.this);
         fit_screen_rl.setOnClickListener(MainActivity.this);
         lock_pattern_rl.setOnClickListener(MainActivity.this);
+        recycle_view_rl.setOnClickListener(MainActivity.this);
+        horizontal_scroll_selected_view_rl.setOnClickListener(MainActivity.this);
     }
 
     private TopbarImplListener topListener = new TopbarImplListener() {
@@ -87,6 +95,12 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
 
             case R.id.lock_pattern_rl:
                 startActivity(new Intent(MainActivity.this, LockScreenActivity.class));
+                break;
+            case R.id.recycle_view_rl:
+                startActivity(new Intent(MainActivity.this,RecycleViewActivity.class));
+                break;
+            case R.id.horizontal_scroll_selected_view_rl:
+                startActivity(new Intent(MainActivity.this,HorizontalScrollSelectedViewActivity.class));
                 break;
 
         }

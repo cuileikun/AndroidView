@@ -37,4 +37,5 @@ dependencies {
     compile 'com.zhy:base-adapter:2.0.2'
     compile project(':lockpattern')
     compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.github.385841539:HorizontalScrollSelectedView:1.0.0'
 }

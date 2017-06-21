@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gitstudy">
+    package="com.gitstudy" >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -9,8 +9,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,7 +38,7 @@
         <activity android:name=".convenientbanner.recyclerviewdemo.ConvenientBannerRecycleActivity" />
         <!-- 通用的广告栏控件  off -->
         <!-- 新手引导界面ShowcastView on -->
-        <activity android:name=".showcastview.ShowCastViewActivity">
+        <activity android:name=".showcastview.ShowCastViewActivity" >
             <item android:name="windowNoTitle">
                 true
             </item>
@@ -70,7 +70,9 @@
         <!-- 仿支付宝手势密码解锁 off -->
         <activity android:name=".recycleview.RecycleViewActivity" />
         <activity android:name=".horizontalscrollselectedview.HorizontalScrollSelectedViewActivity" />
-        <activity android:name=".collapsingtoolbarlayout.CollapsingToolbarLayoutActivity"></activity>
+        <activity android:name=".collapsingtoolbarlayout.CollapsingToolbarLayoutActivity" />
+        <activity android:name=".dynamicaddview.DynamicAddViewActivity" >
+        </activity>
     </application>
 
 </manifest>

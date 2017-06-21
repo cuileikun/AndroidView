@@ -363,7 +363,7 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/day_ten_rl"
+                android:id="@+id/dynamic_add_view_rl"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_30_dip"
                 android:layout_marginLeft="@dimen/dimen_13_dip"
@@ -387,7 +387,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv10"
                     android:gravity="center_vertical"
-                    android:text="10"
+                    android:text="动态添加布局"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 

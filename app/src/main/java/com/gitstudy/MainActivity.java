@@ -6,6 +6,7 @@ import android.widget.RelativeLayout;
 
 import com.gitstudy.collapsingtoolbarlayout.CollapsingToolbarLayoutActivity;
 import com.gitstudy.convenientbanner.ConvenientBannerActivity;
+import com.gitstudy.dynamicaddview.DynamicAddViewActivity;
 import com.gitstudy.fitscreenend.FitScreenActivity;
 import com.gitstudy.fragmenttabhostutils.FragmentTabhostActivity;
 import com.gitstudy.guocustomview.GuoCustomViewActivity;
@@ -29,6 +30,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
     private RelativeLayout recycle_view_rl;
     private RelativeLayout horizontal_scroll_selected_view_rl;
     private RelativeLayout collapsing_toolbar_layout_rl;
+    private RelativeLayout dynamic_add_view_rl;
 
     @Override
     public int getLayoutId() {
@@ -48,6 +50,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
         recycle_view_rl = (RelativeLayout) findViewById(R.id.recycle_view_rl);
         horizontal_scroll_selected_view_rl = (RelativeLayout) findViewById(R.id.horizontal_scroll_selected_view_rl);
         collapsing_toolbar_layout_rl = (RelativeLayout) findViewById(R.id.collapsing_toolbar_layout_rl);
+        dynamic_add_view_rl = (RelativeLayout) findViewById(R.id.dynamic_add_view_rl);
     }
 
     @Override
@@ -69,6 +72,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
         recycle_view_rl.setOnClickListener(MainActivity.this);
         horizontal_scroll_selected_view_rl.setOnClickListener(MainActivity.this);
         collapsing_toolbar_layout_rl.setOnClickListener(MainActivity.this);
+        dynamic_add_view_rl.setOnClickListener(MainActivity.this);
     }
 
     private TopbarImplListener topListener = new TopbarImplListener() {
@@ -109,6 +113,9 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
 
             case R.id.collapsing_toolbar_layout_rl:
                 startActivity(new Intent(MainActivity.this,CollapsingToolbarLayoutActivity.class));
+                break;
+            case R.id.dynamic_add_view_rl:
+                startActivity(new Intent(MainActivity.this,DynamicAddViewActivity.class));
                 break;
         }
 

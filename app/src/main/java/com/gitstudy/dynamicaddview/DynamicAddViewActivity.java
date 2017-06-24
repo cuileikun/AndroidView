@@ -10,15 +10,21 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.gitstudy.R;
+import com.qk.applibrary.listener.TopbarImplListener;
+import com.qk.applibrary.widget.TopbarView;
 
 public class DynamicAddViewActivity extends AppCompatActivity {
     private Button button1;
+    private TopbarView topbarView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dynamic_add_view);
         button1 = (Button) findViewById(R.id.button);
+        topbarView = (TopbarView) findViewById(R.id.top_bar_view);
+        topbarView.setTopbarTitle("提交订单");
+        topbarView.setTopBarClickListener(topListener);
         button1.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -38,7 +44,12 @@ public class DynamicAddViewActivity extends AppCompatActivity {
         });
 
     }
-
+    private TopbarImplListener topListener = new TopbarImplListener() {
+        @Override
+        public void leftButtonClick() {
+            DynamicAddViewActivity.this.finish();
+        }
+    };
     public void createView() {
         LinearLayout ll = (LinearLayout) findViewById(R.id.layout);
         TextView t = new TextView(this);

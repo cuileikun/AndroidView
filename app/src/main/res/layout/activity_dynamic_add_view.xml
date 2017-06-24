@@ -1,45 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:scrollbars="none"
     tools:context="com.gitstudy.dynamicaddview.DynamicAddViewActivity">
 
-    <LinearLayout
-        android:id="@+id/layout"
+    <com.qk.applibrary.widget.TopbarView
+        android:id="@+id/top_bar_view"
+        style="@style/fill_wrap" />
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/btn1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="项目实际应用" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="我是xml生成的！" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="请在我后面添加更多的view" />
+        android:layout_below="@+id/top_bar_view"
+        android:scrollbars="none">
 
         <LinearLayout
-            android:id="@+id/newLayout"
-            android:layout_width="wrap_content"
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="我是xml生成的2" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="项目实际应用" />
 
-</ScrollView>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="我是xml生成的！" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请在我后面添加更多的view" />
+
+            <LinearLayout
+                android:id="@+id/newLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="我是xml生成的2" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="结算" />
+</RelativeLayout>

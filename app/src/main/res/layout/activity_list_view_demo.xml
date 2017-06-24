@@ -21,7 +21,7 @@
             android:orientation="vertical">
 
             <RelativeLayout
-                android:id="@+id/fragment_tabhost_utils_rl"
+                android:id="@+id/list_view_add_delete_rl"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_30_dip"
                 android:layout_marginLeft="@dimen/dimen_13_dip"
@@ -45,7 +45,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/room_iv"
                     android:gravity="center_vertical"
-                    android:text="FragmentTabhostUtils"
+                    android:text="listview增加删除条目"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -83,7 +83,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/erery_day_reconnoitore_list_iv"
                     android:gravity="center_vertical"
-                    android:text="guocustomview"
+                    android:text=""
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -121,7 +121,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/belt_iv"
                     android:gravity="center_vertical"
-                    android:text="广告栏控件ConvenientBanner"
+                    android:text=""
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -159,7 +159,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv"
                     android:gravity="center_vertical"
-                    android:text="新手引导界面ShowcastView"
+                    android:text=""
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -197,7 +197,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv5"
                     android:gravity="center_vertical"
-                    android:text="Android屏幕适配方案终结者"
+                    android:text=""
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -235,7 +235,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv6"
                     android:gravity="center_vertical"
-                    android:text="仿支付宝手势密码解锁"
+                    android:text=""
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -273,7 +273,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv7"
                     android:gravity="center_vertical"
-                    android:text="recycle_view"
+                    android:text=""
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -311,7 +311,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv8"
                     android:gravity="center_vertical"
-                    android:text="HorizontalScrollSelectedView"
+                    android:text=""
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -349,7 +349,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv9"
                     android:gravity="center_vertical"
-                    android:text="CollapsingToolbarLayout实现折叠效果"
+                    android:text=""
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -387,7 +387,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv10"
                     android:gravity="center_vertical"
-                    android:text="动态添加布局"
+                    android:text=""
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -425,7 +425,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv11"
                     android:gravity="center_vertical"
-                    android:text="listview增加删除条目"
+                    android:text=""
                     android:textColor="#333333"
                     android:textSize="15sp" />
 

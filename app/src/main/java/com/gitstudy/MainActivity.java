@@ -11,6 +11,7 @@ import com.gitstudy.fitscreenend.FitScreenActivity;
 import com.gitstudy.fragmenttabhostutils.FragmentTabhostActivity;
 import com.gitstudy.guocustomview.GuoCustomViewActivity;
 import com.gitstudy.horizontalscrollselectedview.HorizontalScrollSelectedViewActivity;
+import com.gitstudy.listview.ListViewDemoActivity;
 import com.gitstudy.lockscreen.LockScreenActivity;
 import com.gitstudy.recycleview.RecycleViewActivity;
 import com.gitstudy.showcastview.ShowCastViewActivity;
@@ -31,6 +32,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
     private RelativeLayout horizontal_scroll_selected_view_rl;
     private RelativeLayout collapsing_toolbar_layout_rl;
     private RelativeLayout dynamic_add_view_rl;
+    private RelativeLayout listview_add_delete_item_rl;
 
     @Override
     public int getLayoutId() {
@@ -51,6 +53,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
         horizontal_scroll_selected_view_rl = (RelativeLayout) findViewById(R.id.horizontal_scroll_selected_view_rl);
         collapsing_toolbar_layout_rl = (RelativeLayout) findViewById(R.id.collapsing_toolbar_layout_rl);
         dynamic_add_view_rl = (RelativeLayout) findViewById(R.id.dynamic_add_view_rl);
+        listview_add_delete_item_rl = (RelativeLayout) findViewById(R.id.listview_add_delete_item_rl);
     }
 
     @Override
@@ -73,6 +76,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
         horizontal_scroll_selected_view_rl.setOnClickListener(MainActivity.this);
         collapsing_toolbar_layout_rl.setOnClickListener(MainActivity.this);
         dynamic_add_view_rl.setOnClickListener(MainActivity.this);
+        listview_add_delete_item_rl.setOnClickListener(MainActivity.this);
     }
 
     private TopbarImplListener topListener = new TopbarImplListener() {
@@ -105,18 +109,22 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
                 startActivity(new Intent(MainActivity.this, LockScreenActivity.class));
                 break;
             case R.id.recycle_view_rl:
-                startActivity(new Intent(MainActivity.this,RecycleViewActivity.class));
+                startActivity(new Intent(MainActivity.this, RecycleViewActivity.class));
                 break;
             case R.id.horizontal_scroll_selected_view_rl:
-                startActivity(new Intent(MainActivity.this,HorizontalScrollSelectedViewActivity.class));
+                startActivity(new Intent(MainActivity.this, HorizontalScrollSelectedViewActivity.class));
                 break;
 
             case R.id.collapsing_toolbar_layout_rl:
-                startActivity(new Intent(MainActivity.this,CollapsingToolbarLayoutActivity.class));
+                startActivity(new Intent(MainActivity.this, CollapsingToolbarLayoutActivity.class));
                 break;
             case R.id.dynamic_add_view_rl:
-                startActivity(new Intent(MainActivity.this,DynamicAddViewActivity.class));
+                startActivity(new Intent(MainActivity.this, DynamicAddViewActivity.class));
                 break;
+            case R.id.listview_add_delete_item_rl:
+                startActivity(new Intent(MainActivity.this, ListViewDemoActivity.class));
+                break;
+
         }
 
     }

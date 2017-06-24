@@ -71,8 +71,10 @@
         <activity android:name=".recycleview.RecycleViewActivity" />
         <activity android:name=".horizontalscrollselectedview.HorizontalScrollSelectedViewActivity" />
         <activity android:name=".collapsingtoolbarlayout.CollapsingToolbarLayoutActivity" />
-        <activity android:name=".dynamicaddview.DynamicAddViewActivity"></activity>
-        <activity android:name=".dynamicaddview.ActualEffectActivity"></activity>
+        <activity android:name=".dynamicaddview.DynamicAddViewActivity" />
+        <activity android:name=".dynamicaddview.ActualEffectActivity" />
+        <activity android:name=".listview.ListViewDemoActivity" />
+        <activity android:name=".listview.ListViewAddDeleteItemActivity"></activity>
     </application>
 
 </manifest>

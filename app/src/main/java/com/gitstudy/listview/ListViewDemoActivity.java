@@ -15,6 +15,8 @@ public class ListViewDemoActivity extends QkActivity implements View.OnClickList
     private Context context;
     private RelativeLayout list_view_add_delete_rl;
     private TopbarView top_bar_view;
+    private RelativeLayout list_demo1_rl;
+    private RelativeLayout list_demo2_rl;
 
 
     @Override
@@ -24,6 +26,8 @@ public class ListViewDemoActivity extends QkActivity implements View.OnClickList
         context = this;
         top_bar_view = (TopbarView) findViewById(R.id.top_bar_view);
         list_view_add_delete_rl = (RelativeLayout) findViewById(R.id.list_view_add_delete_rl);
+        list_demo1_rl = (RelativeLayout) findViewById(R.id.list_demo1_rl);
+        list_demo2_rl = (RelativeLayout) findViewById(R.id.list_demo2_rl);
     }
 
     @Override
@@ -37,6 +41,8 @@ public class ListViewDemoActivity extends QkActivity implements View.OnClickList
         super.addListeners();
         top_bar_view.setTopBarClickListener(topListener);
         list_view_add_delete_rl.setOnClickListener(ListViewDemoActivity.this);
+        list_demo1_rl.setOnClickListener(ListViewDemoActivity.this);
+        list_demo2_rl.setOnClickListener(ListViewDemoActivity.this);
     }
 
     private TopbarImplListener topListener = new TopbarImplListener() {
@@ -56,6 +62,13 @@ public class ListViewDemoActivity extends QkActivity implements View.OnClickList
         switch (view.getId()) {
             case R.id.list_view_add_delete_rl:
                 startActivity(new Intent(ListViewDemoActivity.this, ListViewAddDeleteItemActivity.class));
+                break;
+
+            case R.id.list_demo1_rl:
+                startActivity(new Intent(ListViewDemoActivity.this, ListDemoActivity.class));
+                break;
+            case R.id.list_demo2_rl:
+                startActivity(new Intent(ListViewDemoActivity.this, ListDemo2Activity.class));
                 break;
         }
     }

@@ -13,6 +13,7 @@ import com.gitstudy.guocustomview.GuoCustomViewActivity;
 import com.gitstudy.horizontalscrollselectedview.HorizontalScrollSelectedViewActivity;
 import com.gitstudy.listview.ListViewDemoActivity;
 import com.gitstudy.lockscreen.LockScreenActivity;
+import com.gitstudy.popupwindow.PopupWindowSeriesActivity;
 import com.gitstudy.recycleview.RecycleViewActivity;
 import com.gitstudy.showcastview.ShowCastViewActivity;
 import com.qk.applibrary.activity.QkActivity;
@@ -33,6 +34,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
     private RelativeLayout collapsing_toolbar_layout_rl;
     private RelativeLayout dynamic_add_view_rl;
     private RelativeLayout listview_add_delete_item_rl;
+    private RelativeLayout popup_window_rl;
 
     @Override
     public int getLayoutId() {
@@ -54,6 +56,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
         collapsing_toolbar_layout_rl = (RelativeLayout) findViewById(R.id.collapsing_toolbar_layout_rl);
         dynamic_add_view_rl = (RelativeLayout) findViewById(R.id.dynamic_add_view_rl);
         listview_add_delete_item_rl = (RelativeLayout) findViewById(R.id.listview_add_delete_item_rl);
+        popup_window_rl = (RelativeLayout) findViewById(R.id.popup_window_rl);
     }
 
     @Override
@@ -77,6 +80,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
         collapsing_toolbar_layout_rl.setOnClickListener(MainActivity.this);
         dynamic_add_view_rl.setOnClickListener(MainActivity.this);
         listview_add_delete_item_rl.setOnClickListener(MainActivity.this);
+        popup_window_rl.setOnClickListener(MainActivity.this);
     }
 
     private TopbarImplListener topListener = new TopbarImplListener() {
@@ -124,6 +128,10 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
             case R.id.listview_add_delete_item_rl:
                 startActivity(new Intent(MainActivity.this, ListViewDemoActivity.class));
                 break;
+            case R.id.popup_window_rl:
+                startActivity(new Intent(MainActivity.this, PopupWindowSeriesActivity.class));
+                break;
+
 
         }
 

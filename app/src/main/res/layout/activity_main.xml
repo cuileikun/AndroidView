@@ -439,7 +439,7 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/day_twelve_rl"
+                android:id="@+id/popup_window_rl"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_30_dip"
                 android:layout_marginLeft="@dimen/dimen_13_dip"
@@ -463,7 +463,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv12"
                     android:gravity="center_vertical"
-                    android:text="12"
+                    android:text="PopupWindow"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 

@@ -20,4 +20,10 @@
     <color name="red_f4333c">#F4333C</color>
     <color name="black">#000000</color>
     <color name="gray">#f9a4a3a3</color>
+    <color name="orange_salmon">#EC5745</color>
+    <color name="white">#ffffff</color>
+    <color name="green_deep_color">#6fb30d</color>
+    <color name="black_deep">#FF000000</color>
+    <color name="bbbbbb_2.3">#bbbbbb</color>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
 </resources>

@@ -74,7 +74,12 @@
         <activity android:name=".dynamicaddview.DynamicAddViewActivity" />
         <activity android:name=".dynamicaddview.ActualEffectActivity" />
         <activity android:name=".listview.ListViewDemoActivity" />
-        <activity android:name=".listview.ListViewAddDeleteItemActivity"></activity>
+        <activity android:name=".listview.ListViewAddDeleteItemActivity" />
+        <activity android:name=".listview.ListDemoActivity" />
+        <activity android:name=".listview.ListDemo2Activity" />
+        <activity android:name=".popupwindow.PopupWindowSeriesActivity" />
+        <activity android:name=".popupwindow.demo1.BaseActivity"></activity>
+        <activity android:name=".popupwindow.demo1.PopupWindowActivity"/>
     </application>
 
 </manifest>

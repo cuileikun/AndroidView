@@ -6,6 +6,7 @@ import android.widget.RelativeLayout;
 
 import com.gitstudy.collapsingtoolbarlayout.CollapsingToolbarLayoutActivity;
 import com.gitstudy.convenientbanner.ConvenientBannerActivity;
+import com.gitstudy.datetimedialog.DateTimeDialogActivity;
 import com.gitstudy.dynamicaddview.DynamicAddViewActivity;
 import com.gitstudy.fitscreenend.FitScreenActivity;
 import com.gitstudy.fragmenttabhostutils.FragmentTabhostActivity;
@@ -35,6 +36,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
     private RelativeLayout dynamic_add_view_rl;
     private RelativeLayout listview_add_delete_item_rl;
     private RelativeLayout popup_window_rl;
+    private RelativeLayout date_time_dialog_rl;
 
     @Override
     public int getLayoutId() {
@@ -57,6 +59,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
         dynamic_add_view_rl = (RelativeLayout) findViewById(R.id.dynamic_add_view_rl);
         listview_add_delete_item_rl = (RelativeLayout) findViewById(R.id.listview_add_delete_item_rl);
         popup_window_rl = (RelativeLayout) findViewById(R.id.popup_window_rl);
+        date_time_dialog_rl = (RelativeLayout) findViewById(R.id.date_time_dialog_rl);
     }
 
     @Override
@@ -81,6 +84,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
         dynamic_add_view_rl.setOnClickListener(MainActivity.this);
         listview_add_delete_item_rl.setOnClickListener(MainActivity.this);
         popup_window_rl.setOnClickListener(MainActivity.this);
+        date_time_dialog_rl.setOnClickListener(MainActivity.this);
     }
 
     private TopbarImplListener topListener = new TopbarImplListener() {
@@ -131,7 +135,9 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
             case R.id.popup_window_rl:
                 startActivity(new Intent(MainActivity.this, PopupWindowSeriesActivity.class));
                 break;
-
+            case R.id.date_time_dialog_rl:
+                startActivity(new Intent(MainActivity.this, DateTimeDialogActivity.class));
+                break;
 
         }
 

@@ -1,19 +1,40 @@
 package com.gitstudy.androidpicker;
 
+import android.graphics.Color;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.alibaba.fastjson.JSON;
 import com.gitstudy.R;
 
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
+import java.util.Locale;
 
+import cn.qqtheme.framework.entity.City;
+import cn.qqtheme.framework.entity.County;
+import cn.qqtheme.framework.entity.Province;
+import cn.qqtheme.framework.picker.AddressPicker;
+import cn.qqtheme.framework.picker.ColorPicker;
 import cn.qqtheme.framework.picker.DatePicker;
 import cn.qqtheme.framework.picker.DateTimePicker;
+import cn.qqtheme.framework.picker.DoublePicker;
+import cn.qqtheme.framework.picker.FilePicker;
+import cn.qqtheme.framework.picker.LinkagePicker;
+import cn.qqtheme.framework.picker.NumberPicker;
+import cn.qqtheme.framework.picker.OptionPicker;
 import cn.qqtheme.framework.picker.TimePicker;
 import cn.qqtheme.framework.util.ConvertUtils;
+import cn.qqtheme.framework.util.DateUtils;
+import cn.qqtheme.framework.util.LogUtils;
+import cn.qqtheme.framework.util.StorageUtils;
+import cn.qqtheme.framework.widget.WheelView;
 
 public class AndroidPickerActivity extends AppCompatActivity {
 
@@ -145,50 +166,299 @@ public class AndroidPickerActivity extends AppCompatActivity {
     /**
      * 9单项选择
      */
-
+    public void onOptionPicker(View view) {
+        OptionPicker picker = new OptionPicker(this, new String[]{
+                "第一项", "第二项", "这是一个很长很长很长很长很长很长很长很长很长的很长很长的很长很长的项"
+        });
+        picker.setCanceledOnTouchOutside(false);
+        picker.setDividerRatio(WheelView.DividerConfig.FILL);
+        picker.setShadowColor(Color.RED, 40);
+        picker.setSelectedIndex(1);
+        picker.setCycleDisable(true);
+        picker.setTextSize(11);
+        picker.setOnOptionPickListener(new OptionPicker.OnOptionPickListener() {
+            @Override
+            public void onOptionPicked(int index, String item) {
+                showToast("index=" + index + ", item=" + item);
+            }
+        });
+        picker.show();
+    }
     /**
      * 10双项选择
      */
-
+    public void onDoublePicker(View view) {
+        final ArrayList<String> firstData = new ArrayList<>();
+        firstData.add("2017年5月2日星期二");
+        firstData.add("2017年5月3日星期三");
+        firstData.add("2017年5月4日星期四");
+        firstData.add("2017年5月5日星期五");
+        firstData.add("2017年5月6日星期六");
+        final ArrayList<String> secondData = new ArrayList<>();
+        secondData.add("电动自行车");
+        secondData.add("二轮摩托车");
+        secondData.add("私家小汽车");
+        secondData.add("公共交通汽车");
+        final DoublePicker picker = new DoublePicker(this, firstData, secondData);
+        picker.setDividerVisible(true);
+        picker.setCycleDisable(false);
+        picker.setSelectedIndex(0, 0);
+        picker.setFirstLabel("于", null);
+        picker.setSecondLabel("骑/乘", "出发");
+        picker.setTextSize(12);
+        picker.setOnPickListener(new DoublePicker.OnPickListener() {
+            @Override
+            public void onPicked(int selectedFirstIndex, int selectedSecondIndex) {
+                showToast(firstData.get(selectedFirstIndex) + " " + secondData.get(selectedSecondIndex));
+            }
+        });
+        picker.show();
+    }
     /**
      * 11多项选择
      */
-
+    public void onMultiplePicker(View view) {
+        MultiplePicker picker = new MultiplePicker(this, new String[]{"穿青人", "少数民族", "已识别民族", "未定民族"});
+        picker.setOnItemPickListener(new MultiplePicker.OnItemPickListener() {
+            @Override
+            public void onItemPicked(int count, List<String> items) {
+                showToast("已选" + count + "项：" + items);
+            }
+        });
+        picker.show();
+    }
     /**
      * 12二三级联动选择
      */
+    public void onLinkagePicker(View view) {
+        //联动选择器的更多用法，可参见AddressPicker和CarNumberPicker
+        LinkagePicker.DataProvider provider = new LinkagePicker.DataProvider() {
 
+            @Override
+            public boolean isOnlyTwo() {
+                return true;
+            }
+
+            @NonNull
+            @Override
+            public List<String> provideFirstData() {
+                ArrayList<String> firstList = new ArrayList<>();
+                firstList.add("12");
+                firstList.add("24");
+                return firstList;
+            }
+
+            @NonNull
+            @Override
+            public List<String> provideSecondData(int firstIndex) {
+                ArrayList<String> secondList = new ArrayList<>();
+                for (int i = 1; i <= (firstIndex == 0 ? 12 : 24); i++) {
+                    String str = DateUtils.fillZero(i);
+                    if (firstIndex == 0) {
+                        str += "￥";
+                    } else {
+                        str += "$";
+                    }
+                    secondList.add(str);
+                }
+                return secondList;
+            }
+
+            @Nullable
+            @Override
+            public List<String> provideThirdData(int firstIndex, int secondIndex) {
+                return null;
+            }
+
+        };
+        LinkagePicker picker = new LinkagePicker(this, provider);
+        picker.setCycleDisable(true);
+        picker.setLabel("小时制", "点");
+        picker.setSelectedIndex(0, 8);
+        //picker.setSelectedItem("12", "9");
+        picker.setOnStringPickListener(new LinkagePicker.OnStringPickListener() {
+            @Override
+            public void onPicked(String first, String second, String third) {
+                showToast(first + "-" + second + "-" + third);
+            }
+        });
+        picker.show();
+    }
     /**
      * 13星座选择
      */
-
+    public void onConstellationPicker(View view) {
+        boolean isChinese = Locale.getDefault().getDisplayLanguage().contains("中文");
+        OptionPicker picker = new OptionPicker(this,
+                isChinese ? new String[]{
+                        "水瓶座", "双鱼座", "白羊座", "金牛座", "双子座", "巨蟹座",
+                        "狮子座", "处女座", "天秤座", "天蝎座", "射手座", "摩羯座"
+                } : new String[]{
+                        "Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer",
+                        "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn"
+                });
+        picker.setCycleDisable(false);//不禁用循环
+        picker.setTopBackgroundColor(0xFFEEEEEE);
+        picker.setTopHeight(30);
+        picker.setTopLineColor(0xFFEE0000);
+        picker.setTopLineHeight(1);
+        picker.setTitleText(isChinese ? "请选择" : "Please pick");
+        picker.setTitleTextColor(0xFF999999);
+        picker.setTitleTextSize(12);
+        picker.setCancelTextColor(0xFFEE0000);
+        picker.setCancelTextSize(13);
+        picker.setSubmitTextColor(0xFFEE0000);
+        picker.setSubmitTextSize(13);
+        picker.setTextColor(0xFFEE0000, 0xFF999999);
+        WheelView.DividerConfig config = new WheelView.DividerConfig();
+        config.setColor(0xFFEE0000);//线颜色
+        config.setAlpha(140);//线透明度
+        config.setRatio((float) (1.0 / 8.0));//线比率
+        picker.setDividerConfig(config);
+        picker.setBackgroundColor(0xFFE1E1E1);
+        //picker.setSelectedItem(isChinese ? "处女座" : "Virgo");
+        picker.setSelectedIndex(7);
+        picker.setCanceledOnTouchOutside(true);
+        picker.setOnOptionPickListener(new OptionPicker.OnOptionPickListener() {
+            @Override
+            public void onOptionPicked(int index, String item) {
+                showToast("index=" + index + ", item=" + item);
+            }
+        });
+        picker.show();
+    }
     /**
      * 14数字选择（如身高、体重、年龄）
      */
-
+    public void onNumberPicker(View view) {
+        NumberPicker picker = new NumberPicker(this);
+        picker.setWidth(picker.getScreenWidthPixels() / 2);
+        picker.setCycleDisable(false);
+        picker.setDividerVisible(false);
+        picker.setOffset(2);//偏移量
+        picker.setRange(145, 200, 1);//数字范围
+        picker.setSelectedItem(172);
+        picker.setLabel("厘米");
+        picker.setOnNumberPickListener(new NumberPicker.OnNumberPickListener() {
+            @Override
+            public void onNumberPicked(int index, Number item) {
+                showToast("index=" + index + ", item=" + item.intValue());
+            }
+        });
+        picker.show();
+    }
     /**
      * 15地址选择（包括省级、地级、县级）
      */
+    public void onAddressPicker(View view) {
+        AddressPickTask task = new AddressPickTask(this);
+        task.setHideProvince(false);
+        task.setHideCounty(false);
+        task.setCallback(new AddressPickTask.Callback() {
+            @Override
+            public void onAddressInitFailed() {
+                showToast("数据初始化失败");
+            }
 
+            @Override
+            public void onAddressPicked(Province province, City city, County county) {
+                if (county == null) {
+                    showToast(province.getAreaName() + city.getAreaName());
+                } else {
+                    showToast(province.getAreaName() + city.getAreaName() + county.getAreaName());
+                }
+            }
+        });
+        task.execute("贵州", "毕节", "纳雍");
+    }
     /**
      * 16地址选择（只包括地级、县级）
      */
+    public void onAddress2Picker(View view) {
+        try {
+            ArrayList<Province> data = new ArrayList<>();
+            String json = ConvertUtils.toString(getAssets().open("city2.json"));
+            data.addAll(JSON.parseArray(json, Province.class));
+            AddressPicker picker = new AddressPicker(this, data);
+            picker.setShadowVisible(true);
+            picker.setHideProvince(true);
+            picker.setSelectedItem("贵州", "贵阳", "花溪");
+            picker.setOnAddressPickListener(new AddressPicker.OnAddressPickListener() {
+                @Override
+                public void onAddressPicked(Province province, City city, County county) {
+                    showToast("province : " + province + ", city: " + city + ", county: " + county);
+                }
+            });
+            picker.show();
+        } catch (Exception e) {
+            showToast(LogUtils.toStackTraceString(e));
+        }
+    }
+
 
     /**
      * 17地址选择（只包括省级、地级）
      */
+    public void onAddress3Picker(View view) {
+        AddressPickTask task = new AddressPickTask(this);
+        task.setHideCounty(true);
+        task.setCallback(new AddressPickTask.Callback() {
+            @Override
+            public void onAddressInitFailed() {
+                showToast("数据初始化失败");
+            }
 
+            @Override
+            public void onAddressPicked(Province province, City city, County county) {
+                showToast(province.getAreaName() + " " + city.getAreaName());
+            }
+        });
+        task.execute("四川", "阿坝");
+    }
     /**
      * 18颜色选择
      */
-
+    public void onColorPicker(View view) {
+        ColorPicker picker = new ColorPicker(this);
+        picker.setInitColor(0xDD00DD);
+        picker.setOnColorPickListener(new ColorPicker.OnColorPickListener() {
+            @Override
+            public void onColorPicked(int pickedColor) {
+                showToast(ConvertUtils.toColorString(pickedColor));
+            }
+        });
+        picker.show();
+    }
     /**
      * 19文件选择
      */
-
+    public void onFilePicker(View view) {
+        FilePicker picker = new FilePicker(this, FilePicker.FILE);
+        picker.setShowHideDir(false);
+        //picker.setAllowExtensions(new String[]{".apk"});
+        picker.setOnFilePickListener(new FilePicker.OnFilePickListener() {
+            @Override
+            public void onFilePicked(String currentPath) {
+                showToast(currentPath);
+            }
+        });
+        picker.show();
+    }
     /**
      * 20目录选择
      */
+    public void onDirPicker(View view) {
+        FilePicker picker = new FilePicker(this, FilePicker.DIRECTORY);
+        picker.setRootPath(StorageUtils.getExternalRootPath() + "Download/");
+        picker.setItemHeight(30);
+        picker.setOnFilePickListener(new FilePicker.OnFilePickListener() {
+            @Override
+            public void onFilePicked(String currentPath) {
+                showToast(currentPath);
+            }
+        });
+        picker.show();
+    }
     /**
      * 21建议收集
      */

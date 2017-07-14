@@ -1,12 +1,15 @@
 package com.gitstudy.androidpicker;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
@@ -46,15 +49,54 @@ public class AndroidPickerActivity extends AppCompatActivity {
     /**
      *1选择器视图内嵌
      */
-
+    public void onNestView(View view) {
+        startActivity(new Intent(this, NestActivity.class));
+    }
     /**
      * 2窗口动画(基于XML)
      */
-
+    public void onAnimationStyle(View view) {
+        final NumberPicker picker = new NumberPicker(this);
+        picker.setItemWidth(200);
+        View headerView = View.inflate(AndroidPickerActivity.this, R.layout.picker_header, null);
+        final TextView titleView = (TextView) headerView.findViewById(R.id.picker_title);
+        titleView.setText("自定义顶部视图");
+        headerView.findViewById(R.id.picker_close).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                picker.dismiss();
+            }
+        });
+        picker.setHeaderView(headerView);
+        picker.setAnimationStyle(R.style.Animation_CustomPopup);
+        picker.setCycleDisable(false);
+        picker.setOffset(5);//偏移量
+        picker.setRange(10.5, 20, 1.5);//数字范围
+        picker.setSelectedItem(18.0);
+        picker.setLabel("℃");
+        picker.setOnWheelListener(new NumberPicker.OnWheelListener() {
+            @Override
+            public void onWheeled(int index, Number item) {
+                titleView.setText(String.valueOf(item.floatValue()));
+            }
+        });
+        picker.show();
+    }
     /**
      * 3窗口动画（基于Java）
      */
-
+    public void onAnimator(View view) {
+        CustomHeaderAndFooterPicker picker = new CustomHeaderAndFooterPicker(this);
+        picker.setOffset(3);//显示的条目的偏移量，条数为（offset*2+1）
+        picker.setGravity(Gravity.CENTER);//居中
+        picker.setOnOptionPickListener(new OptionPicker.OnOptionPickListener() {
+            @Override
+            public void onOptionPicked(int position, String option) {
+                showToast("index=" + position + ", item=" + option);
+            }
+        });
+        picker.show();
+    }
     /**
      * 4年月日选择
      */
@@ -462,7 +504,15 @@ public class AndroidPickerActivity extends AppCompatActivity {
     /**
      * 21建议收集
      */
-
+    public void onContact(View view) {
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:liyujiang_tk@yeah.net"));
+        intent.putExtra(Intent.EXTRA_CC, new String[]
+                {"1032694760@qq.com"});
+        intent.putExtra(Intent.EXTRA_EMAIL, "");
+        intent.putExtra(Intent.EXTRA_TEXT, "欢迎提供意您的见或建议");
+        startActivity(Intent.createChooser(intent, "选择邮件客户端"));
+    }
     private void showToast(String msg) {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }

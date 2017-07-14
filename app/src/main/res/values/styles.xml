@@ -113,4 +113,8 @@
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <item name="android:textSize">5sp</item>
     </style>
+    <style name="Animation.CustomPopup" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_out</item>
+    </style>
 </resources>

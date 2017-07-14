@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.RelativeLayout;
 
+import com.gitstudy.androidpicker.AndroidPickerActivity;
 import com.gitstudy.collapsingtoolbarlayout.CollapsingToolbarLayoutActivity;
 import com.gitstudy.convenientbanner.ConvenientBannerActivity;
 import com.gitstudy.datetimedialog.DateTimeDialogActivity;
@@ -37,6 +38,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
     private RelativeLayout listview_add_delete_item_rl;
     private RelativeLayout popup_window_rl;
     private RelativeLayout date_time_dialog_rl;
+    private RelativeLayout android_picker_rl;
 
     @Override
     public int getLayoutId() {
@@ -60,6 +62,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
         listview_add_delete_item_rl = (RelativeLayout) findViewById(R.id.listview_add_delete_item_rl);
         popup_window_rl = (RelativeLayout) findViewById(R.id.popup_window_rl);
         date_time_dialog_rl = (RelativeLayout) findViewById(R.id.date_time_dialog_rl);
+        android_picker_rl = (RelativeLayout) findViewById(R.id.android_picker_rl);
     }
 
     @Override
@@ -85,6 +88,7 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
         listview_add_delete_item_rl.setOnClickListener(MainActivity.this);
         popup_window_rl.setOnClickListener(MainActivity.this);
         date_time_dialog_rl.setOnClickListener(MainActivity.this);
+        android_picker_rl.setOnClickListener(MainActivity.this);
     }
 
     private TopbarImplListener topListener = new TopbarImplListener() {
@@ -137,6 +141,10 @@ public class MainActivity extends QkActivity implements View.OnClickListener {
                 break;
             case R.id.date_time_dialog_rl:
                 startActivity(new Intent(MainActivity.this, DateTimeDialogActivity.class));
+                break;
+
+            case R.id.android_picker_rl:
+                startActivity(new Intent(MainActivity.this, AndroidPickerActivity.class));
                 break;
 
         }

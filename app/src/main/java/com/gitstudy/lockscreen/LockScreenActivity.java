@@ -13,7 +13,7 @@ import com.gitstudy.lockscreen.util.BitmapUtil;
 import com.gitstudy.lockscreen.util.cache.ACache;
 import com.gitstudy.lockscreen.util.constant.Constant;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -21,7 +21,7 @@ import butterknife.ButterKnife;
  * github：https://github.com/cuileikunOrganization/LockPattern
  */
 public class LockScreenActivity extends AppCompatActivity {
-    @Bind(R.id.splash_iv)
+    @BindView(R.id.splash_iv)
     ImageView splashIv;
 
     private ACache aCache;

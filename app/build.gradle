@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'//butter knife
 
 android {
     compileSdkVersion 25
@@ -36,7 +37,6 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:25.2.0'
     compile 'com.zhy:base-adapter:2.0.2'
     compile project(':lockpattern')
-    compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.github.385841539:HorizontalScrollSelectedView:1.0.0'
     //glide图片加载
     compile 'jp.wasabeef:glide-transformations:2.0.1'
@@ -44,4 +44,7 @@ dependencies {
     compile 'com.jaeger.statusbaruitl:library:1.1.1'
     compile 'com.alibaba:fastjson:1.1.55.android'
     compile files('libs/AndroidPicker-1.5.2.jar')
+    //butter knife
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
 }

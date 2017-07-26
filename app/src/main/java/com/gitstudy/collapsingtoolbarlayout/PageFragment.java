@@ -10,12 +10,12 @@ import android.view.ViewGroup;
 import com.gitstudy.R;
 import java.util.ArrayList;
 import java.util.List;
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class PageFragment extends Fragment {
     public static final String ARG_PAGE = "PAGE_NUM";
-    @Bind(R.id.recyclerView)
+    @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
     private int mPage;
 
@@ -58,6 +58,6 @@ public class PageFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
+//        ButterKnife.unbind(this);
     }
 }

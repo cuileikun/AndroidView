@@ -15,7 +15,7 @@ import com.star.lockpattern.widget.LockPatternView;
 
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -26,11 +26,11 @@ public class GestureLoginActivity extends AppCompatActivity {
 
     private static final String TAG = "LoginGestureActivity";
 
-    @Bind(R.id.lockPatternView)
+    @BindView(R.id.lockPatternView)
     LockPatternView lockPatternView;
-    @Bind(R.id.messageTv)
+    @BindView(R.id.messageTv)
     TextView messageTv;
-    @Bind(R.id.forgetGestureBtn)
+    @BindView(R.id.forgetGestureBtn)
     Button forgetGestureBtn;
 
     private ACache aCache;

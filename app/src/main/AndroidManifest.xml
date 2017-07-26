@@ -90,7 +90,8 @@
         <activity android:name=".datetimedialog.SecondDateTimeDialogActivity" />
         <activity android:name=".androidpicker.AndroidPickerActivity" />
         <activity android:name=".androidpicker.NestActivity" />
-        <activity android:name=".base.CuiBaseActivity"></activity>
+        <activity android:name=".base.CuiBaseActivity" />
+        <activity android:name=".webviewvideo.WebViewVideoActivity"></activity>
     </application>
 
 </manifest>

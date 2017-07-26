@@ -25,7 +25,7 @@ import com.bumptech.glide.request.target.SimpleTarget;
 import com.gitstudy.R;
 import com.jaeger.library.StatusBarUtil;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import jp.wasabeef.glide.transformations.BlurTransformation;
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
@@ -34,45 +34,45 @@ public class CollapsingToolbarLayoutActivity extends AppCompatActivity {
     /**
      * ScrollView上半部分
      */
-    @Bind(R.id.toolbar)
+    @BindView(R.id.toolbar)
     Toolbar toolbar;
     /**
      * 头像
      */
-    @Bind(R.id.head_iv)
+    @BindView(R.id.head_iv)
     ImageView headIv;
     /**
      * CollapsingToolbarLayout内部显示内容部分
      */
-    @Bind(R.id.head_layout)
+    @BindView(R.id.head_layout)
     LinearLayout headLayout;
     /**
      * tab分类条目
      */
-    @Bind(R.id.toolbar_tab)
+    @BindView(R.id.toolbar_tab)
     TabLayout toolbarTab;
 
-    @Bind(R.id.app_bar_layout)
+    @BindView(R.id.app_bar_layout)
     AppBarLayout appBarLayout;
     /**
      * 折叠部分
      */
-    @Bind(R.id.collapsingToolbarLayout)
+    @BindView(R.id.collapsingToolbarLayout)
     CollapsingToolbarLayout collapsingToolbarLayout;
     /**
      * ViewPager
      */
-    @Bind(R.id.main_vp_container)
+    @BindView(R.id.main_vp_container)
     ViewPager mViewPager;
     /**
      * ScrollView
      */
-    @Bind(R.id.nsv)
+    @BindView(R.id.nsv)
     NestedScrollView nsv;
     /**
      * 整个布局
      */
-    @Bind(R.id.coordinator_Layout)
+    @BindView(R.id.coordinator_Layout)
     CoordinatorLayout coordinatorLayout;
 
     private ViewPagerAdapter myPagerAdapter;

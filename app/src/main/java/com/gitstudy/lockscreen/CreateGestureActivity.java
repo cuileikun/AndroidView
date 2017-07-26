@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.gitstudy.R;
 import com.gitstudy.lockscreen.util.cache.ACache;
 import com.gitstudy.lockscreen.util.constant.Constant;
@@ -15,7 +16,7 @@ import com.star.lockpattern.widget.LockPatternView;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -25,13 +26,13 @@ import butterknife.OnClick;
  */
 public class CreateGestureActivity extends Activity {
 
-	@Bind(R.id.lockPatterIndicator)
+	@BindView(R.id.lockPatterIndicator)
 	LockPatternIndicator lockPatternIndicator;
-	@Bind(R.id.lockPatternView)
+	@BindView(R.id.lockPatternView)
 	LockPatternView lockPatternView;
-	@Bind(R.id.resetBtn)
+	@BindView(R.id.resetBtn)
 	Button resetBtn;
-	@Bind(R.id.messageTv)
+	@BindView(R.id.messageTv)
 	TextView messageTv;
 
 	private List<LockPatternView.Cell> mChosenPattern = null;

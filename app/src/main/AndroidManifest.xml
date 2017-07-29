@@ -6,6 +6,12 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -87,11 +93,23 @@
         <activity
             android:name=".datetimedialog.DateTimeDialogActivity"
             android:theme="@style/AppBaseTheme" />
-        <activity android:name=".datetimedialog.SecondDateTimeDialogActivity" />
         <activity android:name=".androidpicker.AndroidPickerActivity" />
         <activity android:name=".androidpicker.NestActivity" />
         <activity android:name=".base.CuiBaseActivity" />
-        <activity android:name=".webviewvideo.WebViewVideoActivity"></activity>
+
+        <!-- android:configChanges="orientation|keyboardHidden" -->
+        <!--
+           默认竖屏，点击全屏后再横屏，
+            那么activity必须配置android:configChanges="orientation|screenSize"
+           这样一来，旋转屏幕，只会调用onConfigurationChanged，不会创建新activity。
+            不然的话，代码中设置横屏的时候，都会新建一个Activity，
+            那样就没办法实现点击就横屏全屏了。
+        -->
+
+        <activity
+            android:name=".webviewvideo.MyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:hardwareAccelerated="true"/>
     </application>
 
 </manifest>

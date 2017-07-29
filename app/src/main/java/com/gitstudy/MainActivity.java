@@ -18,7 +18,7 @@ import com.gitstudy.lockscreen.LockScreenActivity;
 import com.gitstudy.popupwindow.PopupWindowSeriesActivity;
 import com.gitstudy.recycleview.RecycleViewActivity;
 import com.gitstudy.showcastview.ShowCastViewActivity;
-import com.gitstudy.webviewvideo.WebViewVideoActivity;
+import com.gitstudy.webviewvideo.MyActivity;
 import com.qk.applibrary.activity.QkActivity;
 import com.qk.applibrary.listener.TopbarImplListener;
 import com.qk.applibrary.widget.TopbarView;
@@ -144,8 +144,9 @@ public class MainActivity extends QkActivity {
             case R.id.android_picker_rl:
                 startActivity(new Intent(MainActivity.this, AndroidPickerActivity.class));
                 break;
-            case R.id.webview_video_rl:
-                startActivity(new Intent(MainActivity.this, WebViewVideoActivity.class));
+            case R.id.webview_video_rl://加载webview  点击图片或者视频 切换到全屏模式
+//                startActivity(new Intent(MainActivity.this, WebViewVideoActivity.class));
+                startActivity(new Intent(MainActivity.this, MyActivity.class));
                 break;
 
         }

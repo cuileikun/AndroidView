@@ -13,6 +13,7 @@ import com.gitstudy.fitscreenend.FitScreenActivity;
 import com.gitstudy.fragmenttabhostutils.FragmentTabhostActivity;
 import com.gitstudy.guocustomview.GuoCustomViewActivity;
 import com.gitstudy.horizontalscrollselectedview.HorizontalScrollSelectedViewActivity;
+import com.gitstudy.knowledge.KnowledgeActivity;
 import com.gitstudy.listview.ListViewDemoActivity;
 import com.gitstudy.lockscreen.LockScreenActivity;
 import com.gitstudy.popupwindow.PopupWindowSeriesActivity;
@@ -60,6 +61,9 @@ public class MainActivity extends QkActivity {
     RelativeLayout android_picker_rl;
     @BindView(R.id.webview_video_rl)
     RelativeLayout webview_video_rl;
+    @BindView(R.id.mianshi_rl)
+    RelativeLayout mianshi_rl;
+
 
     @Override
     public int getLayoutId() {
@@ -98,7 +102,7 @@ public class MainActivity extends QkActivity {
             R.id.fit_screen_rl, R.id.lock_pattern_rl, R.id.recycle_view_rl,
             R.id.horizontal_scroll_selected_view_rl, R.id.collapsing_toolbar_layout_rl, R.id.dynamic_add_view_rl,
             R.id.listview_add_delete_item_rl, R.id.popup_window_rl, R.id.date_time_dialog_rl,
-            R.id.android_picker_rl, R.id.webview_video_rl})
+            R.id.android_picker_rl, R.id.webview_video_rl,R.id.mianshi_rl})
     void click(View view) {
         switch (view.getId()) {
             case R.id.fragment_tabhost_utils_rl:
@@ -147,6 +151,9 @@ public class MainActivity extends QkActivity {
             case R.id.webview_video_rl://加载webview  点击图片或者视频 切换到全屏模式
 //                startActivity(new Intent(MainActivity.this, WebViewVideoActivity.class));
                 startActivity(new Intent(MainActivity.this, MyActivity.class));
+                break;
+            case R.id.mianshi_rl:
+                startActivity(new Intent(MainActivity.this, KnowledgeActivity.class));
                 break;
 
         }

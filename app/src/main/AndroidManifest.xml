@@ -109,7 +109,11 @@
         <activity
             android:name=".webviewvideo.MyActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:hardwareAccelerated="true"/>
+            android:hardwareAccelerated="true" />
+        <activity android:name=".knowledge.KnowledgeActivity" />
+        <activity android:name=".knowledge.ToastLoopActivity" />
+        <activity android:name=".knowledge.WebView1Activity" />
+        <activity android:name=".knowledge.WebView2Activity"></activity>
     </application>
 
 </manifest>

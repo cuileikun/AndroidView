@@ -114,7 +114,8 @@
         <activity android:name=".knowledge.ToastLoopActivity" />
         <activity android:name=".knowledge.WebView1Activity" />
         <activity android:name=".knowledge.WebView2Activity" />
-        <activity android:name=".dialog.DialogActivity"></activity>
+        <activity android:name=".dialog.DialogActivity" />
+        <activity android:name=".OCRshibie.OCRActivity"></activity>
     </application>
 
 </manifest>

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.RelativeLayout;
 
+import com.gitstudy.OCRshibie.OCRActivity;
 import com.gitstudy.androidpicker.AndroidPickerActivity;
 import com.gitstudy.collapsingtoolbarlayout.CollapsingToolbarLayoutActivity;
 import com.gitstudy.convenientbanner.ConvenientBannerActivity;
@@ -66,6 +67,9 @@ public class MainActivity extends QkActivity {
     RelativeLayout mianshi_rl;
     @BindView(R.id.dialog_rl)
     RelativeLayout dialog_rl;
+    @BindView(R.id.ocr_rl)
+    RelativeLayout ocr_rl;
+
 
 
     @Override
@@ -105,7 +109,7 @@ public class MainActivity extends QkActivity {
             R.id.fit_screen_rl, R.id.lock_pattern_rl, R.id.recycle_view_rl,
             R.id.horizontal_scroll_selected_view_rl, R.id.collapsing_toolbar_layout_rl, R.id.dynamic_add_view_rl,
             R.id.listview_add_delete_item_rl, R.id.popup_window_rl, R.id.date_time_dialog_rl,
-            R.id.android_picker_rl, R.id.webview_video_rl, R.id.mianshi_rl, R.id.dialog_rl})
+            R.id.android_picker_rl, R.id.webview_video_rl, R.id.mianshi_rl, R.id.dialog_rl,R.id.ocr_rl})
     void click(View view) {
         switch (view.getId()) {
             case R.id.fragment_tabhost_utils_rl:
@@ -160,6 +164,9 @@ public class MainActivity extends QkActivity {
                 break;
             case R.id.dialog_rl:
                 startActivity(new Intent(MainActivity.this, DialogActivity.class));
+                break;
+            case R.id.ocr_rl:
+                startActivity(new Intent(MainActivity.this, OCRActivity.class));
                 break;
 
         }

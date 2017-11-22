@@ -8,6 +8,7 @@ import com.gitstudy.androidpicker.AndroidPickerActivity;
 import com.gitstudy.collapsingtoolbarlayout.CollapsingToolbarLayoutActivity;
 import com.gitstudy.convenientbanner.ConvenientBannerActivity;
 import com.gitstudy.datetimedialog.DateTimeDialogActivity;
+import com.gitstudy.dialog.DialogActivity;
 import com.gitstudy.dynamicaddview.DynamicAddViewActivity;
 import com.gitstudy.fitscreenend.FitScreenActivity;
 import com.gitstudy.fragmenttabhostutils.FragmentTabhostActivity;
@@ -63,7 +64,9 @@ public class MainActivity extends QkActivity {
     RelativeLayout webview_video_rl;
     @BindView(R.id.mianshi_rl)
     RelativeLayout mianshi_rl;
-//公司电脑首次提交
+    @BindView(R.id.dialog_rl)
+    RelativeLayout dialog_rl;
+
 
     @Override
     public int getLayoutId() {
@@ -102,7 +105,7 @@ public class MainActivity extends QkActivity {
             R.id.fit_screen_rl, R.id.lock_pattern_rl, R.id.recycle_view_rl,
             R.id.horizontal_scroll_selected_view_rl, R.id.collapsing_toolbar_layout_rl, R.id.dynamic_add_view_rl,
             R.id.listview_add_delete_item_rl, R.id.popup_window_rl, R.id.date_time_dialog_rl,
-            R.id.android_picker_rl, R.id.webview_video_rl,R.id.mianshi_rl})
+            R.id.android_picker_rl, R.id.webview_video_rl, R.id.mianshi_rl, R.id.dialog_rl})
     void click(View view) {
         switch (view.getId()) {
             case R.id.fragment_tabhost_utils_rl:
@@ -154,6 +157,9 @@ public class MainActivity extends QkActivity {
                 break;
             case R.id.mianshi_rl:
                 startActivity(new Intent(MainActivity.this, KnowledgeActivity.class));
+                break;
+            case R.id.dialog_rl:
+                startActivity(new Intent(MainActivity.this, DialogActivity.class));
                 break;
 
         }

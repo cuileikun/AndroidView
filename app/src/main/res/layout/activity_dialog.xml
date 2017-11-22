@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".dialog.DialogActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/dialog_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:text="普通对话框"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/dialog_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_style"
+            android:text="列表对话框"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/dialog_single"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_style"
+            android:text="单选列表对话框"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/dialog_multi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_style"
+            android:text="多选列表对话框"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/dialog_half_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_style"
+            android:text="半自定义对话框"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/dialog_custom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_style"
+            android:text="自定义对话框"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/dialog_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_style"
+            android:text="圆形进度条对话框"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/dialog_progress_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_style"
+            android:text="水平进度条对话框"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/dialog_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_style"
+            android:text="BottomSheetDialog"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

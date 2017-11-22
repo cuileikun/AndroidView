@@ -63,7 +63,7 @@ public class MainActivity extends QkActivity {
     RelativeLayout webview_video_rl;
     @BindView(R.id.mianshi_rl)
     RelativeLayout mianshi_rl;
-
+//公司电脑首次提交
 
     @Override
     public int getLayoutId() {

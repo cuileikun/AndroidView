@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
+        android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
         android:drawableLeft="@drawable/approval_circle"
         android:drawablePadding="5dp"
@@ -20,8 +20,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/round_corner">
 
@@ -59,7 +59,7 @@
             android:layout_below="@+id/tv2"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="15dp"
-            android:text="董志博 2017-09-11 IRR:67%" />
+            android:text="董志博   2017-09-11   IRR: 67%" />
 
         <Button
             android:textSize="18sp"

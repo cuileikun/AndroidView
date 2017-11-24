@@ -22,6 +22,7 @@ import com.gitstudy.popupwindow.PopupWindowSeriesActivity;
 import com.gitstudy.recycleview.RecycleViewActivity;
 import com.gitstudy.showcastview.ShowCastViewActivity;
 import com.gitstudy.webviewvideo.MyActivity;
+import com.gitstudy.xrcycleview.XRecycleViewDemoActivity;
 import com.qk.applibrary.activity.QkActivity;
 import com.qk.applibrary.listener.TopbarImplListener;
 import com.qk.applibrary.widget.TopbarView;
@@ -69,6 +70,10 @@ public class MainActivity extends QkActivity {
     RelativeLayout dialog_rl;
     @BindView(R.id.ocr_rl)
     RelativeLayout ocr_rl;
+    @BindView(R.id.xrecycle_view_rl)
+    RelativeLayout xrecycle_view_rl;
+
+
 
 
 
@@ -109,7 +114,7 @@ public class MainActivity extends QkActivity {
             R.id.fit_screen_rl, R.id.lock_pattern_rl, R.id.recycle_view_rl,
             R.id.horizontal_scroll_selected_view_rl, R.id.collapsing_toolbar_layout_rl, R.id.dynamic_add_view_rl,
             R.id.listview_add_delete_item_rl, R.id.popup_window_rl, R.id.date_time_dialog_rl,
-            R.id.android_picker_rl, R.id.webview_video_rl, R.id.mianshi_rl, R.id.dialog_rl,R.id.ocr_rl})
+            R.id.android_picker_rl, R.id.webview_video_rl, R.id.mianshi_rl, R.id.dialog_rl,R.id.ocr_rl,R.id.xrecycle_view_rl})
     void click(View view) {
         switch (view.getId()) {
             case R.id.fragment_tabhost_utils_rl:
@@ -119,7 +124,6 @@ public class MainActivity extends QkActivity {
                 startActivity(new Intent(MainActivity.this, GuoCustomViewActivity.class));
                 break;
             case R.id.convenient_banner_rl:
-
                 startActivity(new Intent(MainActivity.this, ConvenientBannerActivity.class));
                 break;
             case R.id.show_castview_rl:
@@ -168,6 +172,11 @@ public class MainActivity extends QkActivity {
             case R.id.ocr_rl:
                 startActivity(new Intent(MainActivity.this, OCRActivity.class));
                 break;
+            case R.id.xrecycle_view_rl:
+                startActivity(new Intent(MainActivity.this, XRecycleViewDemoActivity.class));
+                break;
+
+
 
         }
     }

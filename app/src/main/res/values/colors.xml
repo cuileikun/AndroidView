@@ -28,4 +28,8 @@
     <item name="gray_holo_light" type="color">#ffd0d0d0</item>
     <color name="immersion">#FF18B4ED</color>
     <color name="background">#FFFFFFFF</color>
+
+    <color name="colorDefault">#ffffff</color>
+    <color name="colorBackground">#f1f0f6</color>
+    <color name="colorText">#797979</color>
 </resources>

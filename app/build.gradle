@@ -47,4 +47,8 @@ dependencies {
     //butter knife
     compile 'com.jakewharton:butterknife:8.4.0'
     apt 'com.jakewharton:butterknife-compiler:8.4.0'
+//    compile 'com.carson_ho:SearchLayout:1.0.1'
+    compile 'com.jcodecraeer:xrecyclerview:1.3.2'
+    compile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    compile 'com.android.support:design:25.2.0'
 }

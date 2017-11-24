@@ -39,6 +39,9 @@ import cn.qqtheme.framework.util.LogUtils;
 import cn.qqtheme.framework.util.StorageUtils;
 import cn.qqtheme.framework.widget.WheelView;
 
+/**
+ * https://github.com/gzu-liyujiang/AndroidPicker
+ */
 public class AndroidPickerActivity extends AppCompatActivity {
 
     @Override

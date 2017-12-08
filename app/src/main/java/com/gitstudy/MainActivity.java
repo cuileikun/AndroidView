@@ -15,6 +15,7 @@ import com.gitstudy.fitscreenend.FitScreenActivity;
 import com.gitstudy.fragmenttabhostutils.FragmentTabhostActivity;
 import com.gitstudy.guocustomview.GuoCustomViewActivity;
 import com.gitstudy.horizontalscrollselectedview.HorizontalScrollSelectedViewActivity;
+import com.gitstudy.horizontalscrollview.HorizontalScrollViewActivity;
 import com.gitstudy.knowledge.KnowledgeActivity;
 import com.gitstudy.listview.ListViewDemoActivity;
 import com.gitstudy.lockscreen.LockScreenActivity;
@@ -72,10 +73,8 @@ public class MainActivity extends QkActivity {
     RelativeLayout ocr_rl;
     @BindView(R.id.xrecycle_view_rl)
     RelativeLayout xrecycle_view_rl;
-
-
-
-
+    @BindView(R.id.horizontal_scroll_view_rl)
+    RelativeLayout horizontal_scroll_view_rl;
 
     @Override
     public int getLayoutId() {
@@ -86,7 +85,6 @@ public class MainActivity extends QkActivity {
     public void initViews() {
         super.initViews();
         ButterKnife.bind(this);
-
     }
 
     @Override
@@ -114,7 +112,7 @@ public class MainActivity extends QkActivity {
             R.id.fit_screen_rl, R.id.lock_pattern_rl, R.id.recycle_view_rl,
             R.id.horizontal_scroll_selected_view_rl, R.id.collapsing_toolbar_layout_rl, R.id.dynamic_add_view_rl,
             R.id.listview_add_delete_item_rl, R.id.popup_window_rl, R.id.date_time_dialog_rl,
-            R.id.android_picker_rl, R.id.webview_video_rl, R.id.mianshi_rl, R.id.dialog_rl,R.id.ocr_rl,R.id.xrecycle_view_rl})
+            R.id.android_picker_rl, R.id.webview_video_rl, R.id.mianshi_rl, R.id.dialog_rl,R.id.ocr_rl,R.id.xrecycle_view_rl,R.id.horizontal_scroll_view_rl})
     void click(View view) {
         switch (view.getId()) {
             case R.id.fragment_tabhost_utils_rl:
@@ -174,6 +172,9 @@ public class MainActivity extends QkActivity {
                 break;
             case R.id.xrecycle_view_rl:
                 startActivity(new Intent(MainActivity.this, XRecycleViewDemoActivity.class));
+                break;
+            case R.id.horizontal_scroll_view_rl:
+                startActivity(new Intent(MainActivity.this, HorizontalScrollViewActivity.class));
                 break;
 
 

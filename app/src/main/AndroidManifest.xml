@@ -118,7 +118,10 @@
         <activity android:name=".xrcycleview.XRecycleViewDemoActivity" />
         <activity android:name=".xrcycleview.LinearActivity" />
         <activity android:name=".xrcycleview.GridActivity" />
-        <activity android:name=".xrcycleview.MultiHeaderActivity"></activity>
+        <activity android:name=".xrcycleview.MultiHeaderActivity" />
+        <activity android:name=".horizontalscrollview.HorizontalScrollViewActivity" />
+        <activity android:name=".horizontalscrollview.FirstHorizontalScrollViewActivity" />
+        <activity android:name=".horizontalscrollview.SecondHorizontalScrollViewActivity"></activity>
     </application>
 
 </manifest>

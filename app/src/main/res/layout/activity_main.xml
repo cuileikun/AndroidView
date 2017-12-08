@@ -744,6 +744,44 @@
                     android:src="@drawable/arrow_right" />
             </RelativeLayout>
 
+            <RelativeLayout
+                android:id="@+id/horizontal_scroll_view_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_marginRight="@dimen/dimen_13_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@drawable/mybelt_bg">
+
+                <ImageView
+                    android:id="@+id/inverstigation_iv20"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:src="@drawable/qq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:layout_toRightOf="@+id/inverstigation_iv20"
+                    android:gravity="center_vertical"
+                    android:text="Android 自定义 HorizontalScrollView 打造超强 Gallery效果"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_8_dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 

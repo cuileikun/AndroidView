@@ -31,6 +31,19 @@ public class ConvenientBannerNetActivity extends AppCompatActivity implements Vi
             "http://f.hiphotos.baidu.com/image/h%3D200/sign=1478eb74d5a20cf45990f9df460b4b0c/d058ccbf6c81800a5422e5fdb43533fa838b4779.jpg",
             "http://f.hiphotos.baidu.com/image/pic/item/09fa513d269759ee50f1971ab6fb43166c22dfba.jpg"
     };
+//    private String[] images = {
+//            "https://office.cmb-leasing.com/app/s/image/thumbnil/07c19ec5-9dc0-4e45-83c2-1153bc690042?token=JWid5Geu2W6UQqkXOZm+Koa6ywGUqF5gXp+Y1Xx9HatUwqe/+5n7lVF19oNXLlQjkwobF5lI4HNtZRTLehFvYAFmEDVJcSIlBFV3tKGikMNctvKK40W8KswI+AWIJ1hnAaIEao3vKvptLdeGB9OGEUYW0fWnv/FK3RK8mrd/0veolJCqfL1jCwhi6q+VgSZ1EADFc/i9raB5tbhmDMltRQqdyNtwF+LswoHWn+lxMgrlLE/XokTmISz6HnjmB0laSGyVa/rjOhEjDJdgRF5kJw==&deviceId=865376030207730",
+//            "https://office.cmb-leasing.com/app/s/image/thumbnil/50946a6b-ccd0-4c90-8179-941f8834d7d0?token=JWid5Geu2W6UQqkXOZm+Koa6ywGUqF5gXp+Y1Xx9HatUwqe/+5n7lVF19oNXLlQjkwobF5lI4HNtZRTLehFvYAFmEDVJcSIlBFV3tKGikMNctvKK40W8KswI+AWIJ1hnAaIEao3vKvptLdeGB9OGEUYW0fWnv/FK3RK8mrd/0veolJCqfL1jCwhi6q+VgSZ1EADFc/i9raB5tbhmDMltRQqdyNtwF+LswoHWn+lxMgrlLE/XokTmISz6HnjmB0laSGyVa/rjOhEjDJdgRF5kJw==&deviceId=865376030207730",
+//            "https://office.cmb-leasing.com/app/s/image/thumbnil/623c76e5-c3d5-4700-ac1e-a466174eff8a?token=JWid5Geu2W6UQqkXOZm+Koa6ywGUqF5gXp+Y1Xx9HatUwqe/+5n7lVF19oNXLlQjkwobF5lI4HNtZRTLehFvYAFmEDVJcSIlBFV3tKGikMNctvKK40W8KswI+AWIJ1hnAaIEao3vKvptLdeGB9OGEUYW0fWnv/FK3RK8mrd/0veolJCqfL1jCwhi6q+VgSZ1EADFc/i9raB5tbhmDMltRQqdyNtwF+LswoHWn+lxMgrlLE/XokTmISz6HnjmB0laSGyVa/rjOhEjDJdgRF5kJw==&deviceId=865376030207730",
+//            "https://office.cmb-leasing.com/app/s/image/thumbnil/9e509cda-0ed3-4b99-8802-da4689005d10?token=JWid5Geu2W6UQqkXOZm+Koa6ywGUqF5gXp+Y1Xx9HatUwqe/+5n7lVF19oNXLlQjkwobF5lI4HNtZRTLehFvYAFmEDVJcSIlBFV3tKGikMNctvKK40W8KswI+AWIJ1hnAaIEao3vKvptLdeGB9OGEUYW0fWnv/FK3RK8mrd/0veolJCqfL1jCwhi6q+VgSZ1EADFc/i9raB5tbhmDMltRQqdyNtwF+LswoHWn+lxMgrlLE/XokTmISz6HnjmB0laSGyVa/rjOhEjDJdgRF5kJw==&deviceId=865376030207730",
+//    };
+//    private String[] images = {
+//            "https://office.cmb-leasing.com/app/s/image/07c19ec5-9dc0-4e45-83c2-1153bc690042?token=JWid5Geu2W6UQqkXOZm+Koa6ywGUqF5gXp+Y1Xx9HatUwqe/+5n7lVF19oNXLlQjkwobF5lI4HNtZRTLehFvYAFmEDVJcSIlBFV3tKGikMNctvKK40W8KswI+AWIJ1hnAaIEao3vKvptLdeGB9OGEUYW0fWnv/FK3RK8mrd/0veolJCqfL1jCwhi6q+VgSZ1EADFc/i9raB5tbhmDMltRQqdyNtwF+LswoHWn+lxMgrlLE/XokTmISz6HnjmB0laSGyVa/rjOhEjDJdgRF5kJw==&deviceId=865376030207730",
+//            "https://office.cmb-leasing.com/app/s/image/50946a6b-ccd0-4c90-8179-941f8834d7d0?token=JWid5Geu2W6UQqkXOZm+Koa6ywGUqF5gXp+Y1Xx9HatUwqe/+5n7lVF19oNXLlQjkwobF5lI4HNtZRTLehFvYAFmEDVJcSIlBFV3tKGikMNctvKK40W8KswI+AWIJ1hnAaIEao3vKvptLdeGB9OGEUYW0fWnv/FK3RK8mrd/0veolJCqfL1jCwhi6q+VgSZ1EADFc/i9raB5tbhmDMltRQqdyNtwF+LswoHWn+lxMgrlLE/XokTmISz6HnjmB0laSGyVa/rjOhEjDJdgRF5kJw==&deviceId=865376030207730",
+//            "https://office.cmb-leasing.com/app/s/image/623c76e5-c3d5-4700-ac1e-a466174eff8a?token=JWid5Geu2W6UQqkXOZm+Koa6ywGUqF5gXp+Y1Xx9HatUwqe/+5n7lVF19oNXLlQjkwobF5lI4HNtZRTLehFvYAFmEDVJcSIlBFV3tKGikMNctvKK40W8KswI+AWIJ1hnAaIEao3vKvptLdeGB9OGEUYW0fWnv/FK3RK8mrd/0veolJCqfL1jCwhi6q+VgSZ1EADFc/i9raB5tbhmDMltRQqdyNtwF+LswoHWn+lxMgrlLE/XokTmISz6HnjmB0laSGyVa/rjOhEjDJdgRF5kJw==&deviceId=865376030207730",
+//            "https://office.cmb-leasing.com/app/s/image/9e509cda-0ed3-4b99-8802-da4689005d10?token=JWid5Geu2W6UQqkXOZm+Koa6ywGUqF5gXp+Y1Xx9HatUwqe/+5n7lVF19oNXLlQjkwobF5lI4HNtZRTLehFvYAFmEDVJcSIlBFV3tKGikMNctvKK40W8KswI+AWIJ1hnAaIEao3vKvptLdeGB9OGEUYW0fWnv/FK3RK8mrd/0veolJCqfL1jCwhi6q+VgSZ1EADFc/i9raB5tbhmDMltRQqdyNtwF+LswoHWn+lxMgrlLE/XokTmISz6HnjmB0laSGyVa/rjOhEjDJdgRF5kJw==&deviceId=865376030207730",
+//
+//    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

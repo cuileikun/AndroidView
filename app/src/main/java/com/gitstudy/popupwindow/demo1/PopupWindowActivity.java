@@ -1,6 +1,6 @@
 package com.gitstudy.popupwindow.demo1;
 
-import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
@@ -127,7 +127,8 @@ public class PopupWindowActivity extends BaseActivity implements CommonPopupWind
         switch (layoutResId) {
             case R.layout.popup_down:
                 RecyclerView recycle_view = (RecyclerView) view.findViewById(R.id.recycle_view);
-                recycle_view.setLayoutManager(new GridLayoutManager(this, 3));
+//                recycle_view.setLayoutManager(new GridLayoutManager(this, 3));
+                recycle_view.setLayoutManager(new LinearLayoutManager(this));
                 PopupAdapter mAdapter = new PopupAdapter(this);
                 recycle_view.setAdapter(mAdapter);
                 mAdapter.setOnItemClickListener(new MyOnclickListener() {

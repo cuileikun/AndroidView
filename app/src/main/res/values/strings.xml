@@ -76,5 +76,8 @@
     <string name="create_gesture_confirm_error">与上一次绘制不一致，请重新绘制</string>
     <string name="create_gesture_confirm_correct">设置成功</string>
     <string name="create_gesture_reset">重新设置</string>
+    <string name="name">健康测试</string>
+    <string name="commit">完成</string>
+    <string name="message">亲，快来测测你的健康指数吧~</string>
 
 </resources>

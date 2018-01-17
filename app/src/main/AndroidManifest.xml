@@ -121,7 +121,10 @@
         <activity android:name=".xrcycleview.MultiHeaderActivity" />
         <activity android:name=".horizontalscrollview.HorizontalScrollViewActivity" />
         <activity android:name=".horizontalscrollview.FirstHorizontalScrollViewActivity" />
-        <activity android:name=".horizontalscrollview.SecondHorizontalScrollViewActivity"></activity>
+        <activity android:name=".horizontalscrollview.SecondHorizontalScrollViewActivity" />
+        <activity android:name=".expandlistviewtest.ExpandListViewDemoActivity" />
+        <activity android:name=".expandlistviewtest.ExpandListViewFirstActivity" />
+        <activity android:name=".expandlistviewtest.ExpandListViewSecondActivity"></activity>
     </application>
 
 </manifest>

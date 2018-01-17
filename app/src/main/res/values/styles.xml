@@ -141,4 +141,8 @@
         <item name="@android:windowEnterAnimation">@anim/normal_dialog_enter</item>
         <item name="@android:windowExitAnimation">@anim/normal_dialog_exit</item>
     </style>
+    <style name="my_CheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
 </resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gitstudy.tablayout.TabLayoutActivity">
+
+    <com.gitstudy.tablayout.MBTabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        app:tabBackground="@drawable/tablayout_item_selector"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#4a4a4a"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="#4a4a4a" />
+</RelativeLayout>

@@ -124,7 +124,11 @@
         <activity android:name=".horizontalscrollview.SecondHorizontalScrollViewActivity" />
         <activity android:name=".expandlistviewtest.ExpandListViewDemoActivity" />
         <activity android:name=".expandlistviewtest.ExpandListViewFirstActivity" />
-        <activity android:name=".expandlistviewtest.ExpandListViewSecondActivity"></activity>
+        <activity android:name=".expandlistviewtest.ExpandListViewSecondActivity" />
+        <activity android:name=".oneandallcheck.AllCheckedActivity" />
+        <activity android:name=".oneandallcheck.ListViewItemAllCheckedActivity" />
+        <activity android:name=".oneandallcheck.RecrcleViewItemAllCheckedActivity" />
+        <activity android:name=".tablayout.TabLayoutActivity"></activity>
     </application>
 
 </manifest>

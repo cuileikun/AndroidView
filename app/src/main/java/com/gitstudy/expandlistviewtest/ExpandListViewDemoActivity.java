@@ -13,6 +13,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+/**
+ * demo地址：http://blog.csdn.net/hehaiminginadth/article/details/48294203
+ */
 public class ExpandListViewDemoActivity extends AppCompatActivity {
     @BindView(R.id.btn_first)
     Button btn_first;

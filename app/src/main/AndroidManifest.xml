@@ -20,13 +20,21 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning,NewApi">
         <activity android:name=".MainActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".WelcomActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <!-- Tabhost工具类 on -->
         <activity android:name=".fragmenttabhostutils.FragmentTabhostActivity" />
         <activity android:name=".fragmenttabhostutils.QuickStartActivity" />
@@ -128,7 +136,10 @@
         <activity android:name=".oneandallcheck.AllCheckedActivity" />
         <activity android:name=".oneandallcheck.ListViewItemAllCheckedActivity" />
         <activity android:name=".oneandallcheck.RecrcleViewItemAllCheckedActivity" />
-        <activity android:name=".tablayout.TabLayoutActivity"></activity>
+        <activity android:name=".tablayout.TabLayoutActivity" />
+        <activity android:name=".thirdliarbry.EventBusFirstActivity" />
+        <activity android:name=".thirdliarbry.eventbus.EventBusSecondActivity" />
+        <activity android:name=".thirdliarbry.eventbus.EventBusThirdActivity"></activity>
     </application>
 
 </manifest>

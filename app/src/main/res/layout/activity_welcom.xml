@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/fill_wrap"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_13_dip"
+                    android:layout_marginRight="@dimen/dimen_10_dip"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_132_dip"
+                        android:background="@drawable/look_reconnaissance_bg"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/match_match"
+                            android:gravity="center"
+                            android:text="1之前模块"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/android_program_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_65_dip"
+                        android:layout_marginTop="@dimen/dimen_10_dip"
+                        android:background="@drawable/repair_rl_bg"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/match_match"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/qk_program_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_132_dip"
+                        android:layout_marginTop="@dimen/dimen_10_dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/realtime_bg"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/match_match"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/hot_technology_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_60_dip"
+                        android:layout_marginTop="@dimen/dimen_10_dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/client_message_bg"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/match_match"
+                            android:gravity="center"
+                            android:text="7"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/dashen_demo_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_61_dip"
+                        android:layout_marginBottom="@dimen/dimen_10_dip"
+                        android:layout_marginTop="@dimen/dimen_10_dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/calculator_bg"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/match_match"
+                            android:gravity="center"
+                            android:text="大神DEMO"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_13_dip"
+                    android:layout_marginTop="@dimen/dimen_10_dip"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_third_liarbry"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_65_dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/customer_inform_ation_entry_bg"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/match_match"
+                            android:gravity="center"
+                            android:text="2三方类库"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/transsion_program_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_132_dip"
+                        android:layout_marginTop="@dimen/dimen_10_dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/visit_information_input_bg"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/match_match"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/brother_program_tl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_132_dip"
+                        android:layout_marginTop="@dimen/dimen_10_dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/wait_rent_bg"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/match_match"
+                            android:gravity="center"
+                            android:text="6"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/third_liarbry_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_130_dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/dimen_10_dip"
+                        android:layout_marginTop="@dimen/dimen_10_dip"
+                        android:background="@drawable/download_bg"
+                        android:orientation="horizontal">
+
+                        <com.qk.applibrary.widget.DownloadImageView
+                            android:id="@+id/two_dimensional_code_iv"
+                            android:layout_width="@dimen/dimen_85_dip"
+                            android:layout_height="@dimen/dimen_85_dip"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/dimen_5_dip"
+                            android:layout_marginTop="@dimen/dimen_30_dip"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            style="@style/match_match"
+                            android:gravity="center"
+                            android:text="8"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

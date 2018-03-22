@@ -6,6 +6,7 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.ImageView;
 
 import com.gitstudy.R;
@@ -42,11 +43,11 @@ public class LockScreenActivity extends AppCompatActivity {
         aCache = ACache.get(this);
         screenWidth = getWindowManager().getDefaultDisplay().getWidth();
         screenHeight = getWindowManager().getDefaultDisplay().getHeight();
-        //Log.e(TAG, "screen width: " + screenWidth);
-        //Log.e(TAG, "screen height: " + screenHeight);
-        //Log.e(TAG, "imageview width: " + splashIv.getWidth());
-        //Log.e(TAG, "imageview height: " + splashIv.getHeight());
-        //Log.e(TAG, "status bar height: " + getStatusBarHeight());
+        Log.e(TAG, "screen width: " + screenWidth);
+        Log.e(TAG, "screen height: " + screenHeight);
+        Log.e(TAG, "imageview width: " + splashIv.getWidth());
+        Log.e(TAG, "imageview height: " + splashIv.getHeight());
+        Log.e(TAG, "status bar height: " + getStatusBarHeight());
         splashBitmap = BitmapUtil.resizeBitmap(screenWidth, screenHeight - getStatusBarHeight(),
                 BitmapFactory.decodeResource(getResources(), R.mipmap.splash));
         splashIv.setImageBitmap(splashBitmap);

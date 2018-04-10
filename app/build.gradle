@@ -52,4 +52,8 @@ dependencies {
     compile 'com.squareup.leakcanary:leakcanary-android:1.5'
     compile 'com.android.support:design:25.2.0'
     compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.castorflex.verticalviewpager:library:19.0.1'
+    compile 'q.rorbin:VerticalTabLayout:1.2.5'
+    compile 'com.android.support:support-v13:25.3.0'
+    compile 'com.android.support:support-v4:25.3.0'
 }

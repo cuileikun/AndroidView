@@ -25,6 +25,7 @@ import com.gitstudy.popupwindow.PopupWindowSeriesActivity;
 import com.gitstudy.recycleview.RecycleViewActivity;
 import com.gitstudy.showcastview.ShowCastViewActivity;
 import com.gitstudy.tablayout.TabLayoutActivity;
+import com.gitstudy.tablayout.verticaltablayout.VerticalTablayoutActivity;
 import com.gitstudy.webviewvideo.MyActivity;
 import com.gitstudy.xrcycleview.XRecycleViewDemoActivity;
 import com.qk.applibrary.activity.QkActivity;
@@ -120,7 +121,8 @@ public class MainActivity extends QkActivity {
             R.id.fit_screen_rl, R.id.lock_pattern_rl, R.id.recycle_view_rl, R.id.horizontal_scroll_selected_view_rl,
             R.id.collapsing_toolbar_layout_rl, R.id.dynamic_add_view_rl, R.id.listview_add_delete_item_rl, R.id.popup_window_rl,
             R.id.date_time_dialog_rl, R.id.android_picker_rl, R.id.webview_video_rl, R.id.mianshi_rl, R.id.dialog_rl, R.id.ocr_rl,
-            R.id.xrecycle_view_rl, R.id.horizontal_scroll_view_rl, R.id.expand_list_view_rl, R.id.all_check_rl,R.id.tablayout})
+            R.id.xrecycle_view_rl, R.id.horizontal_scroll_view_rl, R.id.expand_list_view_rl, R.id.all_check_rl, R.id.tablayout,
+            R.id.vertical_tablayout})
     void click(View view) {
         switch (view.getId()) {
             case R.id.fragment_tabhost_utils_rl:
@@ -193,6 +195,10 @@ public class MainActivity extends QkActivity {
             case R.id.tablayout:
                 startActivity(new Intent(MainActivity.this, TabLayoutActivity.class));
                 break;
+            case R.id.vertical_tablayout:
+                startActivity(new Intent(MainActivity.this, VerticalTablayoutActivity.class));
+                break;
+
         }
     }
 

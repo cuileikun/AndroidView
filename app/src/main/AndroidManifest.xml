@@ -139,7 +139,8 @@
         <activity android:name=".tablayout.TabLayoutActivity" />
         <activity android:name=".thirdliarbry.EventBusFirstActivity" />
         <activity android:name=".thirdliarbry.eventbus.EventBusSecondActivity" />
-        <activity android:name=".thirdliarbry.eventbus.EventBusThirdActivity"></activity>
+        <activity android:name=".thirdliarbry.eventbus.EventBusThirdActivity" />
+        <activity android:name=".tablayout.verticaltablayout.VerticalTablayoutActivity"></activity>
     </application>
 
 </manifest>

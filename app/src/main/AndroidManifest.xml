@@ -140,7 +140,8 @@
         <activity android:name=".thirdliarbry.EventBusFirstActivity" />
         <activity android:name=".thirdliarbry.eventbus.EventBusSecondActivity" />
         <activity android:name=".thirdliarbry.eventbus.EventBusThirdActivity" />
-        <activity android:name=".tablayout.verticaltablayout.VerticalTablayoutActivity"></activity>
+        <activity android:name=".tablayout.verticaltablayout.VerticalTablayoutActivity" />
+        <activity android:name=".watermark.WaterMarkActivity"></activity>
     </application>
 
 </manifest>

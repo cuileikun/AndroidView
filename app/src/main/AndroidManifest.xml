@@ -141,7 +141,14 @@
         <activity android:name=".thirdliarbry.eventbus.EventBusSecondActivity" />
         <activity android:name=".thirdliarbry.eventbus.EventBusThirdActivity" />
         <activity android:name=".tablayout.verticaltablayout.VerticalTablayoutActivity" />
-        <activity android:name=".watermark.WaterMarkActivity"></activity>
+        <activity android:name=".watermark.WaterMarkActivity" />
+        <activity android:name=".alarmmanager.AlarmManagerActivity"></activity>
+        <!--<receiver android:name=".alarmmanager.AlarmReceiver">-->
+                <!--<intent-filter>-->
+                    <!--<action android:name="com.liangdianshui.TIMER_ACTION_REPEATING"></action>-->
+                    <!--<action android:name="com.liangdianshui.TIMER_ACTION"></action>-->
+                <!--</intent-filter>-->
+        <!--</receiver>-->
     </application>
 
 </manifest>

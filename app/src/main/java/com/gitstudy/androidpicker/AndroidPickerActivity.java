@@ -32,6 +32,7 @@ import cn.qqtheme.framework.picker.FilePicker;
 import cn.qqtheme.framework.picker.LinkagePicker;
 import cn.qqtheme.framework.picker.NumberPicker;
 import cn.qqtheme.framework.picker.OptionPicker;
+import cn.qqtheme.framework.picker.SinglePicker;
 import cn.qqtheme.framework.picker.TimePicker;
 import cn.qqtheme.framework.util.ConvertUtils;
 import cn.qqtheme.framework.util.DateUtils;
@@ -43,18 +44,47 @@ import cn.qqtheme.framework.widget.WheelView;
  * https://github.com/gzu-liyujiang/AndroidPicker
  */
 public class AndroidPickerActivity extends AppCompatActivity {
+    private List<String> adviceList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_android_picker);
     }
+
     /**
-     *1选择器视图内嵌
+     * 0项目常用的单项选择
+     */
+    public void commonuse(View view) {
+        adviceList.add("通过");
+        adviceList.add("暂定");
+        adviceList.add("否决");
+        SinglePicker picker = new SinglePicker(AndroidPickerActivity.this, adviceList);
+        picker.setCancelTextColor(0xff9b9b9b);
+        picker.setSubmitTextColor(0xff4a4a4a);
+        picker.setTopBackgroundColor(0xfffafafa);
+        picker.setTopLineHeight(0);
+        picker.setTextColor(0xff4a4a4a, 0xff9b9b9b);
+        WheelView.DividerConfig config = new WheelView.DividerConfig();
+        config.setColor(0xFFf5eeee);//线颜色
+        // config.setRatio((float) (1.0 / 8.0));//线比率
+        picker.setDividerConfig(config);
+        picker.setOnItemPickListener(new SinglePicker.OnItemPickListener() {
+            @Override
+            public void onItemPicked(int index, Object item) {
+                Toast.makeText(AndroidPickerActivity.this, "已选择的意见是：" + adviceList.get(index), Toast.LENGTH_SHORT).show();
+            }
+        });
+        picker.show();
+    }
+
+    /**
+     * 1选择器视图内嵌
      */
     public void onNestView(View view) {
         startActivity(new Intent(this, NestActivity.class));
     }
+
     /**
      * 2窗口动画(基于XML)
      */
@@ -85,6 +115,7 @@ public class AndroidPickerActivity extends AppCompatActivity {
         });
         picker.show();
     }
+
     /**
      * 3窗口动画（基于Java）
      */
@@ -100,6 +131,7 @@ public class AndroidPickerActivity extends AppCompatActivity {
         });
         picker.show();
     }
+
     /**
      * 4年月日选择
      */
@@ -154,6 +186,7 @@ public class AndroidPickerActivity extends AppCompatActivity {
         });
         picker.show();
     }
+
     /**
      * 6年月选择
      */
@@ -172,6 +205,7 @@ public class AndroidPickerActivity extends AppCompatActivity {
         });
         picker.show();
     }
+
     /**
      * 7月日选择
      */
@@ -189,6 +223,7 @@ public class AndroidPickerActivity extends AppCompatActivity {
         });
         picker.show();
     }
+
     /**
      * 8时间选择
      */
@@ -208,6 +243,7 @@ public class AndroidPickerActivity extends AppCompatActivity {
         });
         picker.show();
     }
+
     /**
      * 9单项选择
      */
@@ -229,6 +265,7 @@ public class AndroidPickerActivity extends AppCompatActivity {
         });
         picker.show();
     }
+
     /**
      * 10双项选择
      */
@@ -259,6 +296,7 @@ public class AndroidPickerActivity extends AppCompatActivity {
         });
         picker.show();
     }
+
     /**
      * 11多项选择
      */
@@ -272,6 +310,7 @@ public class AndroidPickerActivity extends AppCompatActivity {
         });
         picker.show();
     }
+
     /**
      * 12二三级联动选择
      */
@@ -329,6 +368,7 @@ public class AndroidPickerActivity extends AppCompatActivity {
         });
         picker.show();
     }
+
     /**
      * 13星座选择
      */
@@ -372,6 +412,7 @@ public class AndroidPickerActivity extends AppCompatActivity {
         });
         picker.show();
     }
+
     /**
      * 14数字选择（如身高、体重、年龄）
      */
@@ -392,6 +433,7 @@ public class AndroidPickerActivity extends AppCompatActivity {
         });
         picker.show();
     }
+
     /**
      * 15地址选择（包括省级、地级、县级）
      */
@@ -416,6 +458,7 @@ public class AndroidPickerActivity extends AppCompatActivity {
         });
         task.execute("贵州", "毕节", "纳雍");
     }
+
     /**
      * 16地址选择（只包括地级、县级）
      */
@@ -460,6 +503,7 @@ public class AndroidPickerActivity extends AppCompatActivity {
         });
         task.execute("四川", "阿坝");
     }
+
     /**
      * 18颜色选择
      */
@@ -474,6 +518,7 @@ public class AndroidPickerActivity extends AppCompatActivity {
         });
         picker.show();
     }
+
     /**
      * 19文件选择
      */
@@ -489,6 +534,7 @@ public class AndroidPickerActivity extends AppCompatActivity {
         });
         picker.show();
     }
+
     /**
      * 20目录选择
      */
@@ -504,6 +550,7 @@ public class AndroidPickerActivity extends AppCompatActivity {
         });
         picker.show();
     }
+
     /**
      * 21建议收集
      */
@@ -516,12 +563,10 @@ public class AndroidPickerActivity extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_TEXT, "欢迎提供意您的见或建议");
         startActivity(Intent.createChooser(intent, "选择邮件客户端"));
     }
+
     private void showToast(String msg) {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
-
-
-
 
 
 }

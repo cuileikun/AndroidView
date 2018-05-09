@@ -23,7 +23,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="commonuse"
+                android:text="0项目常用的单项选择"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

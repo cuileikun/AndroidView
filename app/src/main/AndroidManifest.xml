@@ -6,11 +6,14 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_GPS" />
     <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
     <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
 
     <application
         android:allowBackup="true"
@@ -142,13 +145,16 @@
         <activity android:name=".thirdliarbry.eventbus.EventBusThirdActivity" />
         <activity android:name=".tablayout.verticaltablayout.VerticalTablayoutActivity" />
         <activity android:name=".watermark.WaterMarkActivity" />
-        <activity android:name=".alarmmanager.AlarmManagerActivity"></activity>
-        <!--<receiver android:name=".alarmmanager.AlarmReceiver">-->
-                <!--<intent-filter>-->
-                    <!--<action android:name="com.liangdianshui.TIMER_ACTION_REPEATING"></action>-->
-                    <!--<action android:name="com.liangdianshui.TIMER_ACTION"></action>-->
-                <!--</intent-filter>-->
-        <!--</receiver>-->
+        <activity android:name=".alarmmanager.AlarmManagerActivity" />
+        <!-- <receiver android:name=".alarmmanager.AlarmReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.liangdianshui.TIMER_ACTION_REPEATING"></action> -->
+        <!-- <action android:name="com.liangdianshui.TIMER_ACTION"></action> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <activity android:name=".permission.PermissionActivity" />
+        <activity android:name=".permission.SecondPermissionActivity" />
+        <activity android:name=".permission.PerActivity"></activity>
     </application>
 
 </manifest>

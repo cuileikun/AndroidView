@@ -22,6 +22,7 @@ import com.gitstudy.knowledge.KnowledgeActivity;
 import com.gitstudy.listview.ListViewDemoActivity;
 import com.gitstudy.lockscreen.LockScreenActivity;
 import com.gitstudy.oneandallcheck.AllCheckedActivity;
+import com.gitstudy.permission.PerActivity;
 import com.gitstudy.popupwindow.PopupWindowSeriesActivity;
 import com.gitstudy.recycleview.RecycleViewActivity;
 import com.gitstudy.showcastview.ShowCastViewActivity;
@@ -124,7 +125,7 @@ public class MainActivity extends QkActivity {
             R.id.collapsing_toolbar_layout_rl, R.id.dynamic_add_view_rl, R.id.listview_add_delete_item_rl, R.id.popup_window_rl,
             R.id.date_time_dialog_rl, R.id.android_picker_rl, R.id.webview_video_rl, R.id.mianshi_rl, R.id.dialog_rl, R.id.ocr_rl,
             R.id.xrecycle_view_rl, R.id.horizontal_scroll_view_rl, R.id.expand_list_view_rl, R.id.all_check_rl, R.id.tablayout,
-            R.id.vertical_tablayout,R.id.rl_water_mark,R.id.rl_alarm_manager})
+            R.id.vertical_tablayout,R.id.rl_water_mark,R.id.rl_alarm_manager,R.id.rl_permission_request})
     void click(View view) {
         switch (view.getId()) {
             case R.id.fragment_tabhost_utils_rl:
@@ -205,6 +206,9 @@ public class MainActivity extends QkActivity {
             break;
             case R.id.rl_alarm_manager:
                 startActivity(new Intent(MainActivity.this, AlarmManagerActivity.class));
+                break;
+            case R.id.rl_permission_request:
+                startActivity(new Intent(MainActivity.this,PerActivity.class));
                 break;
         }
     }

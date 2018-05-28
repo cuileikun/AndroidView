@@ -1,5 +1,6 @@
 package com.gitstudy;
 
+import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -24,6 +25,7 @@ import com.gitstudy.lockscreen.LockScreenActivity;
 import com.gitstudy.oneandallcheck.AllCheckedActivity;
 import com.gitstudy.permission.PerActivity;
 import com.gitstudy.popupwindow.PopupWindowSeriesActivity;
+import com.gitstudy.pulltorefreshtest.PullTestActivity;
 import com.gitstudy.recycleview.RecycleViewActivity;
 import com.gitstudy.showcastview.ShowCastViewActivity;
 import com.gitstudy.tablayout.TabLayoutActivity;
@@ -40,6 +42,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends QkActivity {
+    private Context mContext;
     @BindView(R.id.fragment_tabhost_utils_rl)
     RelativeLayout fragment_tabhost_utils_rl;
     @BindView(R.id.top_bar_view)
@@ -91,6 +94,7 @@ public class MainActivity extends QkActivity {
 
     @Override
     public int getLayoutId() {
+        mContext = MainActivity.this;
         return R.layout.activity_main;
     }
 
@@ -125,91 +129,97 @@ public class MainActivity extends QkActivity {
             R.id.collapsing_toolbar_layout_rl, R.id.dynamic_add_view_rl, R.id.listview_add_delete_item_rl, R.id.popup_window_rl,
             R.id.date_time_dialog_rl, R.id.android_picker_rl, R.id.webview_video_rl, R.id.mianshi_rl, R.id.dialog_rl, R.id.ocr_rl,
             R.id.xrecycle_view_rl, R.id.horizontal_scroll_view_rl, R.id.expand_list_view_rl, R.id.all_check_rl, R.id.tablayout,
-            R.id.vertical_tablayout,R.id.rl_water_mark,R.id.rl_alarm_manager,R.id.rl_permission_request})
+            R.id.vertical_tablayout, R.id.rl_water_mark, R.id.rl_alarm_manager, R.id.rl_permission_request, R.id.rl_pull_refresh_test,
+
+    })
     void click(View view) {
         switch (view.getId()) {
             case R.id.fragment_tabhost_utils_rl:
-                startActivity(new Intent(MainActivity.this, FragmentTabhostActivity.class));
+                startActivity(new Intent(mContext, FragmentTabhostActivity.class));
                 break;
             case R.id.guo_custom_view_rl:
-                startActivity(new Intent(MainActivity.this, GuoCustomViewActivity.class));
+                startActivity(new Intent(mContext, GuoCustomViewActivity.class));
                 break;
             case R.id.convenient_banner_rl:
-                startActivity(new Intent(MainActivity.this, ConvenientBannerActivity.class));
+                startActivity(new Intent(mContext, ConvenientBannerActivity.class));
                 break;
             case R.id.show_castview_rl:
-                startActivity(new Intent(MainActivity.this, ShowCastViewActivity.class));
+                startActivity(new Intent(mContext, ShowCastViewActivity.class));
                 break;
             case R.id.fit_screen_rl:
-                startActivity(new Intent(MainActivity.this, FitScreenActivity.class));
+                startActivity(new Intent(mContext, FitScreenActivity.class));
                 break;
             case R.id.lock_pattern_rl:
-                startActivity(new Intent(MainActivity.this, LockScreenActivity.class));
+                startActivity(new Intent(mContext, LockScreenActivity.class));
                 break;
             case R.id.recycle_view_rl:
-                startActivity(new Intent(MainActivity.this, RecycleViewActivity.class));
+                startActivity(new Intent(mContext, RecycleViewActivity.class));
                 break;
             case R.id.horizontal_scroll_selected_view_rl:
-                startActivity(new Intent(MainActivity.this, HorizontalScrollSelectedViewActivity.class));
+                startActivity(new Intent(mContext, HorizontalScrollSelectedViewActivity.class));
                 break;
             case R.id.collapsing_toolbar_layout_rl:
-                startActivity(new Intent(MainActivity.this, CollapsingToolbarLayoutActivity.class));
+                startActivity(new Intent(mContext, CollapsingToolbarLayoutActivity.class));
                 break;
             case R.id.dynamic_add_view_rl:
-                startActivity(new Intent(MainActivity.this, DynamicAddViewActivity.class));
+                startActivity(new Intent(mContext, DynamicAddViewActivity.class));
                 break;
             case R.id.listview_add_delete_item_rl:
-                startActivity(new Intent(MainActivity.this, ListViewDemoActivity.class));
+                startActivity(new Intent(mContext, ListViewDemoActivity.class));
                 break;
             case R.id.popup_window_rl:
-                startActivity(new Intent(MainActivity.this, PopupWindowSeriesActivity.class));
+                startActivity(new Intent(mContext, PopupWindowSeriesActivity.class));
                 break;
             case R.id.date_time_dialog_rl:
-                startActivity(new Intent(MainActivity.this, DateTimeDialogActivity.class));
+                startActivity(new Intent(mContext, DateTimeDialogActivity.class));
                 break;
             case R.id.android_picker_rl:
-                startActivity(new Intent(MainActivity.this, AndroidPickerActivity.class));
+                startActivity(new Intent(mContext, AndroidPickerActivity.class));
                 break;
             case R.id.webview_video_rl://加载webview  点击图片或者视频 切换到全屏模式
-//                startActivity(new Intent(MainActivity.this, WebViewVideoActivity.class));
-                startActivity(new Intent(MainActivity.this, MyActivity.class));
+//                startActivity(new Intent(mContext, WebViewVideoActivity.class));
+                startActivity(new Intent(mContext, MyActivity.class));
                 break;
             case R.id.mianshi_rl:
-                startActivity(new Intent(MainActivity.this, KnowledgeActivity.class));
+                startActivity(new Intent(mContext, KnowledgeActivity.class));
                 break;
             case R.id.dialog_rl:
-                startActivity(new Intent(MainActivity.this, DialogActivity.class));
+                startActivity(new Intent(mContext, DialogActivity.class));
                 break;
             case R.id.ocr_rl:
-                startActivity(new Intent(MainActivity.this, OCRActivity.class));
+                startActivity(new Intent(mContext, OCRActivity.class));
                 break;
             case R.id.xrecycle_view_rl:
-                startActivity(new Intent(MainActivity.this, XRecycleViewDemoActivity.class));
+                startActivity(new Intent(mContext, XRecycleViewDemoActivity.class));
                 break;
             case R.id.horizontal_scroll_view_rl:
-                startActivity(new Intent(MainActivity.this, HorizontalScrollViewActivity.class));
+                startActivity(new Intent(mContext, HorizontalScrollViewActivity.class));
                 break;
             case R.id.expand_list_view_rl:
-                startActivity(new Intent(MainActivity.this, ExpandListViewDemoActivity.class));
+                startActivity(new Intent(mContext, ExpandListViewDemoActivity.class));
                 break;
             case R.id.all_check_rl:
-                startActivity(new Intent(MainActivity.this, AllCheckedActivity.class));
+                startActivity(new Intent(mContext, AllCheckedActivity.class));
                 break;
             case R.id.tablayout:
-                startActivity(new Intent(MainActivity.this, TabLayoutActivity.class));
+                startActivity(new Intent(mContext, TabLayoutActivity.class));
                 break;
             case R.id.vertical_tablayout:
-                startActivity(new Intent(MainActivity.this, VerticalTablayoutActivity.class));
+                startActivity(new Intent(mContext, VerticalTablayoutActivity.class));
                 break;
             case R.id.rl_water_mark:
-                startActivity(new Intent(MainActivity.this, WaterMarkActivity.class));
-            break;
+                startActivity(new Intent(mContext, WaterMarkActivity.class));
+                break;
             case R.id.rl_alarm_manager:
-                startActivity(new Intent(MainActivity.this, AlarmManagerActivity.class));
+                startActivity(new Intent(mContext, AlarmManagerActivity.class));
                 break;
             case R.id.rl_permission_request:
-                startActivity(new Intent(MainActivity.this,PerActivity.class));
+                startActivity(new Intent(mContext, PerActivity.class));
                 break;
+            case R.id.rl_pull_refresh_test:
+                startActivity(new Intent(mContext, PullTestActivity.class));
+                break;
+
         }
     }
 

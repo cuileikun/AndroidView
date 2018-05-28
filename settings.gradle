@@ -1,1 +1,1 @@
-include ':app', ':applibrary', ':lockpattern'
+include ':app', ':applibrary', ':lockpattern', ':library'

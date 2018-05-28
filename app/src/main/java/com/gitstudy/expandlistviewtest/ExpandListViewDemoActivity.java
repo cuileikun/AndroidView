@@ -32,7 +32,7 @@ public class ExpandListViewDemoActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn_first, R.id.btn_second})
+    @OnClick({R.id.btn_first, R.id.btn_second,R.id.btn_multi_item})
     void click(View view) {
         switch (view.getId()) {
             case R.id.btn_first:
@@ -41,6 +41,9 @@ public class ExpandListViewDemoActivity extends AppCompatActivity {
             case R.id.btn_second:
                 startActivity(new Intent(mContext,ExpandListViewSecondActivity.class));
                 break;
+            case R.id.btn_multi_item:
+                startActivity(new Intent(mContext,MultiItemExpandListViewActivity.class));
+            break;
         }
     }
 }

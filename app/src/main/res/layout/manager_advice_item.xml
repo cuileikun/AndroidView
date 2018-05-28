@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_ass_meo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="8dip"
+        android:text="资产经理意见资产经理意见资产经理意见资产经理意见资产经理意见资产经理意见资产经理意见资产经理意见资产经理意见"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+
+</RelativeLayout>

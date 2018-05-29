@@ -1,4 +1,4 @@
-package com.gitstudy.popupwindow.demo1;
+package com.gitstudy.popupwindow.popseries;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

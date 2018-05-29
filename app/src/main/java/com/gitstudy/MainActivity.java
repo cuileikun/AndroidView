@@ -17,11 +17,13 @@ import com.gitstudy.expandlistviewtest.ExpandListViewDemoActivity;
 import com.gitstudy.fitscreenend.FitScreenActivity;
 import com.gitstudy.fragmenttabhostutils.FragmentTabhostActivity;
 import com.gitstudy.guocustomview.GuoCustomViewActivity;
+import com.gitstudy.history.SearchHistoryActivity;
 import com.gitstudy.horizontalscrollselectedview.HorizontalScrollSelectedViewActivity;
 import com.gitstudy.horizontalscrollview.HorizontalScrollViewActivity;
 import com.gitstudy.knowledge.KnowledgeActivity;
 import com.gitstudy.listview.ListViewDemoActivity;
 import com.gitstudy.lockscreen.LockScreenActivity;
+import com.gitstudy.lockscreen.SecondLockScreenActivity;
 import com.gitstudy.oneandallcheck.AllCheckedActivity;
 import com.gitstudy.permission.PerActivity;
 import com.gitstudy.popupwindow.PopupWindowSeriesActivity;
@@ -130,7 +132,7 @@ public class MainActivity extends QkActivity {
             R.id.date_time_dialog_rl, R.id.android_picker_rl, R.id.webview_video_rl, R.id.mianshi_rl, R.id.dialog_rl, R.id.ocr_rl,
             R.id.xrecycle_view_rl, R.id.horizontal_scroll_view_rl, R.id.expand_list_view_rl, R.id.all_check_rl, R.id.tablayout,
             R.id.vertical_tablayout, R.id.rl_water_mark, R.id.rl_alarm_manager, R.id.rl_permission_request, R.id.rl_pull_refresh_test,
-
+            R.id.lock_pattern_rl2, R.id.rl_search_history
     })
     void click(View view) {
         switch (view.getId()) {
@@ -151,6 +153,9 @@ public class MainActivity extends QkActivity {
                 break;
             case R.id.lock_pattern_rl:
                 startActivity(new Intent(mContext, LockScreenActivity.class));
+                break;
+            case R.id.lock_pattern_rl2:
+                startActivity(new Intent(mContext, SecondLockScreenActivity.class));
                 break;
             case R.id.recycle_view_rl:
                 startActivity(new Intent(mContext, RecycleViewActivity.class));
@@ -218,6 +223,9 @@ public class MainActivity extends QkActivity {
                 break;
             case R.id.rl_pull_refresh_test:
                 startActivity(new Intent(mContext, PullTestActivity.class));
+                break;
+            case R.id.rl_search_history:
+                startActivity(new Intent(mContext, SearchHistoryActivity.class));
                 break;
 
         }

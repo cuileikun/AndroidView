@@ -46,4 +46,19 @@
     <color name="btn_pressed_color">#008B00</color>
     <color name="item_text_color">#2b2b2b</color>
     <color name="item_line_color">#c8c7cc</color>
+
+    <color name="red">#ff0000</color>
+
+    <color name="drop_down_selected">#7B1FA2</color>
+    <color name="drop_down_unselected">#111111</color>
+
+    <color name="mask_color">#88888888</color>
+    <color name="check_bg">#f2f2f2</color>
+    <color name="un_press_color">#9C27B0</color>
+    <color name="list_item_focus">#0a000000</color>
+    <color name="white_alpha_percent_45">#73ffffff</color>
+    <color name="text_gray">#7b403b37</color>
+    <color name="base_red">#fffb6655</color>
+    <color name="default_line_color">#e6e6e6</color>
+
 </resources>

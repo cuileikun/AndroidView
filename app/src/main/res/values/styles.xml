@@ -159,7 +159,40 @@
         <item name="android:textSize">12sp</item>
     </style>
 
+    <!--对话框的样式-->
+    <style name="GuangGaoStyle">
+        <!--对话框背景 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!--没有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否浮现在Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!--背景透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 是否有覆盖 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--进出的显示动画 -->
+        <!--<item name="android:windowAnimationStyle">@style/normalDialogAnim</item>-->
+        <!--背景变暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Splash_Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/new_sp_icon</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
     <declare-styleable name="WaterMarkText">
         <attr name="degree" format="integer" />
     </declare-styleable>
+    <style name="common_list">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+
 </resources>

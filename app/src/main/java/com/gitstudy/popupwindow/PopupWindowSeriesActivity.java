@@ -4,39 +4,38 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 
 import com.gitstudy.R;
-import com.gitstudy.popupwindow.demo1.PopupWindowActivity;
+import com.gitstudy.popupwindow.custompop.CustomPopupActivity;
+import com.gitstudy.popupwindow.multipop.MultiPopupActivity;
+import com.gitstudy.popupwindow.popseries.PopupWindowActivity;
 
-public class PopupWindowSeriesActivity extends AppCompatActivity implements View.OnClickListener {
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
-    private Button btn_demo1;
+public class PopupWindowSeriesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_popup_window_series);
-        initView();
-        addListeners();
+        ButterKnife.bind(this);
+
     }
 
-    private void addListeners() {
-        btn_demo1.setOnClickListener(PopupWindowSeriesActivity.this);
-    }
-
-    private void initView() {
-        btn_demo1 = (Button) findViewById(R.id.btn_demo1);
-    }
-
-    @Override
-    public void onClick(View view) {
+    @OnClick({R.id.btn_demo1,R.id.btn_demo2,R.id.btn_demo3})
+    void click(View view) {
         switch (view.getId()) {
             case R.id.btn_demo1:
-                startActivity(new Intent(PopupWindowSeriesActivity.this,PopupWindowActivity.class));
-            break;
+                startActivity(new Intent(PopupWindowSeriesActivity.this, PopupWindowActivity.class));
+                break;
+            case R.id.btn_demo2:
+                startActivity(new Intent(PopupWindowSeriesActivity.this, CustomPopupActivity.class));
+                break;
+            case R.id.btn_demo3:
+                startActivity(new Intent(PopupWindowSeriesActivity.this, MultiPopupActivity.class));
+                break;
         }
     }
-
 
 }

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#b8001c">
+
+        <ImageView
+            android:id="@+id/iv_my_photo"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:src="@drawable/user_photo" />
+
+
+        <ImageView
+            android:id="@+id/search_tv"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="7dp"
+            android:src="@drawable/add_more"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/search_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="42dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/search_tv"
+            android:background="@drawable/search_board"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/new_search" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="28dp"
+                android:background="@null"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:hint="请输入客户名称查询"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColorHint="#aaaaaa"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

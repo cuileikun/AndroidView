@@ -13,6 +13,12 @@
         android:text="ListView条目单选多选全选" />
 
     <Button
+        android:id="@+id/btn_listview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="项目中抽取条目单选与多选" />
+
+    <Button
         android:id="@+id/btn_recycleview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

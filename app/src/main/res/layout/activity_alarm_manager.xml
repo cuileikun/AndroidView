@@ -38,4 +38,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="关闭定时闹钟" />
+
+    <TextView
+        android:id="@+id/tv_current_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前时间" />
+    <TextView
+        android:id="@+id/tv_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按要求显示时间显示几个月前几周前" />
 </LinearLayout>

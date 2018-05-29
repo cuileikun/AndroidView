@@ -1,5 +1,6 @@
 package com.gitstudy.utils;
 
+import android.content.Context;
 import android.view.View;
 
 /**
@@ -18,4 +19,15 @@ public class CommonUtil {
         view.measure(w, h);
     }
 
+    /**
+     * dp转换为px
+     *
+     * @param context
+     * @param dpValue
+     * @return
+     */
+    public static int dp2px(Context context, float dpValue) {
+        final float scale = context.getResources().getDisplayMetrics().density;
+        return (int) (dpValue * scale + 0.5f);
+    }
 }

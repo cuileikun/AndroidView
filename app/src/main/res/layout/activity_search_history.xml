@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/global_search_action_bar_rl"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@color/white_alpha_percent_45"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginLeft="14dp"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:imeOptions="actionSearch"
+            android:hint="搜索你想要的"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical"
+            android:textSize="13sp"
+            />
+        <ImageView
+            android:id="@+id/clear_keyword_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/et_search"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@drawable/login_icon_edit_clear"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_history_rl"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_below="@id/global_search_action_bar_rl"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+        <TextView
+            android:id="@+id/contentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="最近查询"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/text_gray"/>
+        <ImageView
+            android:id="@+id/clear_history_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:paddingTop="4dp"
+            android:src="@drawable/search_delete_icon" />
+        <ListView
+            android:layout_below="@+id/contentTextView"
+            android:id="@+id/search_history_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="0.5dp"
+            style="@style/common_list"
+            android:divider="@color/default_line_color"
+            android:listSelector="@drawable/list_item_selector">
+        </ListView>
+        <!--<Button-->
+        <!--android:layout_below="@+id/search_history_lv"-->
+        <!--android:id="@+id/clear_history_btn"-->
+        <!--android:layout_width="210dp"-->
+        <!--android:layout_height="38dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:textSize="14sp"-->
+        <!--android:text="清除历史搜索记录"-->
+        <!--android:background="@drawable/round_btn_selector"/>-->
+    </RelativeLayout>
+
+</RelativeLayout>

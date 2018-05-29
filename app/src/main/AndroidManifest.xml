@@ -85,7 +85,12 @@
             android:value="1920" />
         <!-- 屏幕适配off -->
         <!-- 仿支付宝手势密码解锁 on -->
-        <activity android:name=".lockscreen.LockScreenActivity" />
+        <activity
+            android:name=".lockscreen.LockScreenActivity"
+            android:theme="@style/Splash_Theme" />
+        <activity
+            android:name=".lockscreen.SecondLockScreenActivity"
+            android:theme="@style/Splash_Theme" />
         <activity android:name=".lockscreen.CreateGestureActivity" />
         <activity android:name=".lockscreen.GestureLoginActivity" />
         <!-- 仿支付宝手势密码解锁 off -->
@@ -99,8 +104,8 @@
         <activity android:name=".listview.ListDemoActivity" />
         <activity android:name=".listview.ListDemo2Activity" />
         <activity android:name=".popupwindow.PopupWindowSeriesActivity" />
-        <activity android:name=".popupwindow.demo1.BaseActivity" />
-        <activity android:name=".popupwindow.demo1.PopupWindowActivity" />
+        <activity android:name=".popupwindow.popseries.BaseActivity" />
+        <activity android:name=".popupwindow.popseries.PopupWindowActivity" />
         <activity
             android:name=".datetimedialog.DateTimeDialogActivity"
             android:theme="@style/AppBaseTheme" />
@@ -159,7 +164,13 @@
         <activity android:name=".pulltorefreshtest.PullTestActivity" />
         <activity android:name=".pulltorefreshtest.ScrollPullToRefreshActivity" />
         <activity android:name=".pulltorefreshtest.WebViewPullToRefreshActivity" />
-        <activity android:name=".expandlistviewtest.MultiItemExpandListViewActivity"></activity>
+        <activity android:name=".expandlistviewtest.MultiItemExpandListViewActivity" />
+        <activity android:name=".popupwindow.custompop.CustomPopupActivity" />
+        <activity android:name=".popupwindow.multipop.MultiPopupActivity" />
+        <activity android:name=".popupwindow.multipop.OriginActivity" />
+        <activity android:name=".lockscreen.GuangGaoActivity" />
+        <activity android:name=".history.SearchHistoryActivity" />
+        <activity android:name=".oneandallcheck.program.SingleAndAllSelectActivity"></activity>
     </application>
 
 </manifest>

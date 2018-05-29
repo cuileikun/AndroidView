@@ -1,4 +1,4 @@
-package com.gitstudy.popupwindow.demo1;
+package com.gitstudy.popupwindow.popseries;
 
 import android.app.Activity;
 import android.content.Context;

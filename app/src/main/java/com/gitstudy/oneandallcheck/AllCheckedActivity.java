@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.gitstudy.R;
+import com.gitstudy.oneandallcheck.program.SingleAndAllSelectActivity;
 
 public class AllCheckedActivity extends AppCompatActivity {
 
@@ -23,6 +24,12 @@ public class AllCheckedActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(AllCheckedActivity.this,RecrcleViewItemAllCheckedActivity.class));
+            }
+        });
+        findViewById(R.id.btn_listview2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AllCheckedActivity.this, SingleAndAllSelectActivity.class));
             }
         });
 

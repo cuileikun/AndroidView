@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--<TextView-->
+        <!--android:id="@+id/choice_text"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:paddingLeft="25dp"-->
+        <!--android:paddingRight="25dp"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:text="飒飒" />-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:background="@color/gray" />-->
+
+    <TextView
+        android:id="@+id/choice_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="王者农药"
+        android:textColor="#4a4a4a"
+        android:textSize="14sp" />
+
+</LinearLayout>

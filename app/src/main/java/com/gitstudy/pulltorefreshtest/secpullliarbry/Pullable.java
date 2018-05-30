@@ -1,4 +1,4 @@
-package com.gitstudy.oneandallcheck.program.pullview;
+package com.gitstudy.pulltorefreshtest.secpullliarbry;
 
 public interface Pullable
 {

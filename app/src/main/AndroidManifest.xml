@@ -170,7 +170,14 @@
         <activity android:name=".popupwindow.multipop.OriginActivity" />
         <activity android:name=".lockscreen.GuangGaoActivity" />
         <activity android:name=".history.SearchHistoryActivity" />
-        <activity android:name=".oneandallcheck.program.SingleAndAllSelectActivity"></activity>
+        <activity android:name=".oneandallcheck.program.SingleAndAllSelectActivity" />
+        <activity android:name=".pulltorefreshtest.SecListViewActivity" />
+        <activity android:name=".pulltorefreshtest.SecScrollViewActivity" />
+        <activity android:name=".pulltorefreshtest.SecTextViewActivity" />
+        <activity android:name=".pulltorefreshtest.SecImageViewActivity" />
+        <activity android:name=".pulltorefreshtest.SecWebViewActivity" />
+        <activity android:name=".pulltorefreshtest.SecGridViewActivity" />
+        <activity android:name=".pulltorefreshtest.SecExpandViewActivity"></activity>
     </application>
 
 </manifest>

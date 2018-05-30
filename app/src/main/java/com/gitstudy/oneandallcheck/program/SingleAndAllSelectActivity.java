@@ -15,9 +15,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.gitstudy.R;
-import com.gitstudy.oneandallcheck.program.pullview.PullToRefreshLayout;
+import com.gitstudy.pulltorefreshtest.secpullliarbry.PullToRefreshLayout;
 import com.gitstudy.utils.ToastUtils;
+
 import java.util.ArrayList;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -267,10 +269,12 @@ public class SingleAndAllSelectActivity extends AppCompatActivity implements Pul
             oneBean.setItemSelected(true);
             mBatApprovelist.add(oneBean);
         }
+        boundary="6481248";
         doNext();
     }
 
     private void doNext() {
+
         mAdapter = new ProBatApproveAdapter(mBatApprovelist, mContext);
         mListView.setAdapter(mAdapter);
         mTitle.setText("批量审批");

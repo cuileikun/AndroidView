@@ -11,7 +11,7 @@
         android:id="@+id/title_bar"
         layout="@layout/title_layout_com"></include>
 
-    <com.gitstudy.oneandallcheck.program.pullview.PullToRefreshLayout
+    <com.gitstudy.pulltorefreshtest.secpullliarbry.PullToRefreshLayout
         android:id="@+id/refresh_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -20,7 +20,7 @@
 
         <include layout="@layout/refresh_head" />
         <!-- 支持所有实现Pullable接口的View -->
-        <com.gitstudy.oneandallcheck.program.pullview.PullableListView
+        <com.gitstudy.pulltorefreshtest.secpullliarbry.PullableListView
             android:id="@+id/lv"
             android:scrollbars="none"
             android:layout_width="match_parent"
@@ -29,7 +29,7 @@
             android:dividerHeight="1dp" />
 
         <include layout="@layout/load_more" />
-    </com.gitstudy.oneandallcheck.program.pullview.PullToRefreshLayout>
+    </com.gitstudy.pulltorefreshtest.secpullliarbry.PullToRefreshLayout>
     <LinearLayout
         android:id="@+id/ll_bottom_tab"
         android:layout_width="match_parent"

@@ -10,12 +10,52 @@
         android:id="@+id/btn_pull_refresh_scroll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="可以下拉刷新的ScrollView" />
+        android:text="1_可以下拉刷新的ScrollView" />
 
     <Button
         android:id="@+id/btn_pull_refresh_webview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="可以下拉刷新的WebViewView" />
+        android:text="1_可以下拉刷新的WebViewView" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第二个下拉刷新库" />
+
+    <Button
+        android:id="@+id/btn_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2_ListView下拉刷新上拉加载" />
+    <Button
+        android:id="@+id/btn_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2_ScrollView下拉刷新上拉加载" />
+    <Button
+        android:id="@+id/btn_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2_TextView下拉刷新上拉加载" />
+    <Button
+        android:id="@+id/btn_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2_ImageView下拉刷新上拉加载" />
+    <Button
+        android:id="@+id/btn_webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2_WebView下拉刷新上拉加载" />
+    <Button
+        android:id="@+id/btn_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2_GridView下拉刷新上拉加载" />
+    <Button
+        android:id="@+id/btn_expandview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2_ExpandableView下拉刷新上拉加载" />
 </LinearLayout>

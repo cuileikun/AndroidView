@@ -1,23 +1,23 @@
-package com.gitstudy.oneandallcheck.program.pullview;
+package com.gitstudy.pulltorefreshtest.secpullliarbry;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.widget.ListView;
+import android.widget.GridView;
 
-public class PullableListView extends ListView implements Pullable
+public class PullableGridView extends GridView implements Pullable
 {
 
-	public PullableListView(Context context)
+	public PullableGridView(Context context)
 	{
 		super(context);
 	}
 
-	public PullableListView(Context context, AttributeSet attrs)
+	public PullableGridView(Context context, AttributeSet attrs)
 	{
 		super(context, attrs);
 	}
 
-	public PullableListView(Context context, AttributeSet attrs, int defStyle)
+	public PullableGridView(Context context, AttributeSet attrs, int defStyle)
 	{
 		super(context, attrs, defStyle);
 	}
@@ -32,20 +32,15 @@ public class PullableListView extends ListView implements Pullable
 		} else if (getFirstVisiblePosition() == 0
 				&& getChildAt(0).getTop() >= 0)
 		{
-			// 滑到ListView的顶部了
+			// 滑到顶部了
 			return true;
 		} else
 			return false;
 	}
 
-	public boolean isNot=false;
-
 	@Override
 	public boolean canPullUp()
 	{
-		if(isNot){
-			return false;
-		}
 		if (getCount() == 0)
 		{
 			// 没有item的时候也可以上拉加载
@@ -61,4 +56,5 @@ public class PullableListView extends ListView implements Pullable
 		}
 		return false;
 	}
+
 }

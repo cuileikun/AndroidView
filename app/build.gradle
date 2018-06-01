@@ -57,4 +57,5 @@ dependencies {
     compile 'com.android.support:support-v13:25.3.0'
     compile 'com.android.support:support-v4:25.3.0'
     compile project(':library')
+    compile files('libs/AndroidSwipeLayout-v1.1.8.jar')
 }

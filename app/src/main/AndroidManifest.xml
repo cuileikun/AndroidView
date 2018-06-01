@@ -109,7 +109,7 @@
         <activity
             android:name=".datetimedialog.DateTimeDialogActivity"
             android:theme="@style/AppBaseTheme" />
-        <activity android:name=".datetimedialog.sec.SecDateTimeDialogActivity"/>
+        <activity android:name=".datetimedialog.sec.SecDateTimeDialogActivity" />
         <activity android:name=".androidpicker.AndroidPickerActivity" />
         <activity android:name=".androidpicker.NestActivity" />
         <activity android:name=".base.CuiBaseActivity" />
@@ -179,7 +179,7 @@
         <activity android:name=".pulltorefreshtest.SecWebViewActivity" />
         <activity android:name=".pulltorefreshtest.SecGridViewActivity" />
         <activity android:name=".pulltorefreshtest.SecExpandViewActivity" />
-
+        <activity android:name=".listview.ListDemo3Activity"></activity>
     </application>
 
 </manifest>

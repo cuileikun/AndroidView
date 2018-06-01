@@ -135,7 +135,7 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/show_castview_rl"
+                android:id="@+id/rl_cehua_delete"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_30_dip"
                 android:layout_marginLeft="@dimen/dimen_13_dip"
@@ -159,7 +159,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv"
                     android:gravity="center_vertical"
-                    android:text=""
+                    android:text="listview侧滑删除条目"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 

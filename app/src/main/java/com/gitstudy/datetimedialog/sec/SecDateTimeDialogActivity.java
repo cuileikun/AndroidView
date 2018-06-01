@@ -1,7 +1,9 @@
-package com.gitstudy.datetimedialog;
+package com.gitstudy.datetimedialog.sec;
 
 import android.app.DatePickerDialog;
 import android.content.Context;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -9,20 +11,25 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.gitstudy.R;
-import com.qk.applibrary.activity.QkActivity;
+import com.gitstudy.datetimedialog.DateTimeDialogActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class DateTimeDialogActivity extends QkActivity {
+public class SecDateTimeDialogActivity extends AppCompatActivity {
     private Context context;
     private TextView tv_times;
     private RelativeLayout rl_select_time;
     private Button datePickerDialog;
-
     @Override
-    public void initViews() {
-        context = DateTimeDialogActivity.this;
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_sec_date_time_dialog);
+        initData();
+    }
+
+    private void initData() {
+        context = SecDateTimeDialogActivity.this;
         tv_times = (TextView) findViewById(R.id.tv_times);
         rl_select_time = (RelativeLayout) findViewById(R.id.rl_select_time);
         rl_select_time.setOnClickListener(new View.OnClickListener() {
@@ -71,11 +78,4 @@ public class DateTimeDialogActivity extends QkActivity {
             }
         });
     }
-
-    @Override
-    public int getLayoutId() {
-        return R.layout.activity_date_time_dialog;
-    }
-
-
 }

@@ -540,9 +540,47 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv13"
                     android:gravity="center_vertical"
-                    android:text="日期选择控件DATETIMEDIALOG"
+                    android:text="(自定义)Activity主题不同展示不同日期选择控件DATETIMEDIALOG_1"
                     android:textColor="#333333"
-                    android:textSize="15sp" />
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_8_dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/date_time_dialog_rl2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_marginRight="@dimen/dimen_13_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@drawable/mybelt_bg">
+
+                <ImageView
+                    android:id="@+id/inverstigation_iv132"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:src="@drawable/qq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:layout_toRightOf="@+id/inverstigation_iv132"
+                    android:gravity="center_vertical"
+                    android:text="(原生)Activity主题不同展示不同日期选择控件DATETIMEDIALOG_2"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
 
                 <ImageView
                     android:layout_width="@dimen/dimen_20_dip"

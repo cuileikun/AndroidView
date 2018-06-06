@@ -60,5 +60,8 @@
     <color name="text_gray">#7b403b37</color>
     <color name="base_red">#fffb6655</color>
     <color name="default_line_color">#e6e6e6</color>
+    <color name="red_ff4a57">#ff4a57</color>
+    <color name="press">#efefef</color>
+    <color name="normal">#ffffff</color>
 
 </resources>

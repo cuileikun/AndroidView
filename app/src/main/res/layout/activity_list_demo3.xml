@@ -3,16 +3,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
     android:orientation="vertical"
     tools:context="com.gitstudy.listview.ListDemo3Activity">
 
-
-
-    <ListView
-        android:id="@+id/message_center_lv"
+    <Button
+        android:id="@+id/rv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        ></ListView>
+        android:layout_height="wrap_content"
+        android:text="完整的RecyclerViewDemo" />
+
+    <Button
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ListView" />
+
+    <Button
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="线性布局LinearLayout" />
+
+    <Button
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ViewPager" />
+
+    <Button
+        android:id="@+id/expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="expandableListView删除条目" />
 
 </LinearLayout>

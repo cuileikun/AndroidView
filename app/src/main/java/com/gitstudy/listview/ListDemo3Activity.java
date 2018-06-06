@@ -1,43 +1,60 @@
 package com.gitstudy.listview;
 
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.ListView;
+import android.view.View;
 
 import com.gitstudy.R;
-import com.gitstudy.listview.three.DeleteBean;
-import com.gitstudy.listview.three.ListViewAdapter;
+import com.gitstudy.listview.three.ExpandListViewDeleteActivity;
+import com.gitstudy.listview.three.LinearLayoutDelDemoActivity;
+import com.gitstudy.listview.three.ListViewDelDemoActivity;
+import com.gitstudy.listview.three.RecycleDelDemoActivity;
+import com.gitstudy.listview.three.ViewPagerActivity;
 
-import java.util.ArrayList;
-import java.util.List;
-
+/**
+ * 安卓侧滑删除：https://blog.csdn.net/zxt0601/article/details/52303781
+ */
 public class ListDemo3Activity extends AppCompatActivity {
-    private ListView message_center_lv;
-    private ListViewAdapter mAdapter;
-    private List<DeleteBean> mDataList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_demo3);
-        initView();
+        findViewById(R.id.rv).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(v.getContext(), RecycleDelDemoActivity.class));
+            }
+        });
+
+        findViewById(R.id.lv).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(v.getContext(), ListViewDelDemoActivity.class));
+            }
+        });
+
+        findViewById(R.id.ll).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(v.getContext(), LinearLayoutDelDemoActivity.class));
+            }
+        });
+
+        findViewById(R.id.viewPager).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ListDemo3Activity.this, ViewPagerActivity.class));
+            }
+        });
+        findViewById(R.id.expandableListView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ListDemo3Activity.this,ExpandListViewDeleteActivity.class));
+            }
+        });
     }
 
-    private void initView() {
-        for (int i = 0; i < 6; i++) {
-            DeleteBean bean = new DeleteBean();
-            bean.time = "上课时间" + i;
-            bean.dec = "你的更衣柜将在七天后过期" + i;
-            mDataList.add(bean);
-        }
-        // TODO Auto-generated method stub
-        message_center_lv = (ListView) findViewById(R.id.message_center_lv);
-        message_center_lv.setDivider(new ColorDrawable(Color.GRAY));
-        message_center_lv.setDividerHeight(1);
-        mAdapter = new ListViewAdapter(this,mDataList);
 
-        message_center_lv.setAdapter(mAdapter);
-    }
 }

@@ -149,7 +149,6 @@
         <activity android:name=".tablayout.TabLayoutActivity" />
         <activity android:name=".thirdliarbry.EventBusFirstActivity" />
         <activity android:name=".thirdliarbry.eventbus.EventBusSecondActivity" />
-        <activity android:name=".thirdliarbry.eventbus.EventBusThirdActivity" />
         <activity android:name=".tablayout.verticaltablayout.VerticalTablayoutActivity" />
         <activity android:name=".watermark.WaterMarkActivity" />
         <activity android:name=".alarmmanager.AlarmManagerActivity" />
@@ -164,7 +163,6 @@
         <activity android:name=".permission.PerActivity" />
         <activity android:name=".pulltorefreshtest.PullTestActivity" />
         <activity android:name=".pulltorefreshtest.ScrollPullToRefreshActivity" />
-        <activity android:name=".pulltorefreshtest.WebViewPullToRefreshActivity" />
         <activity android:name=".expandlistviewtest.MultiItemExpandListViewActivity" />
         <activity android:name=".popupwindow.custompop.CustomPopupActivity" />
         <activity android:name=".popupwindow.multipop.MultiPopupActivity" />
@@ -179,7 +177,12 @@
         <activity android:name=".pulltorefreshtest.SecWebViewActivity" />
         <activity android:name=".pulltorefreshtest.SecGridViewActivity" />
         <activity android:name=".pulltorefreshtest.SecExpandViewActivity" />
-        <activity android:name=".listview.ListDemo3Activity"></activity>
+        <activity android:name=".listview.ListDemo3Activity" />
+        <activity android:name=".listview.three.RecycleDelDemoActivity" />
+        <activity android:name=".listview.three.ListViewDelDemoActivity" />
+        <activity android:name=".listview.three.LinearLayoutDelDemoActivity" />
+        <activity android:name=".listview.three.ViewPagerActivity" />
+        <activity android:name=".listview.three.ExpandListViewDeleteActivity"></activity>
     </application>
 
 </manifest>

@@ -182,7 +182,10 @@
         <activity android:name=".listview.three.ListViewDelDemoActivity" />
         <activity android:name=".listview.three.LinearLayoutDelDemoActivity" />
         <activity android:name=".listview.three.ViewPagerActivity" />
-        <activity android:name=".listview.three.ExpandListViewDeleteActivity"></activity>
+        <activity android:name=".listview.three.ExpandListViewDeleteActivity" />
+        <activity android:name=".oneandallcheck.onlyonechoice.JustSingleChoiceActivity" />
+        <activity android:name=".oneandallcheck.onlyonechoice.SecondSingleChoiceActivity" />
+        <activity android:name=".json.JsonTestActivity"></activity>
     </application>
 
 </manifest>

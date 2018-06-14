@@ -19,6 +19,17 @@
         android:text="项目中抽取条目单选与多选" />
 
     <Button
+        android:id="@+id/btn_listview_single_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ListView条目单选效果" />
+    <Button
+        android:id="@+id/btn_single_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(项目定制)ListView条目单选效果" />
+
+    <Button
         android:id="@+id/btn_recycleview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

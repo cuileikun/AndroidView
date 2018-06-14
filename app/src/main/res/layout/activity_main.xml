@@ -1210,6 +1210,44 @@
                     android:src="@drawable/arrow_right" />
             </RelativeLayout>
 
+            <RelativeLayout
+                android:id="@+id/rl_json"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_90_dip"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_marginRight="@dimen/dimen_13_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@drawable/mybelt_bg">
+
+                <ImageView
+                    android:id="@+id/inverstigation_iv30"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:src="@drawable/qq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:layout_toRightOf="@+id/inverstigation_iv30"
+                    android:gravity="center_vertical"
+                    android:text="如何给后台传递对象和集合，不能直接传递对象跟集合，因为Spring框架貌似只能接收String类型的参数，所以需要先用json封装，之后再转成String存进去(利用json封装对象跟集合)，"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_8_dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 

@@ -21,6 +21,7 @@ import com.gitstudy.guocustomview.GuoCustomViewActivity;
 import com.gitstudy.history.SearchHistoryActivity;
 import com.gitstudy.horizontalscrollselectedview.HorizontalScrollSelectedViewActivity;
 import com.gitstudy.horizontalscrollview.HorizontalScrollViewActivity;
+import com.gitstudy.html.HtmlTestActivity;
 import com.gitstudy.json.JsonTestActivity;
 import com.gitstudy.knowledge.KnowledgeActivity;
 import com.gitstudy.listview.ListViewDemoActivity;
@@ -134,10 +135,13 @@ public class MainActivity extends QkActivity {
             R.id.date_time_dialog_rl, R.id.android_picker_rl, R.id.webview_video_rl, R.id.mianshi_rl, R.id.dialog_rl, R.id.ocr_rl,
             R.id.xrecycle_view_rl, R.id.horizontal_scroll_view_rl, R.id.expand_list_view_rl, R.id.all_check_rl, R.id.tablayout,
             R.id.vertical_tablayout, R.id.rl_water_mark, R.id.rl_alarm_manager, R.id.rl_permission_request, R.id.rl_pull_refresh_test,
-            R.id.lock_pattern_rl2, R.id.rl_search_history, R.id.date_time_dialog_rl2, R.id.rl_json
+            R.id.lock_pattern_rl2, R.id.rl_search_history, R.id.date_time_dialog_rl2, R.id.rl_json, R.id.rl_html
     })
     void click(View view) {
         switch (view.getId()) {
+            case R.id.rl_html:
+                startActivity(new Intent(mContext, HtmlTestActivity.class));
+                break;
             case R.id.rl_json:
                 startActivity(new Intent(mContext, JsonTestActivity.class));
                 break;

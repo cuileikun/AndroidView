@@ -185,7 +185,8 @@
         <activity android:name=".listview.three.ExpandListViewDeleteActivity" />
         <activity android:name=".oneandallcheck.onlyonechoice.JustSingleChoiceActivity" />
         <activity android:name=".oneandallcheck.onlyonechoice.SecondSingleChoiceActivity" />
-        <activity android:name=".json.JsonTestActivity"></activity>
+        <activity android:name=".json.JsonTestActivity" />
+        <activity android:name=".html.HtmlTestActivity"></activity>
     </application>
 
 </manifest>

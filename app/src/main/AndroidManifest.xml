@@ -186,7 +186,8 @@
         <activity android:name=".oneandallcheck.onlyonechoice.JustSingleChoiceActivity" />
         <activity android:name=".oneandallcheck.onlyonechoice.SecondSingleChoiceActivity" />
         <activity android:name=".json.JsonTestActivity" />
-        <activity android:name=".html.HtmlTestActivity"></activity>
+        <activity android:name=".html.HtmlTestActivity" />
+        <activity android:name=".order.OrderActivity"></activity>
     </application>
 
 </manifest>

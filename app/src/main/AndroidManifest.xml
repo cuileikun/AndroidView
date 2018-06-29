@@ -187,7 +187,12 @@
         <activity android:name=".oneandallcheck.onlyonechoice.SecondSingleChoiceActivity" />
         <activity android:name=".json.JsonTestActivity" />
         <activity android:name=".html.HtmlTestActivity" />
-        <activity android:name=".order.OrderActivity"></activity>
+        <activity android:name=".order.OrderActivity" />
+        <activity android:name=".pulltorefreshtest.ListViewAddFooterActivity" />
+        <activity android:name=".fragmenttabhostutils.huihuituijian.TabHostFirstActivity"></activity>
+        <activity android:name=".fragmenttabhostutils.huihuituijian.TabHostSecondActivity"></activity>
+        <activity android:name=".fragmenttabhostutils.huihuituijian.TabHostThirdActivity"></activity>
+
     </application>
 
 </manifest>

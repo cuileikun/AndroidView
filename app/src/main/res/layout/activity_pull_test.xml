@@ -5,7 +5,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.gitstudy.pulltorefreshtest.PullTestActivity">
-
+    <Button
+        android:id="@+id/btn_list_iew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ListView增加头布局及脚步局" />
     <Button
         android:id="@+id/btn_pull_refresh_scroll"
         android:layout_width="match_parent"
@@ -16,7 +20,7 @@
         android:id="@+id/btn_pull_refresh_webview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1_可以下拉刷新的WebViewView" />
+        android:text="2_可以下拉刷新的WebViewView" />
 
     <Button
         android:layout_width="match_parent"

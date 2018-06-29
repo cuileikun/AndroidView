@@ -3,33 +3,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_first_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="16dip"
+        android:text="项目实测第一个" />
+
+    <Button
+        android:id="@+id/btn_sec_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="16dip"
+        android:text="项目实测第二个" />
+
+    <Button
+        android:id="@+id/btn_third_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginTop="16dip"
+        android:text="项目实测第三个--点击第一个tab的时候调用第一个tab里面的方法" />
+
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dip"
-        android:text="quick start"
         android:onClick="quick_start"
-        />
+        android:text="quick start" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dip"
         android:layout_marginRight="16dip"
-        android:text="custom in xml"
         android:onClick="custom_in_xml"
-        />
+        android:text="custom in xml" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dip"
         android:layout_marginRight="16dip"
         android:layout_marginTop="16dip"
-        android:text="custom in java"
         android:onClick="custom_in_java"
-        />
+        android:text="custom in java" />
 
 
     <Button
@@ -38,7 +64,6 @@
         android:layout_marginLeft="16dip"
         android:layout_marginRight="16dip"
         android:layout_marginTop="16dip"
-        android:text="use in fragment"
         android:onClick="use_in_fragment"
-        />
+        android:text="use in fragment" />
 </LinearLayout>

@@ -63,5 +63,6 @@
     <color name="red_ff4a57">#ff4a57</color>
     <color name="press">#efefef</color>
     <color name="normal">#ffffff</color>
+    <color name="bar_red">#ffb8001c</color>
 
 </resources>

@@ -23,9 +23,12 @@ public class PullTestActivity extends AppCompatActivity {
     }
 
     @OnClick({R.id.btn_pull_refresh_scroll, R.id.btn_pull_refresh_webview, R.id.btn_listview, R.id.btn_scrollview,
-            R.id.btn_textview, R.id.btn_imageview,R.id.btn_webview,R.id.btn_gridview,R.id.btn_expandview})
+            R.id.btn_textview, R.id.btn_imageview, R.id.btn_webview, R.id.btn_gridview, R.id.btn_expandview, R.id.btn_list_iew})
     void click(View view) {
         switch (view.getId()) {
+            case R.id.btn_list_iew:
+                startActivity(new Intent(mContext,ListViewAddFooterActivity.class));
+                break;
             case R.id.btn_pull_refresh_scroll:
                 startActivity(new Intent(mContext, ScrollPullToRefreshActivity.class));
                 break;

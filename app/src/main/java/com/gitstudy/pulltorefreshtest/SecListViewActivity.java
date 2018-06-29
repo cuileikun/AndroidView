@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -27,6 +28,8 @@ public class SecListViewActivity extends AppCompatActivity implements PullToRefr
 //        ptrl.setOnRefreshListener(new MyListener());
         ptrl.setOnRefreshListener(this);
         listView = (ListView) findViewById(R.id.content_view);
+        View mFooterView = LayoutInflater.from(SecListViewActivity.this).inflate(R.layout.list_test_footer, null);
+        listView.addFooterView(mFooterView);
         initListView();
     }
     @Override

@@ -114,6 +114,8 @@ public class MainActivity extends QkActivity {
     public void initData() {
         super.initData();
         top_bar_view.setTopbarTitle("######");
+
+
     }
 
     @Override

@@ -11,6 +11,16 @@ import com.gitstudy.R;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+/**
+ * public interface Pullable
+ * 判断是否可以下拉，如果不需要下拉功能可以直接return false
+ *
+ * @return true如果可以下拉否则返回false
+ * boolean canPullDown();
+ * 判断是否可以上拉，如果不需要上拉功能可以直接return false
+ * @return true如果可以上拉否则返回false
+ * boolean canPullUp();
+ */
 public class PullTestActivity extends AppCompatActivity {
     private Context mContext;
 
@@ -27,7 +37,7 @@ public class PullTestActivity extends AppCompatActivity {
     void click(View view) {
         switch (view.getId()) {
             case R.id.btn_list_iew:
-                startActivity(new Intent(mContext,ListViewAddFooterActivity.class));
+                startActivity(new Intent(mContext, ListViewAddFooterActivity.class));
                 break;
             case R.id.btn_pull_refresh_scroll:
                 startActivity(new Intent(mContext, ScrollPullToRefreshActivity.class));

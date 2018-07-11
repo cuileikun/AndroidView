@@ -57,6 +57,7 @@
         <activity android:name=".convenientbanner.ConvenientBannerNetActivity" />
         <activity android:name=".convenientbanner.ConvenientBannerNetPageActivity" />
         <activity android:name=".convenientbanner.recyclerviewdemo.ConvenientBannerRecycleActivity" />
+
         <!-- 通用的广告栏控件  off -->
         <!-- 新手引导界面ShowcastView on -->
         <activity android:name=".showcastview.ShowCastViewActivity">
@@ -189,10 +190,10 @@
         <activity android:name=".html.HtmlTestActivity" />
         <activity android:name=".order.OrderActivity" />
         <activity android:name=".pulltorefreshtest.ListViewAddFooterActivity" />
-        <activity android:name=".fragmenttabhostutils.huihuituijian.TabHostFirstActivity"></activity>
-        <activity android:name=".fragmenttabhostutils.huihuituijian.TabHostSecondActivity"></activity>
-        <activity android:name=".fragmenttabhostutils.huihuituijian.TabHostThirdActivity"></activity>
-
+        <activity android:name=".fragmenttabhostutils.huihuituijian.TabHostFirstActivity" />
+        <activity android:name=".fragmenttabhostutils.huihuituijian.TabHostSecondActivity" />
+        <activity android:name=".fragmenttabhostutils.huihuituijian.TabHostThirdActivity" />
+        <activity android:name=".pulltorefreshtest.PullToRefreshWebViewActivty"></activity>
     </application>
 
 </manifest>

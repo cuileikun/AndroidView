@@ -195,7 +195,8 @@
         <activity android:name=".fragmenttabhostutils.huihuituijian.TabHostThirdActivity" />
         <activity android:name=".pulltorefreshtest.PullToRefreshWebViewActivty" />
         <activity android:name=".guide.SecSplashActivity" />
-        <activity android:name=".guide.GuideActivity"></activity>
+        <activity android:name=".guide.GuideActivity" />
+        <activity android:name=".shape.ShapeActivity"></activity>
     </application>
 
 </manifest>

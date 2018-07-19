@@ -34,6 +34,7 @@ import com.gitstudy.permission.PerActivity;
 import com.gitstudy.popupwindow.PopupWindowSeriesActivity;
 import com.gitstudy.pulltorefreshtest.PullTestActivity;
 import com.gitstudy.recycleview.RecycleViewActivity;
+import com.gitstudy.shape.ShapeActivity;
 import com.gitstudy.showcastview.ShowCastViewActivity;
 import com.gitstudy.tablayout.TabLayoutActivity;
 import com.gitstudy.tablayout.verticaltablayout.VerticalTablayoutActivity;
@@ -54,50 +55,6 @@ public class MainActivity extends QkActivity {
     RelativeLayout fragment_tabhost_utils_rl;
     @BindView(R.id.top_bar_view)
     TopbarView top_bar_view;
-    @BindView(R.id.guo_custom_view_rl)
-    RelativeLayout guo_custom_view_rl;
-    @BindView(R.id.convenient_banner_rl)
-    RelativeLayout convenient_banner_rl;
-    @BindView(R.id.show_castview_rl)
-    RelativeLayout show_castview_rl;
-    @BindView(R.id.fit_screen_rl)
-    RelativeLayout fit_screen_rl;
-    @BindView(R.id.lock_pattern_rl)
-    RelativeLayout lock_pattern_rl;
-    @BindView(R.id.recycle_view_rl)
-    RelativeLayout recycle_view_rl;
-    @BindView(R.id.horizontal_scroll_selected_view_rl)
-    RelativeLayout horizontal_scroll_selected_view_rl;
-    @BindView(R.id.collapsing_toolbar_layout_rl)
-    RelativeLayout collapsing_toolbar_layout_rl;
-    @BindView(R.id.dynamic_add_view_rl)
-    RelativeLayout dynamic_add_view_rl;
-    @BindView(R.id.listview_add_delete_item_rl)
-    RelativeLayout listview_add_delete_item_rl;
-    @BindView(R.id.popup_window_rl)
-    RelativeLayout popup_window_rl;
-    @BindView(R.id.date_time_dialog_rl)
-    RelativeLayout date_time_dialog_rl;
-    @BindView(R.id.android_picker_rl)
-    RelativeLayout android_picker_rl;
-    @BindView(R.id.webview_video_rl)
-    RelativeLayout webview_video_rl;
-    @BindView(R.id.mianshi_rl)
-    RelativeLayout mianshi_rl;
-    @BindView(R.id.dialog_rl)
-    RelativeLayout dialog_rl;
-    @BindView(R.id.ocr_rl)
-    RelativeLayout ocr_rl;
-    @BindView(R.id.xrecycle_view_rl)
-    RelativeLayout xrecycle_view_rl;
-    @BindView(R.id.horizontal_scroll_view_rl)
-    RelativeLayout horizontal_scroll_view_rl;
-    @BindView(R.id.expand_list_view_rl)
-    RelativeLayout expand_list_view_rl;
-    @BindView(R.id.all_check_rl)
-    RelativeLayout all_check_rl;
-    @BindView(R.id.tablayout)
-    RelativeLayout tablayout;
 
     @Override
     public int getLayoutId() {
@@ -139,10 +96,14 @@ public class MainActivity extends QkActivity {
             R.id.date_time_dialog_rl, R.id.android_picker_rl, R.id.webview_video_rl, R.id.mianshi_rl, R.id.dialog_rl, R.id.ocr_rl,
             R.id.xrecycle_view_rl, R.id.horizontal_scroll_view_rl, R.id.expand_list_view_rl, R.id.all_check_rl, R.id.tablayout,
             R.id.vertical_tablayout, R.id.rl_water_mark, R.id.rl_alarm_manager, R.id.rl_permission_request, R.id.rl_pull_refresh_test,
-            R.id.lock_pattern_rl2, R.id.rl_search_history, R.id.date_time_dialog_rl2, R.id.rl_json, R.id.rl_html, R.id.rl_order,R.id.rl_guide
+            R.id.lock_pattern_rl2, R.id.rl_search_history, R.id.date_time_dialog_rl2, R.id.rl_json, R.id.rl_html, R.id.rl_order,
+            R.id.rl_guide,R.id.rl_shape
     })
     void click(View view) {
         switch (view.getId()) {
+            case R.id.rl_shape:
+                startActivity(new Intent(mContext, ShapeActivity.class));
+                break;
             case R.id.rl_guide:
                 startActivity(new Intent(mContext, SecSplashActivity.class));
                 break;

@@ -38,6 +38,7 @@ import com.gitstudy.shape.ShapeActivity;
 import com.gitstudy.showcastview.ShowCastViewActivity;
 import com.gitstudy.tablayout.TabLayoutActivity;
 import com.gitstudy.tablayout.verticaltablayout.VerticalTablayoutActivity;
+import com.gitstudy.timecount.CountTimeActivity;
 import com.gitstudy.watermark.WaterMarkActivity;
 import com.gitstudy.webviewvideo.MyActivity;
 import com.gitstudy.xrcycleview.XRecycleViewDemoActivity;
@@ -72,8 +73,6 @@ public class MainActivity extends QkActivity {
     public void initData() {
         super.initData();
         top_bar_view.setTopbarTitle("######");
-
-
     }
 
     @Override
@@ -97,10 +96,13 @@ public class MainActivity extends QkActivity {
             R.id.xrecycle_view_rl, R.id.horizontal_scroll_view_rl, R.id.expand_list_view_rl, R.id.all_check_rl, R.id.tablayout,
             R.id.vertical_tablayout, R.id.rl_water_mark, R.id.rl_alarm_manager, R.id.rl_permission_request, R.id.rl_pull_refresh_test,
             R.id.lock_pattern_rl2, R.id.rl_search_history, R.id.date_time_dialog_rl2, R.id.rl_json, R.id.rl_html, R.id.rl_order,
-            R.id.rl_guide,R.id.rl_shape
+            R.id.rl_guide, R.id.rl_shape, R.id.rl_count_time
     })
     void click(View view) {
         switch (view.getId()) {
+            case R.id.rl_count_time:
+                startActivity(new Intent(mContext, CountTimeActivity.class));
+                break;
             case R.id.rl_shape:
                 startActivity(new Intent(mContext, ShapeActivity.class));
                 break;
@@ -211,7 +213,6 @@ public class MainActivity extends QkActivity {
             case R.id.rl_search_history:
                 startActivity(new Intent(mContext, SearchHistoryActivity.class));
                 break;
-
         }
     }
 

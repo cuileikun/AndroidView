@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gitstudy.timecount.CountTimeActivity">
+
+    <Button
+        android:id="@+id/btn_count_down_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1倒计时_CountDownTimer方式实现"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2倒计时_Timer_TimerTask方式实现"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_handler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3倒计时_TimerTask与Handler方式实现"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_handler_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4倒计时_Handler与Message方式实现"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_handler_thread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5计时_Handler与Thread（不占用UI线程）方式实现"
+        android:textAllCaps="false" />
+    <Button
+        android:id="@+id/btn_handler_runner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6计时_Handler与Runnable（最简单型） 方式实现"
+        android:textAllCaps="false" />
+
+</LinearLayout>

@@ -193,10 +193,16 @@
         <activity android:name=".fragmenttabhostutils.huihuituijian.TabHostFirstActivity" />
         <activity android:name=".fragmenttabhostutils.huihuituijian.TabHostSecondActivity" />
         <activity android:name=".fragmenttabhostutils.huihuituijian.TabHostThirdActivity" />
-        <activity android:name=".pulltorefreshtest.PullToRefreshWebViewActivty" />
         <activity android:name=".guide.SecSplashActivity" />
         <activity android:name=".guide.GuideActivity" />
-        <activity android:name=".shape.ShapeActivity"></activity>
+        <activity android:name=".shape.ShapeActivity" />
+        <activity android:name=".timecount.CountTimeActivity" />
+        <activity android:name=".timecount.CountDownTimeActivity" />
+        <activity android:name=".timecount.TimerActivity" />
+        <activity android:name=".timecount.TimerHandlerActivity" />
+        <activity android:name=".timecount.HandlerMsgActivity" />
+        <activity android:name=".timecount.HandlerThreadActivity" />
+        <activity android:name=".timecount.HandlerRunnerActivity"></activity>
     </application>
 
 </manifest>

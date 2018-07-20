@@ -45,7 +45,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/room_iv"
                     android:gravity="center_vertical"
-                    android:text="FragmentTabhostUtils"
+                    android:text="1_FragmentTabhostUtils"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -83,7 +83,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/erery_day_reconnoitore_list_iv"
                     android:gravity="center_vertical"
-                    android:text="guocustomview"
+                    android:text="2_guocustomview"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -121,7 +121,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/belt_iv"
                     android:gravity="center_vertical"
-                    android:text="广告栏控件ConvenientBanner"
+                    android:text="3_广告栏控件ConvenientBanner"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -159,7 +159,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv"
                     android:gravity="center_vertical"
-                    android:text="新手引导界面ShowcastView"
+                    android:text="4_新手引导界面ShowcastView"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -197,7 +197,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv5"
                     android:gravity="center_vertical"
-                    android:text="Android屏幕适配方案终结者"
+                    android:text="5_Android屏幕适配方案终结者"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -235,7 +235,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv6"
                     android:gravity="center_vertical"
-                    android:text="仿支付宝手势密码解锁及广告页_1"
+                    android:text="6_仿支付宝手势密码解锁及广告页_1"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -273,7 +273,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv62"
                     android:gravity="center_vertical"
-                    android:text="仿支付宝手势密码解锁及广告页_2"
+                    android:text="7_仿支付宝手势密码解锁及广告页_2"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -311,7 +311,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv7"
                     android:gravity="center_vertical"
-                    android:text="recycle_view"
+                    android:text="8_recycle_view"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -349,7 +349,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv8"
                     android:gravity="center_vertical"
-                    android:text="HorizontalScrollSelectedView"
+                    android:text="9_HorizontalScrollSelectedView"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -387,7 +387,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv9"
                     android:gravity="center_vertical"
-                    android:text="CollapsingToolbarLayout实现折叠效果"
+                    android:text="10_CollapsingToolbarLayout实现折叠效果"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -425,7 +425,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv10"
                     android:gravity="center_vertical"
-                    android:text="动态添加布局"
+                    android:text="11_动态添加布局"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -463,7 +463,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv11"
                     android:gravity="center_vertical"
-                    android:text="listview增加删除条目"
+                    android:text="12_listview增加删除条目"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -501,7 +501,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv12"
                     android:gravity="center_vertical"
-                    android:text="PopupWindow"
+                    android:text="14_PopupWindow"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -540,7 +540,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv13"
                     android:gravity="center_vertical"
-                    android:text="(自定义)Activity主题不同展示不同日期选择控件DATETIMEDIALOG_1"
+                    android:text="15_(自定义)Activity主题不同展示不同日期选择控件DATETIMEDIALOG_1"
                     android:textColor="#333333"
                     android:textSize="12sp" />
 
@@ -578,7 +578,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv132"
                     android:gravity="center_vertical"
-                    android:text="(原生)Activity主题不同展示不同日期选择控件DATETIMEDIALOG_2"
+                    android:text="16_(原生)Activity主题不同展示不同日期选择控件DATETIMEDIALOG_2"
                     android:textColor="#333333"
                     android:textSize="12sp" />
 
@@ -616,7 +616,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv14"
                     android:gravity="center_vertical"
-                    android:text="AndroidPicker"
+                    android:text="17_AndroidPicker"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -654,7 +654,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv15"
                     android:gravity="center_vertical"
-                    android:text="WebView全屏播放视频"
+                    android:text="18_WebView全屏播放视频"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -692,7 +692,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv16"
                     android:gravity="center_vertical"
-                    android:text="常见技术总结"
+                    android:text="19_常见技术总结"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -731,7 +731,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv17"
                     android:gravity="center_vertical"
-                    android:text="安卓dialog大全"
+                    android:text="20_安卓dialog大全"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -769,7 +769,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv18"
                     android:gravity="center_vertical"
-                    android:text="OCR识别身份证银行卡驾驶证"
+                    android:text="21_OCR识别身份证银行卡驾驶证"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -807,7 +807,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv19"
                     android:gravity="center_vertical"
-                    android:text="XRecycleView"
+                    android:text="22_XRecycleView"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -846,7 +846,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv20"
                     android:gravity="center_vertical"
-                    android:text="Android 自定义 HorizontalScrollView 打造超强 Gallery效果"
+                    android:text="23_Android 自定义 HorizontalScrollView 打造超强 Gallery效果"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -885,7 +885,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv21"
                     android:gravity="center_vertical"
-                    android:text="ExpandListViewDemo"
+                    android:text="24_ExpandListViewDemo"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -924,7 +924,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv22"
                     android:gravity="center_vertical"
-                    android:text="listView(RecycleView条目单选多选)"
+                    android:text="25_listView(RecycleView条目单选多选)"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -963,7 +963,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv23"
                     android:gravity="center_vertical"
-                    android:text="TabLayout"
+                    android:text="26_TabLayout"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -1002,7 +1002,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv24"
                     android:gravity="center_vertical"
-                    android:text="VerticalTabLayout"
+                    android:text="27_VerticalTabLayout"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -1041,7 +1041,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv25"
                     android:gravity="center_vertical"
-                    android:text="Android水印"
+                    android:text="28_Android水印"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -1080,7 +1080,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv26"
                     android:gravity="center_vertical"
-                    android:text="AlarmManager实现精准计时"
+                    android:text="29_AlarmManager实现精准计时"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -1119,7 +1119,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv27"
                     android:gravity="center_vertical"
-                    android:text="安卓权限申请的两种方式"
+                    android:text="30_安卓权限申请的两种方式"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -1158,7 +1158,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv28"
                     android:gravity="center_vertical"
-                    android:text="下拉刷新测试"
+                    android:text="31_下拉刷新测试"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -1197,7 +1197,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv29"
                     android:gravity="center_vertical"
-                    android:text="搜索历史demo"
+                    android:text="32_搜索历史demo"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -1236,7 +1236,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv30"
                     android:gravity="center_vertical"
-                    android:text="如何给后台传递对象和集合，不能直接传递对象跟集合，因为Spring框架貌似只能接收String类型的参数，所以需要先用json封装，之后再转成String存进去(利用json封装对象跟集合)，"
+                    android:text="33_如何给后台传递对象和集合，不能直接传递对象跟集合，因为Spring框架貌似只能接收String类型的参数，所以需要先用json封装，之后再转成String存进去(利用json封装对象跟集合)，"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -1275,7 +1275,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv31"
                     android:gravity="center_vertical"
-                    android:text="Html标签使用及TextView设置"
+                    android:text="34_Html标签使用及TextView设置"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -1314,7 +1314,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv32"
                     android:gravity="center_vertical"
-                    android:text="仿物流的流程图"
+                    android:text="35_仿物流的流程图"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -1353,7 +1353,7 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv33"
                     android:gravity="center_vertical"
-                    android:text="新手引导页"
+                    android:text="36_新手引导页"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 
@@ -1392,7 +1392,46 @@
                     android:layout_marginLeft="@dimen/dimen_19_dip"
                     android:layout_toRightOf="@+id/inverstigation_iv34"
                     android:gravity="center_vertical"
-                    android:text="shape使用总结"
+                    android:text="37_shape使用总结"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_8_dip"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_count_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:layout_marginRight="@dimen/dimen_13_dip"
+                android:layout_marginTop="@dimen/dimen_10_dip"
+                android:background="@drawable/mybelt_bg">
+
+                <ImageView
+                    android:id="@+id/inverstigation_iv35"
+                    android:layout_width="@dimen/dimen_20_dip"
+                    android:layout_height="@dimen/dimen_20_dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:src="@drawable/qq_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_19_dip"
+                    android:layout_toRightOf="@+id/inverstigation_iv35"
+                    android:gravity="center_vertical"
+                    android:text="38_安卓倒计时_计时的几种实现方式"
                     android:textColor="#333333"
                     android:textSize="15sp" />
 

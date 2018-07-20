@@ -26,7 +26,7 @@ public class CountTimeActivity extends AppCompatActivity {
     }
 
     @OnClick({R.id.btn_count_down_time, R.id.btn_timer, R.id.btn_handler, R.id.btn_handler_msg,
-            R.id.btn_handler_thread,R.id.btn_handler_runner})
+            R.id.btn_handler_thread, R.id.btn_handler_runner})
     void click(View view) {
         switch (view.getId()) {
             case R.id.btn_handler_runner:

@@ -202,7 +202,9 @@
         <activity android:name=".timecount.TimerHandlerActivity" />
         <activity android:name=".timecount.HandlerMsgActivity" />
         <activity android:name=".timecount.HandlerThreadActivity" />
-        <activity android:name=".timecount.HandlerRunnerActivity"></activity>
+        <activity android:name=".timecount.HandlerRunnerActivity" />
+        <activity android:name=".convenientbanner.TestImageActivity" />
+        <activity android:name=".WebViewTestActivity"></activity>
     </application>
 
 </manifest>

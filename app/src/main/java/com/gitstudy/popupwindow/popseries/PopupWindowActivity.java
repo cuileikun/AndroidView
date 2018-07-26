@@ -28,6 +28,22 @@ public class PopupWindowActivity extends BaseActivity implements CommonPopupWind
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         initToolBar(toolbar, "PopupWindow", true);
     }
+    //仿ios相册选择框
+    public void showIosPop(View view) {
+        if (popupWindow != null && popupWindow.isShowing()) return;
+        View upView = LayoutInflater.from(this).inflate(R.layout.ios_popup_up, null);
+        //测量View的宽高
+        CommonUtil.measureWidthAndHeight(upView);
+        popupWindow = new CommonPopupWindow.Builder(this)
+                .setView(R.layout.ios_popup_up)
+                .setWidthAndHeight(ViewGroup.LayoutParams.MATCH_PARENT, upView.getMeasuredHeight())
+                .setBackGroundLevel(0.5f)//取值范围0.0f-1.0f 值越小越暗
+                .setAnimationStyle(R.style.AnimUp)
+                .setViewOnclickListener(this)
+                .create();
+        popupWindow.showAtLocation(findViewById(android.R.id.content), Gravity.BOTTOM, 0, 0);
+    }
+
 
     //向下弹出
     public void showDownPop(View view) {
@@ -94,6 +110,7 @@ public class PopupWindowActivity extends BaseActivity implements CommonPopupWind
                 .create();
         popupWindow.showAtLocation(findViewById(android.R.id.content), Gravity.BOTTOM, 0, 0);
     }
+
 
     //向上弹出
     public void showUpPop(View view) {
@@ -196,6 +213,47 @@ public class PopupWindowActivity extends BaseActivity implements CommonPopupWind
                     public void onClick(View v) {
                         toast("踩一下");
                         popupWindow.dismiss();
+                    }
+                });
+                break;
+
+            case R.layout.ios_popup_up:
+                Button btn_take_photo2 = (Button) view.findViewById(R.id.btn_take_photo);
+                Button btn_select_photo2 = (Button) view.findViewById(R.id.btn_select_photo);
+                Button btn_cancel2 = (Button) view.findViewById(R.id.btn_cancel);
+                btn_take_photo2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        toast("拍照");
+                        if (popupWindow != null) {
+                            popupWindow.dismiss();
+                        }
+                    }
+                });
+                btn_select_photo2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        toast("相册选取");
+                        if (popupWindow != null) {
+                            popupWindow.dismiss();
+                        }
+                    }
+                });
+                btn_cancel2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (popupWindow != null) {
+                            popupWindow.dismiss();
+                        }
+                    }
+                });
+                view.setOnTouchListener(new View.OnTouchListener() {
+                    @Override
+                    public boolean onTouch(View v, MotionEvent event) {
+                        if (popupWindow != null) {
+                            popupWindow.dismiss();
+                        }
+                        return true;
                     }
                 });
                 break;

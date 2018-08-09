@@ -204,7 +204,8 @@
         <activity android:name=".timecount.HandlerThreadActivity" />
         <activity android:name=".timecount.HandlerRunnerActivity" />
         <activity android:name=".convenientbanner.TestImageActivity" />
-        <activity android:name=".WebViewTestActivity"></activity>
+        <activity android:name=".WebViewTestActivity" />
+        <activity android:name=".scrolledittxt.ScrollEditTextActivity"></activity>
     </application>
 
 </manifest>

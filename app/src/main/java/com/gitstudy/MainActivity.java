@@ -34,6 +34,7 @@ import com.gitstudy.permission.PerActivity;
 import com.gitstudy.popupwindow.PopupWindowSeriesActivity;
 import com.gitstudy.pulltorefreshtest.PullTestActivity;
 import com.gitstudy.recycleview.RecycleViewActivity;
+import com.gitstudy.scrolledittxt.ScrollEditTextActivity;
 import com.gitstudy.shape.ShapeActivity;
 import com.gitstudy.showcastview.ShowCastViewActivity;
 import com.gitstudy.tablayout.TabLayoutActivity;
@@ -96,10 +97,13 @@ public class MainActivity extends QkActivity {
             R.id.xrecycle_view_rl, R.id.horizontal_scroll_view_rl, R.id.expand_list_view_rl, R.id.all_check_rl, R.id.tablayout,
             R.id.vertical_tablayout, R.id.rl_water_mark, R.id.rl_alarm_manager, R.id.rl_permission_request, R.id.rl_pull_refresh_test,
             R.id.lock_pattern_rl2, R.id.rl_search_history, R.id.date_time_dialog_rl2, R.id.rl_json, R.id.rl_html, R.id.rl_order,
-            R.id.rl_guide, R.id.rl_shape, R.id.rl_count_time
+            R.id.rl_guide, R.id.rl_shape, R.id.rl_count_time,R.id.rl_scroll_edit
     })
     void click(View view) {
         switch (view.getId()) {
+            case R.id.rl_scroll_edit:
+                startActivity(new Intent(mContext, ScrollEditTextActivity.class));
+                break;
             case R.id.rl_count_time:
                 startActivity(new Intent(mContext, CountTimeActivity.class));
                 break;

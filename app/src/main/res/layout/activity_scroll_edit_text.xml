@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gitstudy.scrolledittxt.KeyboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kb_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_layout_com" />
+
+    <Button
+        android:id="@+id/btn_summit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffb8001c"
+        android:text="提交"
+        android:textColor="#F8F8FF"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_summit"
+        android:layout_below="@+id/rl_title_bar"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="50dp"
+                android:paddingTop="50dp"
+                android:text="招银租赁"
+                android:textColor="#9B9B9B"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="50dp"
+                android:paddingTop="50dp"
+                android:text="招银租赁"
+                android:textColor="#9B9B9B"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="50dp"
+                android:paddingTop="50dp"
+                android:text="招银租赁"
+                android:textColor="#9B9B9B"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="50dp"
+                android:paddingTop="50dp"
+                android:text="招银租赁"
+                android:textColor="#9B9B9B"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="40dp"
+                android:paddingTop="40dp"
+                android:text="招银租赁"
+                android:textColor="#9B9B9B"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="描述"
+                    android:textColor="#4A4A4A"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tv_text_num"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:lines="1"
+                    android:text="0/10"
+                    android:textColor="#9B9B9B"
+                    android:textSize="14sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="请输入信息"
+                android:maxLength="500"
+                android:minHeight="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="14dp"
+                android:scrollbars="vertical"
+                android:textColor="#4A4A4A"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</com.gitstudy.scrolledittxt.KeyboardLayout>

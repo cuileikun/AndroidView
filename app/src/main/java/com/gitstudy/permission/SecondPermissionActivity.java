@@ -33,9 +33,11 @@ public class SecondPermissionActivity extends AppCompatActivity {
                 //判断相机权限是否打开
                 if (PermissionsChecker.checkIsLacksPermission(SecondPermissionActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
                     ToastUtils.showShort(SecondPermissionActivity.this, "请打开SD卡读写文件权限");
+                    grantPermission();
                     return;
                 } else {
                     ToastUtils.showShort(SecondPermissionActivity.this, "SD卡读写权限已经打开，可以进行下一步操作");
+                    grantPermission();
                 }
                 break;
             case R.id.btn_came:

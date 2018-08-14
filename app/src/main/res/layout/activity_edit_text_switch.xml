@@ -53,7 +53,7 @@
             android:inputType="number"
             android:paddingLeft="14dp"
             android:singleLine="true"
-            android:text="tv"
+            android:text="TextView长按变为编辑状态"
             android:textColor="@color/gray"
             android:textSize="16sp" />
         <View

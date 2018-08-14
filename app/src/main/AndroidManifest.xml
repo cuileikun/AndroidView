@@ -205,7 +205,8 @@
         <activity android:name=".timecount.HandlerRunnerActivity" />
         <activity android:name=".convenientbanner.TestImageActivity" />
         <activity android:name=".WebViewTestActivity" />
-        <activity android:name=".scrolledittxt.ScrollEditTextActivity"></activity>
+        <activity android:name=".scrolledittxt.ScrollEditTextActivity" />
+        <activity android:name=".scrolledittxt.EditTextSwitchActivity"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gitstudy.scrolledittxt.EditTextSwitchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="14dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/tv_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="手机" />
+
+        <EditText
+          android:imeOptions="actionDone"
+            android:id="@+id/edt_telephone_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:layout_toRightOf="@+id/tv_telephone"
+            android:background="@null"
+            android:gravity="right|center"
+            android:inputType="number"
+            android:paddingLeft="14dp"
+            android:singleLine="true"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_telephone_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:layout_toRightOf="@+id/tv_telephone"
+            android:background="@null"
+            android:gravity="right|center"
+            android:inputType="number"
+            android:paddingLeft="14dp"
+            android:singleLine="true"
+            android:text="tv"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray" />
+    </RelativeLayout>
+</LinearLayout>

@@ -45,7 +45,7 @@
                     </RelativeLayout>
 
                     <RelativeLayout
-                        android:id="@+id/android_program_rl"
+                        android:id="@+id/android_test"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/dimen_65_dip"
                         android:layout_marginTop="@dimen/dimen_10_dip"
@@ -56,7 +56,7 @@
                             android:id="@+id/tv_text"
                             style="@style/match_match"
                             android:gravity="center"
-                            android:text="3"
+                            android:text="测试"
                             android:textColor="#ffffff"
                             android:textSize="14sp" />
 

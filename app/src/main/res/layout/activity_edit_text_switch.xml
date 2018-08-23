@@ -23,7 +23,6 @@
             android:text="手机" />
 
         <EditText
-          android:imeOptions="actionDone"
             android:id="@+id/edt_telephone_number"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -33,13 +32,15 @@
             android:layout_toRightOf="@+id/tv_telephone"
             android:background="@null"
             android:gravity="right|center"
+            android:imeOptions="actionDone"
             android:inputType="number"
             android:paddingLeft="14dp"
             android:singleLine="true"
             android:text=""
-            android:visibility="gone"
             android:textColor="@color/gray"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:visibility="gone" />
+
         <TextView
             android:id="@+id/tv_telephone_number"
             android:layout_width="match_parent"
@@ -56,6 +57,7 @@
             android:text="TextView长按变为编辑状态"
             android:textColor="@color/gray"
             android:textSize="16sp" />
+
         <View
             android:id="@+id/view4"
             android:layout_width="match_parent"

@@ -206,7 +206,8 @@
         <activity android:name=".convenientbanner.TestImageActivity" />
         <activity android:name=".WebViewTestActivity" />
         <activity android:name=".scrolledittxt.ScrollEditTextActivity" />
-        <activity android:name=".scrolledittxt.EditTextSwitchActivity"></activity>
+        <activity android:name=".scrolledittxt.EditTextSwitchActivity" />
+        <activity android:name=".TestActivity"></activity>
     </application>
 
 </manifest>

@@ -41,4 +41,40 @@ public class CommonUtil {
         String time = dff.format(new Date());
         return time;
     }
+    /**
+     * 将时间转化成毫秒
+     * 时间格式: yyyy-MM-dd HH:mm:ss
+     *
+     * @param time
+     * @return
+     */
+    public static Long timeStrToSecond(String time) {
+        try {
+            SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            Long second = format.parse(time).getTime();
+            return second;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return -1l;
+    }
+    /**
+     * 将时间转化成毫秒
+     * 时间格式: yyyy-MM-dd HH:mm:ss
+     *
+     * @param time
+     * @return
+     */
+    public static Long timeStrToThird(String time) {
+        try {
+            SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
+            Long second = format.parse(time).getTime();
+            return second;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return -1l;
+    }
 }

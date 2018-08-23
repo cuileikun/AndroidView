@@ -46,9 +46,12 @@ public class WelcomActivity extends AppCompatActivity {
 
     }
 
-    @OnClick({R.id.rl_first, R.id.rl_third_liarbry})
+    @OnClick({R.id.rl_first, R.id.rl_third_liarbry,R.id.android_test})
     void click(View view) {
         switch (view.getId()) {
+            case R.id.android_test:
+                startActivity(new Intent(WelcomActivity.this, TestActivity.class));
+                break;
             case R.id.rl_first:
                 startActivity(new Intent(WelcomActivity.this, MainActivity.class));
                 break;

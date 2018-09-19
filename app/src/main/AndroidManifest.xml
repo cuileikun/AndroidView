@@ -203,11 +203,10 @@
         <activity android:name=".timecount.HandlerMsgActivity" />
         <activity android:name=".timecount.HandlerThreadActivity" />
         <activity android:name=".timecount.HandlerRunnerActivity" />
-        <activity android:name=".convenientbanner.TestImageActivity" />
-        <activity android:name=".WebViewTestActivity" />
         <activity android:name=".scrolledittxt.ScrollEditTextActivity" />
         <activity android:name=".scrolledittxt.EditTextSwitchActivity" />
-        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".TestActivity" />
+
     </application>
 
 </manifest>

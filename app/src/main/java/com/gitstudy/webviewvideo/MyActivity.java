@@ -39,7 +39,8 @@ public class MyActivity extends AppCompatActivity {
         webView.getSettings().setAppCacheEnabled(true);
         webView.getSettings().setBuiltInZoomControls(true);
         webView.getSettings().setSaveFormData(true);
-        webView.loadUrl("http://192.168.1.215:51006/qk-web/admin/Houseinfo/showHouseinfo2.do?showType=2&houseid=40894");
+//        webView.loadUrl("http://192.168.1.215:51006/qk-web/admin/Houseinfo/showHouseinfo2.do?showType=2&houseid=40894");
+        webView.loadUrl("http://flashmedia.eastday.com/newdate/news/2016-11/shznews1125-19.mp4");
     }
 
     public boolean inCustomView() {

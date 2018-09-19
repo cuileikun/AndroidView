@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_shibor_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:gravity="center"
+        android:textColor="#B00005"
+        android:textSize="@dimen/_14sp"
+        tools:text="3.2%" />
+
+    <TextView
+        android:id="@+id/tv_shibor_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:minHeight="@dimen/_20dp"
+        android:textColor="#151515"
+        android:textSize="@dimen/_14sp"
+        tools:text="1week" />
+</LinearLayout>

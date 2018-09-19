@@ -18,6 +18,7 @@ import com.gitstudy.expandlistviewtest.ExpandListViewDemoActivity;
 import com.gitstudy.fitscreenend.FitScreenActivity;
 import com.gitstudy.fragmenttabhostutils.FragmentTabhostActivity;
 import com.gitstudy.guide.SecSplashActivity;
+import com.gitstudy.gundongtext.GunDongActivity;
 import com.gitstudy.guocustomview.GuoCustomViewActivity;
 import com.gitstudy.history.SearchHistoryActivity;
 import com.gitstudy.horizontalscrollselectedview.HorizontalScrollSelectedViewActivity;
@@ -99,10 +100,14 @@ public class MainActivity extends QkActivity {
             R.id.xrecycle_view_rl, R.id.horizontal_scroll_view_rl, R.id.expand_list_view_rl, R.id.all_check_rl, R.id.tablayout,
             R.id.vertical_tablayout, R.id.rl_water_mark, R.id.rl_alarm_manager, R.id.rl_permission_request, R.id.rl_pull_refresh_test,
             R.id.lock_pattern_rl2, R.id.rl_search_history, R.id.date_time_dialog_rl2, R.id.rl_json, R.id.rl_html, R.id.rl_order,
-            R.id.rl_guide, R.id.rl_shape, R.id.rl_count_time,R.id.rl_scroll_edit,R.id.rl_edit_switch,R.id.rl_ipc,R.id.rl_photo_view
+            R.id.rl_guide, R.id.rl_shape, R.id.rl_count_time,R.id.rl_scroll_edit,R.id.rl_edit_switch,R.id.rl_ipc,R.id.rl_photo_view,
+            R.id.rl_gundong_wenzi
     })
     void click(View view) {
         switch (view.getId()) {
+            case R.id.rl_gundong_wenzi:
+                startActivity(new Intent(mContext, GunDongActivity.class));
+                break;
             case R.id.rl_photo_view:
                 startActivity(new Intent(mContext, PhotoViewActivity.class));
                 break;

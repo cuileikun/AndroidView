@@ -194,5 +194,26 @@
         <item name="android:cacheColorHint">@android:color/transparent</item>
         <item name="android:listSelector">@android:color/transparent</item>
     </style>
+    <style name="DividerLine">
+        <item name="android:background">#EFEEEE</item>
+    </style>
 
+    <style name="DividerLine.White">
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="DividerLine.White.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="DividerLine.Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_1dp</item>
+    </style>
+
+    <style name="DividerLine.Vertical">
+        <item name="android:layout_width">@dimen/_1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
 </resources>

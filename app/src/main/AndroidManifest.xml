@@ -206,7 +206,7 @@
         <activity android:name=".scrolledittxt.ScrollEditTextActivity" />
         <activity android:name=".scrolledittxt.EditTextSwitchActivity" />
         <activity android:name=".TestActivity" />
-
+        <activity android:name=".photoview.PhotoViewActivity"></activity>
     </application>
 
 </manifest>

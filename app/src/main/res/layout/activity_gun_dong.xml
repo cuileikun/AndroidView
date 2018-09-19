@@ -11,4 +11,51 @@
     <!-- 资讯 -->
     <include layout="@layout/gate_way_new_module" />
 
+    <com.gitstudy.gundongtext.anthermethod.ScrollBanner
+        android:id="@+id/sb_demographic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:autoStart="true"
+        android:background="@drawable/warning_bg"
+        android:flipInterval="3000"
+        android:inAnimation="@anim/slide_in_bottom"
+        android:outAnimation="@anim/slide_out_top">
+        <TextView
+            android:id="@+id/tv_warning_content1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="有预警信息有预警信息有预警信息"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tv_warning_content2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="当前天气状况当前天气状况当前"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/tv_warning_content3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="123456465"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+    </ViewFlipper>
+
+
 </LinearLayout>

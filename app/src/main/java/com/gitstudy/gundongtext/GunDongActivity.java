@@ -6,12 +6,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.LinearLayout;
 
 import com.gitstudy.R;
+import com.gitstudy.gundongtext.anthermethod.ScrollBanner;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/**
+ * Android实现文字垂直滚动、纵向走马灯效果的实现方式汇总
+ * https://www.jb51.net/article/131470.htm/
+ *
+ * Android:TextView的垂直滚动效果和上下滚动效果，原生动画实现
+ * https://blog.csdn.net/u012990509/article/details/54617112
+ *
+ * android TextView向上滚动（模仿滚动文字广告效果）
+ * https://blog.csdn.net/u010184245/article/details/73176672/
+ */
 public class GunDongActivity extends AppCompatActivity {
     private Context mContext;
     @BindView(R.id.ll_carousel_container)
@@ -26,14 +38,30 @@ public class GunDongActivity extends AppCompatActivity {
     private CarouselHolder dollarHolder;
     private CarouselHolder shiborlHolder;
     private CarouselHolder liborHolder;
-
+    ScrollBanner sb_demographic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gun_dong);
         ButterKnife.bind(this);
+        antherMethod();
+        thirdMethod();
         initData();
+    }
+
+    private void thirdMethod() {
+
+    }
+
+    private void antherMethod() {
+        sb_demographic = (ScrollBanner) findViewById(R.id.sb_demographic);
+        List<String> demographicsList = new ArrayList<String>();
+        for (int i = 0; i < 20; i++) {
+            demographicsList.add("第" + i + "条内容");
+        }
+        sb_demographic.setList(demographicsList);
+        sb_demographic.startScroll();
     }
 
     private void initData() {

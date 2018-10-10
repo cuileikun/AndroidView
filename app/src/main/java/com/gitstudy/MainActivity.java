@@ -27,6 +27,7 @@ import com.gitstudy.html.HtmlTestActivity;
 import com.gitstudy.json.JsonTestActivity;
 import com.gitstudy.knowledge.KnowledgeActivity;
 import com.gitstudy.listview.ListViewDemoActivity;
+import com.gitstudy.localshare.LocalShareActivity;
 import com.gitstudy.lockscreen.LockScreenActivity;
 import com.gitstudy.lockscreen.SecondLockScreenActivity;
 import com.gitstudy.oneandallcheck.AllCheckedActivity;
@@ -100,11 +101,14 @@ public class MainActivity extends QkActivity {
             R.id.xrecycle_view_rl, R.id.horizontal_scroll_view_rl, R.id.expand_list_view_rl, R.id.all_check_rl, R.id.tablayout,
             R.id.vertical_tablayout, R.id.rl_water_mark, R.id.rl_alarm_manager, R.id.rl_permission_request, R.id.rl_pull_refresh_test,
             R.id.lock_pattern_rl2, R.id.rl_search_history, R.id.date_time_dialog_rl2, R.id.rl_json, R.id.rl_html, R.id.rl_order,
-            R.id.rl_guide, R.id.rl_shape, R.id.rl_count_time,R.id.rl_scroll_edit,R.id.rl_edit_switch,R.id.rl_ipc,R.id.rl_photo_view,
-            R.id.rl_gundong_wenzi
+            R.id.rl_guide, R.id.rl_shape, R.id.rl_count_time, R.id.rl_scroll_edit, R.id.rl_edit_switch, R.id.rl_ipc, R.id.rl_photo_view,
+            R.id.rl_gundong_wenzi, R.id.rl_share
     })
     void click(View view) {
         switch (view.getId()) {
+            case R.id.rl_share:
+                startActivity(new Intent(mContext, LocalShareActivity.class));
+                break;
             case R.id.rl_gundong_wenzi:
                 startActivity(new Intent(mContext, GunDongActivity.class));
                 break;

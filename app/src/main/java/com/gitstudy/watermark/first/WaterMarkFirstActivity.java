@@ -1,4 +1,4 @@
-package com.gitstudy.watermark;
+package com.gitstudy.watermark.first;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 import com.gitstudy.R;
 
-public class WaterMarkActivity extends AppCompatActivity {
+public class WaterMarkFirstActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

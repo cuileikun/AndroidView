@@ -151,7 +151,7 @@
         <activity android:name=".thirdliarbry.EventBusFirstActivity" />
         <activity android:name=".thirdliarbry.eventbus.EventBusSecondActivity" />
         <activity android:name=".tablayout.verticaltablayout.VerticalTablayoutActivity" />
-        <activity android:name=".watermark.WaterMarkActivity" />
+        <activity android:name=".watermark.first.WaterMarkFirstActivity" />
         <activity android:name=".alarmmanager.AlarmManagerActivity" />
         <!-- <receiver android:name=".alarmmanager.AlarmReceiver"> -->
         <!-- <intent-filter> -->
@@ -208,7 +208,9 @@
         <activity android:name=".TestActivity" />
         <activity android:name=".photoview.PhotoViewActivity" />
         <activity android:name=".gundongtext.GunDongActivity" />
-        <activity android:name=".localshare.LocalShareActivity"></activity>
+        <activity android:name=".localshare.LocalShareActivity" />
+        <activity android:name=".watermark.ShuiYinActivity" />
+        <activity android:name=".watermark.second.WaterMarkSecondActivity"></activity>
     </application>
 
 </manifest>

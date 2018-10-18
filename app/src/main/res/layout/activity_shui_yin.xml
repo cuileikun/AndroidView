@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gitstudy.watermark.ShuiYinActivity">
+
+    <Button
+        android:id="@+id/btn_first_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第一种方式添加水印" />
+
+    <Button
+        android:id="@+id/btn_second_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="第二种方式添加水印" />
+</LinearLayout>

@@ -1,4 +1,4 @@
-package com.gitstudy.watermark;
+package com.gitstudy.watermark.first;
 
 import android.content.Context;
 import android.content.res.TypedArray;

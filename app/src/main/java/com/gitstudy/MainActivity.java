@@ -44,7 +44,7 @@ import com.gitstudy.showcastview.ShowCastViewActivity;
 import com.gitstudy.tablayout.TabLayoutActivity;
 import com.gitstudy.tablayout.verticaltablayout.VerticalTablayoutActivity;
 import com.gitstudy.timecount.CountTimeActivity;
-import com.gitstudy.watermark.WaterMarkActivity;
+import com.gitstudy.watermark.ShuiYinActivity;
 import com.gitstudy.webviewvideo.MyActivity;
 import com.gitstudy.xrcycleview.XRecycleViewDemoActivity;
 import com.qk.applibrary.activity.QkActivity;
@@ -223,7 +223,7 @@ public class MainActivity extends QkActivity {
                 startActivity(new Intent(mContext, VerticalTablayoutActivity.class));
                 break;
             case R.id.rl_water_mark:
-                startActivity(new Intent(mContext, WaterMarkActivity.class));
+                startActivity(new Intent(mContext, ShuiYinActivity.class));
                 break;
             case R.id.rl_alarm_manager:
                 startActivity(new Intent(mContext, AlarmManagerActivity.class));

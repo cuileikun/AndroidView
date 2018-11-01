@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/leased"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:text="待办事项"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:gravity="right"
+            android:text="2017-10-31"
+            android:textColor="#676767"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_warning_report_submit"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/ic_leased_warning_report"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="预警报告"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_warning_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:lines="1"
+                    android:text="22"
+                    android:textColor="#FFF17B12"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_warning_report_submit"
+                    android:layout_width="76dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_blue_bg"
+                    android:gravity="center"
+                    android:text="立即处理"
+                    android:textColor="#FF1756FF"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="135dp"
+                android:background="#f2f2f2"></View>
+
+            <LinearLayout
+                android:id="@+id/ll_asset_class_submit"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/ic_leased_asset_class"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="资产分类"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_asset_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:lines="1"
+                    android:text="22"
+                    android:textColor="#FFF17B12"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_asset_class_submit"
+                    android:layout_width="76dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_blue_bg"
+                    android:gravity="center"
+                    android:text="立即处理"
+                    android:textColor="#FF1756FF"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="135dp"
+                android:background="#f2f2f2"></View>
+
+            <LinearLayout
+                android:id="@+id/ll_review_report_submit"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/ic_leased_review_report"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="回访报告"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_review_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:lines="1"
+                    android:text="22"
+                    android:textColor="#FFF17B12"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_review_report_submit"
+                    android:layout_width="76dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_blue_bg"
+                    android:gravity="center"
+                    android:text="立即处理"
+                    android:textColor="#FF1756FF"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="135dp"
+                android:background="#f2f2f2"></View>
+
+            <LinearLayout
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/ic_leased_risk_issues"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="风险事项报告"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_risk_issues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:lines="1"
+                    android:text="22"
+                    android:textColor="#676767"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_risk_issues_submit"
+                    android:layout_width="76dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_blue_bg"
+                    android:gravity="center"
+                    android:text="立即处理"
+                    android:textColor="#676767"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="135dp"
+                android:background="#f2f2f2"></View>
+
+            <LinearLayout
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/ic_leased_asset_purpose"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="资金用途检查"
+                    android:textColor="#FF333333"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_asset_purpose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:lines="1"
+                    android:text="22"
+                    android:textColor="#676767"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_asset_purpose_sumbit"
+                    android:layout_width="76dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_blue_bg"
+                    android:gravity="center"
+                    android:text="立即处理"
+                    android:textColor="#676767"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

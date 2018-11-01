@@ -210,7 +210,9 @@
         <activity android:name=".gundongtext.GunDongActivity" />
         <activity android:name=".localshare.LocalShareActivity" />
         <activity android:name=".watermark.ShuiYinActivity" />
-        <activity android:name=".watermark.second.WaterMarkSecondActivity"></activity>
+        <activity android:name=".watermark.second.WaterMarkSecondActivity" />
+        <activity android:name=".listview.HorizontalListActivity" />
+        <activity android:name=".listview.HorizontalScrollViewActivity"></activity>
     </application>
 
 </manifest>

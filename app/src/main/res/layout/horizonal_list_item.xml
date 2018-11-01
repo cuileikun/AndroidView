@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="预警报告"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="22"
+            android:textColor="#f49038"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_item3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="立即处理"
+            android:textColor="#1957fe"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1dp"
+        android:layout_height="140dp"
+        android:layout_toRightOf="@+id/ll_content"
+        android:background="#f2f2f2"></View>
+
+
+</RelativeLayout>

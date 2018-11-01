@@ -18,7 +18,8 @@ public class ListViewDemoActivity extends QkActivity implements View.OnClickList
     private RelativeLayout list_demo1_rl;
     private RelativeLayout list_demo2_rl;
     private RelativeLayout rl_cehua_delete;
-
+    private RelativeLayout horizontal_scroll_view;
+    private RelativeLayout horizontal_scroll_view2;
 
     @Override
     public void initViews() {
@@ -30,6 +31,9 @@ public class ListViewDemoActivity extends QkActivity implements View.OnClickList
         list_demo1_rl = (RelativeLayout) findViewById(R.id.list_demo1_rl);
         list_demo2_rl = (RelativeLayout) findViewById(R.id.list_demo2_rl);
         rl_cehua_delete = (RelativeLayout) findViewById(R.id.rl_cehua_delete);
+        horizontal_scroll_view = (RelativeLayout) findViewById(R.id.horizontal_scroll_view);
+        horizontal_scroll_view2 = (RelativeLayout) findViewById(R.id.horizontal_scroll_view2);
+
     }
 
     @Override
@@ -46,6 +50,8 @@ public class ListViewDemoActivity extends QkActivity implements View.OnClickList
         list_demo1_rl.setOnClickListener(ListViewDemoActivity.this);
         list_demo2_rl.setOnClickListener(ListViewDemoActivity.this);
         rl_cehua_delete.setOnClickListener(ListViewDemoActivity.this);
+        horizontal_scroll_view.setOnClickListener(ListViewDemoActivity.this);
+        horizontal_scroll_view2.setOnClickListener(ListViewDemoActivity.this);
     }
 
     private TopbarImplListener topListener = new TopbarImplListener() {
@@ -75,6 +81,12 @@ public class ListViewDemoActivity extends QkActivity implements View.OnClickList
                 break;
             case R.id.rl_cehua_delete:
                 startActivity(new Intent(ListViewDemoActivity.this, ListDemo3Activity.class));
+                break;
+            case R.id.horizontal_scroll_view:
+                startActivity(new Intent(ListViewDemoActivity.this, HorizontalListActivity.class));
+                break;
+            case R.id.horizontal_scroll_view2:
+                startActivity(new Intent(ListViewDemoActivity.this, HorizontalScrollViewActivity.class));
                 break;
 
         }

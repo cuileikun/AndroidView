@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/applibrary" />
+            <option value="$PROJECT_DIR$/calendarview" />
             <option value="$PROJECT_DIR$/library" />
             <option value="$PROJECT_DIR$/lockpattern" />
           </set>
@@ -20,6 +21,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/applibrary" />
+            <option value="$PROJECT_DIR$/calendarview" />
             <option value="$PROJECT_DIR$/library" />
             <option value="$PROJECT_DIR$/lockpattern" />
           </set>

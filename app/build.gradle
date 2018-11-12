@@ -60,4 +60,5 @@ dependencies {
     //Adapter终结者 地址：https://github.com/mcxtzhang/all-base-adapter
     compile 'com.android.support:recyclerview-v7:25.4.0'
     compile 'com.github.mcxtzhang:all-base-adapter:V1.5.2'
+    compile project(':calendarview')
 }

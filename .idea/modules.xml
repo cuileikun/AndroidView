@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/AndroidView.iml" filepath="$PROJECT_DIR$/AndroidView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/applibrary/applibrary.iml" filepath="$PROJECT_DIR$/applibrary/applibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calendarview/calendarview.iml" filepath="$PROJECT_DIR$/calendarview/calendarview.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/lockpattern/lockpattern.iml" filepath="$PROJECT_DIR$/lockpattern/lockpattern.iml" />
     </modules>

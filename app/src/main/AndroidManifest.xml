@@ -212,7 +212,8 @@
         <activity android:name=".watermark.ShuiYinActivity" />
         <activity android:name=".watermark.second.WaterMarkSecondActivity" />
         <activity android:name=".listview.HorizontalListActivity" />
-        <activity android:name=".listview.HorizontalScrollViewActivity"></activity>
+        <activity android:name=".listview.HorizontalScrollViewActivity" />
+        <activity android:name=".rili.RiLiStartActivity"></activity>
     </application>
 
 </manifest>

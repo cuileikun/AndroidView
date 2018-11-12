@@ -18,7 +18,7 @@ import butterknife.ButterKnife;
 /**
  * html参考链接：https://blog.csdn.net/sunchaohui5741/article/details/79023525
  * 包含html控制字体的一般用法及特殊用法
- *
+ * <p>
  * TextView设置图片参考链接：https://blog.csdn.net/hwe_xc/article/details/50906220
  */
 public class HtmlTestActivity extends AppCompatActivity {
@@ -28,6 +28,8 @@ public class HtmlTestActivity extends AppCompatActivity {
     TextView mTvRmbRte;
     @BindView(R.id.tv_address)
     TextView address;
+    @BindView(R.id.tv_address2)
+    TextView mSecAddress;
     private String rmbAmtSmall;
     private Spanned rmbAmtSmallSpanned;
 
@@ -39,10 +41,20 @@ public class HtmlTestActivity extends AppCompatActivity {
 
         firstMethod();
         secondMethod();
+        thirdMethod();
+
     }
 
     private void secondMethod() {
-        address.setText(Html.fromHtml("上海浦东的" + "<font color='#ff0000'>" + "(预约)" + "</font>"));
+        //文案效果3  多色效果，并且加粗
+        Spanned strC = Html.fromHtml("我是默认背景色  <strong><font color=#ff0000>" + "我是红色" + "</font></strong>  我是默认背景色");
+        mSecAddress.setText(strC);
+
+    }
+
+    private void thirdMethod() {
+        Spanned spanned = Html.fromHtml("上海浦东的" + "<font color='#ff0000'>" + "(预约)" + "</font>");
+        address.setText(spanned);
     }
 
     private void firstMethod() {

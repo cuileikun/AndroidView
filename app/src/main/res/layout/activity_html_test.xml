@@ -26,8 +26,23 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:gravity="center_horizontal"
-            android:text="2,下面是html特殊用法-控制字体颜色大小 "
+            android:text="2,下面是html常规用法_控制字体颜色及字体粗细"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_address2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="3,下面是html特殊用法-控制字体颜色大小 "
             android:textColor="@color/gray" />
 
         <RelativeLayout

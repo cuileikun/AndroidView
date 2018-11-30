@@ -10,6 +10,7 @@ import com.gitstudy.alarmmanager.AlarmManagerActivity;
 import com.gitstudy.androidpicker.AndroidPickerActivity;
 import com.gitstudy.collapsingtoolbarlayout.CollapsingToolbarLayoutActivity;
 import com.gitstudy.convenientbanner.ConvenientBannerActivity;
+import com.gitstudy.dateandtime.DateAndTimeActivity;
 import com.gitstudy.datetimedialog.DateTimeDialogActivity;
 import com.gitstudy.datetimedialog.sec.SecDateTimeDialogActivity;
 import com.gitstudy.dialog.DialogActivity;
@@ -37,7 +38,6 @@ import com.gitstudy.photoview.PhotoViewActivity;
 import com.gitstudy.popupwindow.PopupWindowSeriesActivity;
 import com.gitstudy.pulltorefreshtest.PullTestActivity;
 import com.gitstudy.recycleview.RecycleViewActivity;
-import com.gitstudy.rili.RiLiStartActivity;
 import com.gitstudy.scrolledittxt.EditTextSwitchActivity;
 import com.gitstudy.scrolledittxt.ScrollEditTextActivity;
 import com.gitstudy.shape.ShapeActivity;
@@ -103,12 +103,16 @@ public class MainActivity extends QkActivity {
             R.id.vertical_tablayout, R.id.rl_water_mark, R.id.rl_alarm_manager, R.id.rl_permission_request, R.id.rl_pull_refresh_test,
             R.id.lock_pattern_rl2, R.id.rl_search_history, R.id.date_time_dialog_rl2, R.id.rl_json, R.id.rl_html, R.id.rl_order,
             R.id.rl_guide, R.id.rl_shape, R.id.rl_count_time, R.id.rl_scroll_edit, R.id.rl_edit_switch, R.id.rl_ipc, R.id.rl_photo_view,
-            R.id.rl_gundong_wenzi, R.id.rl_share,R.id.rl_rili
+            R.id.rl_gundong_wenzi, R.id.rl_share,R.id.rl_rili,R.id.rl_time
     })
     void click(View view) {
         switch (view.getId()) {
+            case R.id.rl_time:
+                startActivity(new Intent(mContext, DateAndTimeActivity.class));
+                break;
             case R.id.rl_rili:
-                startActivity(new Intent(mContext, RiLiStartActivity.class));
+//                startActivity(new Intent(mContext, RiLiStartActivity.class));
+//                startActivity(new Intent(mContext, CustomActivity.class));
                 break;
             case R.id.rl_share:
                 startActivity(new Intent(mContext, LocalShareActivity.class));

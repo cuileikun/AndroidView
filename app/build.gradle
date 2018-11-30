@@ -18,6 +18,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    task intoJar(type: Copy) {
+        delete 'build/libs/CalendarView.jar'
+        from('build/intermediates/bundles/release/')
+        into('build/libs/')
+        include('classes.jar')
+        rename ('classes.jar', 'CalendarView.jar')
+    }
+    intoJar.dependsOn(build)
 }
 
 dependencies {
@@ -60,5 +68,4 @@ dependencies {
     //Adapter终结者 地址：https://github.com/mcxtzhang/all-base-adapter
     compile 'com.android.support:recyclerview-v7:25.4.0'
     compile 'com.github.mcxtzhang:all-base-adapter:V1.5.2'
-    compile project(':calendarview')
 }

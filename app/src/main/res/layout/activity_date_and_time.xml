@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gitstudy.dateandtime.DateAndTimeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_get_near_sunday_from_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取距离当前日期最近的周日" />
+
+        <TextView
+            android:id="@+id/tv_get_near_sunday_from_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:hint="获取距离当前日期最近的周日" />
+
+        <Button
+            android:id="@+id/btn_get_near_sunday_from_someday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取距离当前日期最近的周日" />
+
+        <TextView
+            android:id="@+id/tv_get_near_sunday_from_someday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:hint="获取距离指定日期最近的一个星期天" />
+
+        <Button
+            android:id="@+id/btn_get_sunday_from_someday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="获取指定日期的上个周末的周日" />
+
+        <TextView
+            android:id="@+id/tv_get_sunday_from_someday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:hint="获取指定日期的上个周末的周日" />
+
+
+        <EditText
+            android:id="@+id/ed_is_sunday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="判断日期是是否是周日" />
+
+        <Button
+            android:id="@+id/btn_is_sunday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="判断给定日期是否是周日" />
+
+        <TextView
+            android:id="@+id/tv_is_sunday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:hint="判断给定日期是否是周日" />
+    </LinearLayout>
+</ScrollView>

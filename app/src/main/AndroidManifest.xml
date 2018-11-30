@@ -213,7 +213,18 @@
         <activity android:name=".watermark.second.WaterMarkSecondActivity" />
         <activity android:name=".listview.HorizontalListActivity" />
         <activity android:name=".listview.HorizontalScrollViewActivity" />
-        <activity android:name=".rili.RiLiStartActivity"></activity>
+        <activity android:name=".rili.RiLiStartActivity" />
+        <activity android:name=".rili.meizu.MeiZuActivity" />
+        <activity android:name=".rili.custom.CustomActivity" />
+        <activity android:name=".rili.range.RangeActivity" />
+        <activity android:name=".rili.simple.SimpleActivity" />
+        <activity android:name=".rili.colorful.ColorfulActivity" />
+        <activity android:name=".rili.index.IndexActivity" />
+        <activity android:name=".rili.pager.ViewPagerActivity" />
+        <activity android:name=".rili.single.SingleActivity" />
+        <activity android:name=".rili.solay.SolarActivity" />
+        <activity android:name=".rili.progress.ProgressActivity" />
+        <activity android:name=".dateandtime.DateAndTimeActivity"></activity>
     </application>
 
 </manifest>

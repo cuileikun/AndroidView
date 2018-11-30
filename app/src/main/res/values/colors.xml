@@ -65,4 +65,7 @@
     <color name="normal">#ffffff</color>
     <color name="bar_red">#ffb8001c</color>
 
+    <color name="content_background">#f2f2f2</color>
+    <color name="solar_background">#009988</color>
+
 </resources>
